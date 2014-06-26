@@ -15,9 +15,6 @@ content = f.read()
 
 start = time.time()
 chars(content)
-
-#chars(content)
-
 end = time.time();
 
 print end - start

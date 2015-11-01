@@ -1,7 +1,63 @@
-function* values() {
-  for (var i = 0; i < arguments.length; i++) {
-    yield arguments[i];
-  }
+
+var _regeneratorRuntime = require('babel-runtime/regenerator')['default'];
+
+var _Promise = require('babel-runtime/core-js/promise')['default'];
+
+var marked0$0 = [getValue].map(_regeneratorRuntime.mark);
+var co = require('co');
+
+var Benchmark = require('benchmark');
+var suite = new Benchmark.Suite();
+
+
+function getValue() {
+  return _regeneratorRuntime.wrap(function getValue$(context$1$0) {
+    while (1) switch (context$1$0.prev = context$1$0.next) {
+      case 0:
+        context$1$0.next = 2;
+        return _Promise.resolve(1);
+
+      case 2:
+        return context$1$0.abrupt('return', context$1$0.sent);
+
+      case 3:
+      case 'end':
+        return context$1$0.stop();
+    }
+  }, marked0$0[0], this);
 }
 
-var o = values(1, 2, 3);  // => [object Generator]
+function* getValue2() {
+  return yield Promise.resolve(1);
+}
+
+function yieldFn(){
+  return co(getValue);
+}
+
+function compileFn(){
+  return co(getValue2)
+}
+
+
+
+suite.add('yieldFn', function (defer) {
+  yieldFn().then(function(){
+    defer.resolve();
+  })
+}, {
+  defer: true
+})
+.add('compileFn', function (defer) {
+   compileFn().then(function(){
+    defer.resolve();
+  })
+}, {
+  defer: true
+})
+.on('cycle', function (event) {
+  console.log(String(event.target));
+}).on('complete', function () {
+  console.log('Fastest is ' + this.filter('fastest').pluck('name'));
+})
+.run({ async: true });

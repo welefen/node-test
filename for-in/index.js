@@ -6,8 +6,8 @@ var suite = new Benchmark.Suite();
 
 
 var obj = {};
-for(var i=0;i<100;i++){
-  var key = Math.random();
+for(var i=0;i<20;i++){
+  var key = 'ww';
   obj[key] = i;
 }
 

@@ -10,18 +10,19 @@ var CLS = require('./cls.js')
 
 var fn1 = function(){
   var instance = new CLS();
-  var data = instance.fn();
+  var data = instance.test();
 }
 
 var fn2 = function(){
-  var instance = thinkit();
+  var instance = new thinkit();
   var data = instance.fn();
 }
 
 var fn3 = function(){
   var instance = new babelCompiled();
-  var data = instance.fn();
+  var data = instance.test();
 }
+
 
 
 suite.add('node class', function () {

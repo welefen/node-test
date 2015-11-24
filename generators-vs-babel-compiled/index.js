@@ -8,6 +8,11 @@ var babelCompiled = require('./babel_compiled.js');
 var generators = require('./generators.js')
 
 
+var promiseFn = function(){
+  return Promise.resolve(1).then(function(data){
+    return data + 2;
+  })
+}
 
 suite.add('es6 generators', function (defer) {
   generators().then(function(){
@@ -18,7 +23,13 @@ suite.add('es6 generators', function (defer) {
    babelCompiled().then(function(){
     defer.resolve();
   })
-}, {defer: true})// add listeners
+}, {defer: true})
+.add('promise', function (defer) {
+   promiseFn().then(function(){
+    defer.resolve();
+  })
+}, {defer: true})
+// add listeners
 .on('cycle', function (event) {
   console.log(String(event.target));
 }).on('complete', function () {

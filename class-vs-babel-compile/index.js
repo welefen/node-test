@@ -6,6 +6,7 @@ var suite = new Benchmark.Suite();
 
 var babelCompiled = require('./babel_compiled.js');
 var Class = require('./class.js')
+var babelCompiledWithoutLoose = require('./babel_compile_without_loose.js');
 
 
 var fn1 = function(){
@@ -19,6 +20,10 @@ var fn2 = function(){
   var data = instance.test();
 }
 
+var fn3 = function(){
+  var instance = new babelCompiledWithoutLoose();
+  var data = instance.test();
+}
 
 
 suite.add('es6 class', function () {
@@ -26,6 +31,9 @@ suite.add('es6 class', function () {
 })
 .add('babel compiled', function () {
    fn2()
+})
+.add('babel compiled without loose', function () {
+   fn3()
 })// add listeners
 .on('cycle', function (event) {
   console.log(String(event.target));

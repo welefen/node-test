@@ -9,7 +9,9 @@
     "babel-core": "^6.3.2",
     "babel-preset-stage-1": "^6.1.18"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.3.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

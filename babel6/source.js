@@ -1,6 +1,12 @@
 
 var a = class {
-  async test(){
-    await Promise.resolve(1);
+  getName(){
+    return 'welefen'
+  }
+  get name (){
+    return this._name;
+  }
+  set name(value){
+    this._name = 'welefen';
   }
 }

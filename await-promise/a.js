@@ -35,12 +35,16 @@ var fn2 = function fn2() {
   }, null, this);
 };
 
-suite.add('promise', function (done) {
-  fn1().then(done);
-});
-suite.add('await', function (done) {
-  fn2().then(done);
-}).on('cycle', function (event) {
+suite.add('promise', function (defer) {
+  fn1().then(function(){
+    defer.resolve();
+  });
+}, {defer: true});
+suite.add('await', function (defer) {
+  fn2().then(function(){
+    defer.resolve();
+  });
+}, {defer: true}).on('cycle', function (event) {
   console.log(String(event.target));
 }).on('complete', function () {
   console.log('Fastest is ' + this.filter('fastest').pluck('name'));

@@ -6,7 +6,7 @@ var babel = require('babel-core');
 var startTime = Date.now();
 var data = require("babel-core").transform(content, {
   presets: ["es2015-loose", "stage-1"],
-  plugins: ['transform-runtime'],
+  //plugins: ['transform-runtime'],
 });
 var endTime = Date.now();
 

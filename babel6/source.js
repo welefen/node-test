@@ -1,12 +1,23 @@
 
 var a = class {
-  getName(){
-    return 'welefen'
+  async test(){
+    let value = await Promise.resolve(1);
+    await Promise.reject(new Error('error'))
+    return value;
   }
-  get name (){
-    return this._name;
-  }
-  set name(value){
-    this._name = 'welefen';
+  static test(){
+
   }
 }
+var instance = new a();
+instance.test().then(function(data){
+  console.log('data', data);
+})
+var b = class extends a {
+  async test(){
+    await super.test();
+    await Promise.resolve(2);
+  }
+}
+
+export default b;

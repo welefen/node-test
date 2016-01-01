@@ -20,4 +20,12 @@ var b = class extends a {
   }
 }
 
+async function c(){
+  var data = [1, 2, 3];
+  for(var i =0,length = data.length;i<length;i++){
+    var result = await Promise.resolve(data[i]);
+  }
+}
+
 export default b;
+

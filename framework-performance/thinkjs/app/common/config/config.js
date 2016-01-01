@@ -5,6 +5,7 @@
  */
 module.exports = {
   resource_on: false,
+  logic_on: false
   //log_request: true
   //key: value
 };

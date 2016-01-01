@@ -107,4 +107,43 @@ var b = (function (_a) {
   return b;
 })(a);
 
+var c = (function () {
+  var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
+    var data, i, length, result;
+    return _regenerator2.default.wrap(function _callee3$(_context3) {
+      while (1) {
+        switch (_context3.prev = _context3.next) {
+          case 0:
+            data = [1, 2, 3];
+            i = 0, length = data.length;
+
+          case 2:
+            if (!(i < length)) {
+              _context3.next = 9;
+              break;
+            }
+
+            _context3.next = 5;
+            return _promise2.default.resolve(data[i]);
+
+          case 5:
+            result = _context3.sent;
+
+          case 6:
+            i++;
+            _context3.next = 2;
+            break;
+
+          case 9:
+          case 'end':
+            return _context3.stop();
+        }
+      }
+    }, _callee3, this);
+  }));
+  return function c() {
+    return ref.apply(this, arguments);
+  };
+})();
+
 exports.default = b;

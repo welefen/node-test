@@ -1,459 +1,1377 @@
-[deoptimizing (DEOPT eager): begin 0x331df405ec59 <JS Function substr (SharedFunctionInfo 0x189e0f858f09)> (opt #33) @2, FP to SP delta: 48]
-            ;;; deoptimize at 10874: wrong map
-  reading input frame substr => node=3, args=3, height=4; inputs:
-      0: 0x331df405ec59 ; (frame function) 0x331df405ec59 <JS Function substr (SharedFunctionInfo 0x189e0f858f09)>
-      1: 0xc5a0a108889 ; rax 0xc5a0a108889 <String[8]: >=0.12.0>
-      2: 0x200000000 ; [fp + 24] 2
-      3: 0x189e0f804131 ; [fp + 16] 0x189e0f804131 <undefined>
-      4: 0x331df4041119 ; [fp - 24] 0x331df4041119 <FixedArray[30]>
-      5: 0x189e0f804131 ; (literal 1) 0x189e0f804131 <undefined>
-      6: 0x189e0f804131 ; (literal 1) 0x189e0f804131 <undefined>
-      7: 0x189e0f804131 ; (literal 1) 0x189e0f804131 <undefined>
-  translating frame substr => node=3, height=24
-    0x7fff5fbfee30: [top + 72] <- 0xc5a0a108889 ;  0xc5a0a108889 <String[8]: >=0.12.0>  (input #1)
-    0x7fff5fbfee28: [top + 64] <- 0x200000000 ;  2  (input #2)
-    0x7fff5fbfee20: [top + 56] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #3)
-    0x7fff5fbfee18: [top + 48] <- 0x3e0680a19774 ;  caller's pc
-    0x7fff5fbfee10: [top + 40] <- 0x7fff5fbfee50 ;  caller's fp
-    0x7fff5fbfee08: [top + 32] <- 0x331df4041119 ;  context    0x331df4041119 <FixedArray[30]>  (input #4)
-    0x7fff5fbfee00: [top + 24] <- 0x331df405ec59 ;  function    0x331df405ec59 <JS Function substr (SharedFunctionInfo 0x189e0f858f09)>  (input #0)
-    0x7fff5fbfedf8: [top + 16] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #5)
-    0x7fff5fbfedf0: [top + 8] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #6)
-    0x7fff5fbfede8: [top + 0] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #7)
-[deoptimizing (eager): end 0x331df405ec59 <JS Function substr (SharedFunctionInfo 0x189e0f858f09)> @2 => node=3, pc=0x3e0680ab52ad, state=NO_REGISTERS, alignment=no padding, took 0.060 ms]
-[removing optimized code for: substr]
-[deoptimizing (DEOPT eager): begin 0x331df40bc2d9 <JS Function realpathSync (SharedFunctionInfo 0x331df40a7ac9)> (opt #45) @15, FP to SP delta: 280]
-            ;;; deoptimize at 37922: value mismatch
-  reading input frame realpathSync => node=3, args=188, height=10; inputs:
-      0: 0x331df40bc2d9 ; (frame function) 0x331df40bc2d9 <JS Function realpathSync (SharedFunctionInfo 0x331df40a7ac9)>
-      1: 0x5c52a140619 ; [fp + 32] 0x5c52a140619 <an Object with map 0x2a74a32e8f1>
-      2: 0xc5a0a1e3c71 ; [fp + 24] 0xc5a0a1e3c71 <String[54]: /Users/welefen/Develop/git/thinkjs/lib/config/redis.js>
-      3: 0x5c52a1b7bd1 ; [fp + 16] 0x5c52a1b7bd1 <an Object with map 0x2a74a334569>
-      4: 0xc5a0a1e3fe9 ; [fp - 24] 0xc5a0a1e3fe9 <FixedArray[10]>
-      5: 0xc5a0a1e4611 ; [fp - 40] 0xc5a0a1e4611 <String[54]: /Users/welefen/Develop/git/thinkjs/lib/config/redis.js>
-      6: 0xc5a0a1e46d1 ; [fp - 48] 0xc5a0a1e46d1 <an Object with map 0x2a74a3065c9>
-      7: 0xc5a0a1e4049 ; rdx 0xc5a0a1e4049 <JS Function start (SharedFunctionInfo 0x331df40c05d1)>
-      8: 0x189e0f804131 ; (literal 7) 0x189e0f804131 <undefined>
-      9: 0x189e0f804131 ; (literal 7) 0x189e0f804131 <undefined>
-     10: 0x189e0f804131 ; (literal 7) 0x189e0f804131 <undefined>
-     11: 0x189e0f804131 ; (literal 7) 0x189e0f804131 <undefined>
-     12: 0x189e0f804131 ; (literal 7) 0x189e0f804131 <undefined>
-     13: 0x189e0f804131 ; (literal 7) 0x189e0f804131 <undefined>
-  translating frame realpathSync => node=188, height=72
-    0x7fff5fbfe8a0: [top + 120] <- 0x5c52a140619 ;  0x5c52a140619 <an Object with map 0x2a74a32e8f1>  (input #1)
-    0x7fff5fbfe898: [top + 112] <- 0xc5a0a1e3c71 ;  0xc5a0a1e3c71 <String[54]: /Users/welefen/Develop/git/thinkjs/lib/config/redis.js>  (input #2)
-    0x7fff5fbfe890: [top + 104] <- 0x5c52a1b7bd1 ;  0x5c52a1b7bd1 <an Object with map 0x2a74a334569>  (input #3)
-    0x7fff5fbfe888: [top + 96] <- 0x3e0680aad862 ;  caller's pc
-    0x7fff5fbfe880: [top + 88] <- 0x7fff5fbfe8c0 ;  caller's fp
-    0x7fff5fbfe878: [top + 80] <- 0xc5a0a1e3fe9 ;  context    0xc5a0a1e3fe9 <FixedArray[10]>  (input #4)
-    0x7fff5fbfe870: [top + 72] <- 0x331df40bc2d9 ;  function    0x331df40bc2d9 <JS Function realpathSync (SharedFunctionInfo 0x331df40a7ac9)>  (input #0)
-    0x7fff5fbfe868: [top + 64] <- 0xc5a0a1e4611 ;  0xc5a0a1e4611 <String[54]: /Users/welefen/Develop/git/thinkjs/lib/config/redis.js>  (input #5)
-    0x7fff5fbfe860: [top + 56] <- 0xc5a0a1e46d1 ;  0xc5a0a1e46d1 <an Object with map 0x2a74a3065c9>  (input #6)
-    0x7fff5fbfe858: [top + 48] <- 0xc5a0a1e4049 ;  0xc5a0a1e4049 <JS Function start (SharedFunctionInfo 0x331df40c05d1)>  (input #7)
-    0x7fff5fbfe850: [top + 40] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #8)
-    0x7fff5fbfe848: [top + 32] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #9)
-    0x7fff5fbfe840: [top + 24] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #10)
-    0x7fff5fbfe838: [top + 16] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #11)
-    0x7fff5fbfe830: [top + 8] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #12)
-    0x7fff5fbfe828: [top + 0] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #13)
-[deoptimizing (eager): end 0x331df40bc2d9 <JS Function realpathSync (SharedFunctionInfo 0x331df40a7ac9)> @15 => node=188, pc=0x3e0680aae681, state=NO_REGISTERS, alignment=no padding, took 0.094 ms]
-[removing optimized code for: realpathSync]
-[deoptimizing (DEOPT eager): begin 0x5c52a140319 <JS Function Buffer (SharedFunctionInfo 0x331df40786a1)> (opt #46) @2, FP to SP delta: 32]
-            ;;; deoptimize at 1156: out of bounds
-  reading input frame Buffer => node=2, args=74, height=2; inputs:
-      0: 0x5c52a140319 ; (frame function) 0x5c52a140319 <JS Function Buffer (SharedFunctionInfo 0x331df40786a1)>
-      1: 0xc5a0a3c5679 ; [fp + 24] 0xc5a0a3c5679 <a Buffer with map 0x2a74a330101>
-      2: 0x1c801a1577b1 ; [fp + 16] 0x1c801a1577b1 <String[2]\: \r\n>
-      3: 0x5c52a151af9 ; rax 0x5c52a151af9 <FixedArray[27]>
-      4: argumets object #0 (length = 1)
-           0x1c801a1577b1 ; [fp + 16] 0x1c801a1577b1 <String[2]\: \r\n>
-  translating frame Buffer => node=74, height=8
-    0x7fff5fbfe728: [top + 48] <- 0xc5a0a3c5679 ;  0xc5a0a3c5679 <a Buffer with map 0x2a74a330101>  (input #1)
-    0x7fff5fbfe720: [top + 40] <- 0x1c801a1577b1 ;  0x1c801a1577b1 <String[2]\: \r\n>  (input #2)
-    0x7fff5fbfe718: [top + 32] <- 0x3e0680a19afd ;  caller's pc
-    0x7fff5fbfe710: [top + 24] <- 0x7fff5fbfe758 ;  caller's fp
-    0x7fff5fbfe708: [top + 16] <- 0x5c52a151af9 ;  context    0x5c52a151af9 <FixedArray[27]>  (input #3)
-    0x7fff5fbfe700: [top + 8] <- 0x5c52a140319 ;  function    0x5c52a140319 <JS Function Buffer (SharedFunctionInfo 0x331df40786a1)>  (input #0)
-    0x7fff5fbfe6f8: [top + 0] <- 0x189e0f8044f9 ;  0x189e0f8044f9 <Odd Oddball>  (input #4)
-[deoptimizing (eager): end 0x5c52a140319 <JS Function Buffer (SharedFunctionInfo 0x331df40786a1)> @2 => node=74, pc=0x3e0680aba37f, state=NO_REGISTERS, alignment=no padding, took 0.050 ms]
-Materialization [0x7fff5fbfe6f8] <- 0xc5a0a3c5691 ;  0xc5a0a3c5691 <an Arguments with map 0x2a74a3080f1>
-[removing optimized code for: Buffer]
-[deoptimizing (DEOPT eager): begin 0x5c52a191059 <JS Function assertEncoding (SharedFunctionInfo 0x331df40a37b9)> (opt #47) @1, FP to SP delta: 24]
-            ;;; deoptimize at -1: unexpected object
-  reading input frame assertEncoding => node=2, args=3, height=1; inputs:
-      0: 0x5c52a191059 ; (frame function) 0x5c52a191059 <JS Function assertEncoding (SharedFunctionInfo 0x331df40a37b9)>
-      1: 0x189e0f804131 ; [fp + 24] 0x189e0f804131 <undefined>
-      2: 0x189e0f804131 ; rax 0x189e0f804131 <undefined>
-      3: 0x5c52a18d3a9 ; [fp - 24] 0x5c52a18d3a9 <FixedArray[57]>
-  translating frame assertEncoding => node=3, height=0
-    0x7fff5fbfe950: [top + 40] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #1)
-    0x7fff5fbfe948: [top + 32] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #2)
-    0x7fff5fbfe940: [top + 24] <- 0x3e0680b9f15e ;  caller's pc
-    0x7fff5fbfe938: [top + 16] <- 0x7fff5fbfe980 ;  caller's fp
-    0x7fff5fbfe930: [top + 8] <- 0x5c52a18d3a9 ;  context    0x5c52a18d3a9 <F[2015-12-28 19:17:01] [THINK] Server running at http://127.0.0.1:8360/
-[2015-12-28 19:17:01] [THINK] ThinkJS Version: 2.0.15
-[2015-12-28 19:17:01] [THINK] Cluster Status: closed
-[2015-12-28 19:17:01] [THINK] WebSocket Status: closed
-[2015-12-28 19:17:01] [THINK] File Auto Compile: false
-[2015-12-28 19:17:01] [THINK] File Auto Reload: false
-[2015-12-28 19:17:01] [THINK] App Enviroment: production
+Inlining builtin 0x3bfefcc54a99 <JS Function shift (SharedFunctionInfo 0x3bfefcc54a09)>
+Inlined posixSplitPath called from posix.dirname.
+Inlining api function 0x1490849a9c41 <JS Function fstat (SharedFunctionInfo 0x1490849a9bb1)>
+Inlining builtin 0x3bfefcc548d1 <JS Function pop (SharedFunctionInfo 0x3bfefcc54841)>
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined ok called from Module.require.
+Inlined ok called from Module.require.
+Did not inline Module._load called from Module.require (target text too big).
+Inlined Module.require called from require.
+Inlined ok called from Module.require.
+Inlined ok called from Module.require.
+Did not inline Module._load called from Module.require (target text too big).
+Inlined NativeModule.exists called from NativeModule.nonInternalExists.
+Inlined NativeModule.isInternal called from NativeModule.nonInternalExists.
+Inlining builtin 0x3bfefcc54a99 <JS Function shift (SharedFunctionInfo 0x3bfefcc54a09)>
+Inlined fs.Stats._checkModeProperty called from fs.Stats.isSymbolicLink.
+Inlined assertPath called from posix.isAbsolute.
+Inlined nullCheck called from fs.lstatSync.
+Inlined posix._makeLong called from fs.lstatSync.
+Inlining api function 0x1490849a9a81 <JS Function lstat (SharedFunctionInfo 0x1490849a99f1)>
+Inlined fs.lstatSync called from realpathSync.
+Inlined fs.Stats._checkModeProperty called from fs.Stats.isSymbolicLink.
+Inlined fs.Stats.isSymbolicLink called from realpathSync.
+Inlined start called from realpathSync.
+Inlining builtin 0x3bfefcc54a99 <JS Function shift (SharedFunctionInfo 0x3bfefcc54a09)>
+Inlined posixSplitPath called from posix.extname.
+Did not inline allocate called from Buffer (target text too big).
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Buffer.isEncoding called from assertEncoding.
+Inlined modeNum called from fs.openSync.
+Inlined nullCheck called from fs.openSync.
+Inlined posix._makeLong called from fs.openSync.
+Did not inline stringToFlags called from fs.openSync (target text too big).
+Inlining api function 0x1490849a8581 <JS Function open (SharedFunctionInfo 0x1490849a84f1)>
+Inlined fs.Stats._checkModeProperty called from fs.Stats.isFile.
+Inlining api function 0x1490849a83c1 <JS Function close (SharedFunctionInfo 0x1490849a8331)>
+Inlining builtin 0x149084965371 <JS Function charCodeAt (SharedFunctionInfo 0x3bfefcc57c61)>
+Did not inline ContextifyScript called from exports.runInThisContext (target is api function).
+Inlining api function 0x3bfefccb0f21 <JS Function runInThisContext (SharedFunctionInfo 0x3bfefccb0e91)>
+Did not inline fs.readFileSync called from Module._extensions..js (target text too big).
+Inlining builtin 0x149084965371 <JS Function charCodeAt (SharedFunctionInfo 0x3bfefcc57c61)>
+Inlined stripBOM called from Module._extensions..js.
+Did not inline Module._compile called from Module._extensions..js (target text too big).
+Inlined isBuffer called from isObject.
+Inlined assertPath called from posix.resolve.
+Inlining builtin 0x3bfefcc548d1 <JS Function pop (SharedFunctionInfo 0x3bfefcc54841)>
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined normalizeArray called from posix.resolve.
+Inlined nullCheck called from fs.statSync.
+Inlined posix._makeLong called from fs.statSync.
+Inlining api function 0x1490849a98c1 <JS Function stat (SharedFunctionInfo 0x1490849a9831)>
+Inlined NativeModule.exists called from NativeModule.nonInternalExists.
+Inlined NativeModule.isInternal called from NativeModule.nonInternalExists.
+Inlined NativeModule.nonInternalExists called from Module._resolveLookupPaths.
+Did not inline concat called from Module._resolveLookupPaths (target not inlineable).
+Inlining builtin 0x3bfefcc54a99 <JS Function shift (SharedFunctionInfo 0x3bfefcc54a09)>
+Inlined posixSplitPath called from posix.basename.
+Inlined posix.basename called from Module._resolveLookupPaths.
+Inlining builtin 0x3bfefcc54a99 <JS Function shift (SharedFunctionInfo 0x3bfefcc54a09)>
+Inlined posixSplitPath called from posix.dirname.
+Inlined [2016-01-09 14:47:05] [THINK] Server running at http://127.0.0.1:8360/
+[2016-01-09 14:47:05] [THINK] ThinkJS Version: 2.1.0
+[2016-01-09 14:47:05] [THINK] Cluster Status: closed
+[2016-01-09 14:47:05] [THINK] WebSocket Status: closed
+[2016-01-09 14:47:05] [THINK] File Auto Compile: false
+[2016-01-09 14:47:05] [THINK] File Auto Reload: false
+[2016-01-09 14:47:05] [THINK] App Enviroment: production
 
-ixedArray[57]>  (input #3)
-    0x7fff5fbfe928: [top + 0] <- 0x5c52a191059 ;  function    0x5c52a191059 <JS Function assertEncoding (SharedFunctionInfo 0x331df40a37b9)>  (input #0)
-[deoptimizing (eager): end 0x5c52a191059 <JS Function assertEncoding (SharedFunctionInfo 0x331df40a37b9)> @1 => node=3, pc=0x3e0680ab86c6, state=NO_REGISTERS, alignment=no padding, took 0.054 ms]
-[removing optimized code for: assertEncoding]
-[deoptimizing (DEOPT eager): begin 0x5c52a140859 <JS Function EventEmitter (SharedFunctionInfo 0x331df40734e1)> (opt #63) @72, FP to SP delta: 128]
-            ;;; deoptimize at 972: Unknown map in polymorphic access
-  reading input frame EventEmitter => node=1, args=6, height=2; inputs:
-      0: 0x5c52a140859 ; (frame function) 0x5c52a140859 <JS Function EventEmitter (SharedFunctionInfo 0x331df40734e1)>
-      1: 0xc5a0b143be1 ; [fp + 16] 0xc5a0b143be1 <an IncomingMessage with map 0x2a74a383be9>
-      2: 0x5c52a147749 ; [fp - 24] 0x5c52a147749 <FixedArray[16]>
-      3: 0x331df4074849 ; (literal 11) 0x331df4074849 <JS Function EventEmitter.init (SharedFunctionInfo 0x331df4073b71)>
-  reading input frame EventEmitter.init => node=1, args=120, height=1; inputs:
-      0: 0x331df4074849 ; (literal 11) 0x331df4074849 <JS Function EventEmitter.init (SharedFunctionInfo 0x331df4073b71)>
-      1: 0xc5a0b143be1 ; rbx 0xc5a0b143be1 <an IncomingMessage with map 0x2a74a383be9>
-      2: 0x5c52a147749 ; (literal 12) 0x5c52a147749 <FixedArray[16]>
-  translating frame EventEmitter => node=6, height=8
-    0x7fff5fbf6c08: [top + 40] <- 0xc5a0b143be1 ;  0xc5a0b143be1 <an IncomingMessage with map 0x2a74a383be9>  (input #1)
-    0x7fff5fbf6c00: [top + 32] <- 0x3e0680bbe9e0 ;  caller's pc
-    0x7fff5fbf6bf8: [top + 24] <- 0x7fff5fbf6c28 ;  caller's fp
-    0x7fff5fbf6bf0: [top + 16] <- 0x5c52a147749 ;  context    0x5c52a147749 <FixedArray[16]>  (input #2)
-    0x7fff5fbf6be8: [top + 8] <- 0x5c52a140859 ;  function    0x5c52a140859 <JS Function EventEmitter (SharedFunctionInfo 0x331df40734e1)>  (input #0)
-    0x7fff5fbf6be0: [top + 0] <- 0x331df4074849 ;  0x331df4074849 <JS Function EventEmitter.init (SharedFunctionInfo 0x331df4073b71)>  (input #3)
-  translating frame EventEmitter.init => node=120, height=0
-    0x7fff5fbf6bd8: [top + 32] <- 0xc5a0b143be1 ;  0xc5a0b143be1 <an IncomingMessage with map 0x2a74a383be9>  (input #1)
-    0x7fff5fbf6bd0: [top + 24] <- 0x3e0680a7d874 ;  caller's pc
-    0x7fff5fbf6bc8: [top + 16] <- 0x7fff5fbf6bf8 ;  caller's fp
-    0x7fff5fbf6bc0: [top + 8] <- 0x5c52a147749 ;  context    0x5c52a147749 <FixedArray[16]>  (input #2)
-    0x7fff5fbf6bb8: [top + 0] <- 0x331df4074849 ;  function    0x331df4074849 <JS Function EventEmitter.init (SharedFunctionInfo 0x331df4073b71)>  (input #0)
-[deoptimizing (eager): end 0x5c52a140859 <JS Function EventEmitter (SharedFunctionInfo 0x331df40734e1)> @72 => node=120, pc=0x3e0680a7ddcd, state=NO_REGISTERS, alignment=no padding, took 0.058 ms]
-[removing optimized code for: EventEmitter]
-[deoptimizing (DEOPT eager): begin 0x331df4074999 <JS Function addListener (SharedFunctionInfo 0x331df4073e11)> (opt #61) @27, FP to SP delta: 64]
-            ;;; deoptimize at 1528: wrong map
-  reading input frame addListener => node=3, args=380, height=6; inputs:
-      0: 0x331df4074999 ; (frame function) 0x331df4074999 <JS Function addListener (SharedFunctionInfo 0x331df4073e11)>
-      1: 0xc5a0b08cfb9 ; rcx 0xc5a0b08cfb9 <a Socket with map 0x2a74a385769>
-      2: 0x189e0f8ad2f9 ; [fp + 24] 0x189e0f8ad2f9 <String[5]: close>
-      3: 0xc5a0b08b329 ; [fp + 16] 0xc5a0b08b329 <JS Function onServerResponseClose (SharedFunctionInfo 0x1c801a166421)>
-      4: 0x5c52a147749 ; rbx 0x5c52a147749 <FixedArray[16]>
-      5: 0x189e0f804131 ; (literal 2) 0x189e0f804131 <undefined>
-      6: 0x189e0f804131 ; (literal 2) 0x189e0f804131 <undefined>
-      7: 0xc5a0b146d89 ; rax 0xc5a0b146d89 <JS Array[2]>
-      8: 0x331df4074999 ; [fp - 32] 0x331df4074999 <JS Function addListener (SharedFunctionInfo 0x331df4073e11)>
-      9: 0x5c52a1b2291 ; rdx 0x5c52a1b2291 <JS Function $getMaxListeners (SharedFunctionInfo 0x331df4073589)>
-  reading input frame $getMaxListeners => node=2, args=2, height=1; inputs:
-      0: 0x5c52a1b2291 ; (literal 4) 0x5c52a1b2291 <JS Function $getMaxListeners (SharedFunctionInfo 0x331df4073589)>
-      1: 0x189e0f804131 ; (literal 2) 0x189e0f804131 <undefined>
-      2: 0xc5a0b08cfb9 ; rcx 0xc5a0b08cfb9 <a Socket with map 0x2a74a385769>
-      3: 0x5c52a147749 ; (literal 5) 0x5c52a147749 <FixedArray[16]>
-  translating frame addListener => node=380, height=40
-    0x7fff5fbf6bf8: [top + 88] <- 0xc5a0b08cfb9 ;  0xc5a0b08cfb9 <a Socket with map 0x2a74a385769>  (input #1)
-    0x7fff5fbf6bf0: [top + 80] <- 0x189e0f8ad2f9 ;  0x189e0f8ad2f9 <String[5]: close>  (input #2)
-    0x7fff5fbf6be8: [top + 72] <- 0xc5a0b08b329 ;  0xc5a0b08b329 <JS Function onServerResponseClose (SharedFunctionInfo 0x1c801a166421)>  (input #3)
-    0x7fff5fbf6be0: [top + 64] <- 0x3e0680bbb81b ;  caller's pc
-    0x7fff5fbf6bd8: [top + 56] <- 0x7fff5fbf6c30 ;  caller's fp
-    0x7fff5fbf6bd0: [top + 48] <- 0x5c52a147749 ;  context    0x5c52a147749 <FixedArray[16]>  (input #4)
-    0x7fff5fbf6bc8: [top + 40] <- 0x331df4074999 ;  function    0x331df4074999 <JS Function addListener (SharedFunctionInfo 0x331df4073e11)>  (input #0)
-    0x7fff5fbf6bc0: [top + 32] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #5)
-    0x7fff5fbf6bb8: [top + 24] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #6)
-    0x7fff5fbf6bb0: [top + 16] <- 0xc5a0b146d89 ;  0xc5a0b146d89 <JS Array[2]>  (input #7)
-    0x7fff5fbf6ba8: [top + 8] <- 0x331df4074999 ;  0x331df4074999 <JS Function addListener (SharedFunctionInfo 0x331df4073e11)>  (input #8)
-    0x7fff5fbf6ba0: [top + 0] <- 0x5c52a1b2291 ;  0x5c52a1b2291 <JS Function $getMaxListeners (SharedFunctionInfo 0x331df4073589)>  (input #9)
-  translating frame $getMaxListeners => node=2, height=0
-    0x7fff5fbf6b98: [top + 40] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #1)
-    0x7fff5fbf6b90: [top + 32] <- 0xc5a0b08cfb9 ;  0xc5a0b08cfb9 <a Socket with map 0x2a74a385769>  (input #2)
-    0x7fff5fbf6b88: [top + 24] <- 0x3e0680a9470f ;  caller's pc
-    0x7fff5fbf6b80: [top + 16] <- 0x7fff5fbf6bd8 ;  caller's fp
-    0x7fff5fbf6b78: [top + 8] <- 0x5c52a147749 ;  context    0x5c52a147749 <FixedArray[16]>  (input #3)
-    0x7fff5fbf6b70: [top + 0] <- 0x5c52a1b2291 ;  function    0x5c52a1b2291 <JS Function $getMaxListeners (SharedFunctionInfo 0x331df4073589)>  (input #0)
-[deoptimizing (eager): end 0x331df4074999 <JS Function addListener (SharedFunctionInfo 0x331df4073e11)> @27 => node=2, pc=0x3e0680bb1ee6, state=NO_REGISTERS, alignment=no padding, took 0.097 ms]
-[removing optimized code for: addListener]
-[deoptimizing (DEOPT eager): begin 0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)> (opt #66) @2, FP to SP delta: 24]
-            ;;; deoptimize at -1: wrong map
-  reading input frame remove => node=2, args=3, height=1; inputs:
-      0: 0x5c52a1b3399 ; (frame function) 0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>
-      1: 0x5c52a1b4771 ; [fp + 24] 0x5c52a1b4771 <an Object with map 0x2a74a3822d1>
-      2: 0xc5a0b08cfb9 ; rax 0xc5a0b08cfb9 <a Socket with map 0x2a74a385769>
-      3: 0x5c52a1b4ae9 ; [fp - 24] 0x5c52a1b4ae9 <FixedArray[5]>
-  translating frame remove => node=3, height=0
-    0x7fff5fbf6890: [top + 40] <- 0x5c52a1b4771 ;  0x5c52a1b4771 <an Object with map 0x2a74a3822d1>  (input #1)
-    0x7fff5fbf6888: [top + 32] <- 0xc5a0b08cfb9 ;  0xc5a0b08cfb9 <a Socket with map 0x2a74a385769>  (input #2)
-    0x7fff5fbf6880: [top + 24] <- 0x3e0680bc6a62 ;  caller's pc
-    0x7fff5fbf6878: [top + 16] <- 0x7fff5fbf68b8 ;  caller's fp
-    0x7fff5fbf6870: [top + 8] <- 0x5c52a1b4ae9 ;  context    0x5c52a1b4ae9 <FixedArray[5]>  (input #3)
-    0x7fff5fbf6868: [top + 0] <- 0x5c52a1b3399 ;  function    0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>  (input #0)
-[deoptimizing (eager): end 0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)> @2 => node=3, pc=0x3e0680bb0e86, state=NO_REGISTERS, alignment=no padding, took 0.030 ms]
-[removing optimized code for: remove]
-[deoptimizing (DEOPT eager): begin 0x5c52a1907a1 <JS Function ok (SharedFunctionInfo 0x331df4086499)> (opt #16) @1, FP to SP delta: 24]
-            ;;; deoptimize at -1: unexpected object
-  reading input frame ok => node=3, args=3, height=1; inputs:
-      0: 0x5c52a1907a1 ; (frame function) 0x5c52a1907a1 <JS Function ok (SharedFunctionInfo 0x331df4086499)>
-      1: 0x189e0f804131 ; [fp + 32] 0x189e0f804131 <undefined>
-      2: 0xc5a0b08cfb9 ; rax 0xc5a0b08cfb9 <a Socket with map 0x2a74a385769>
-      3: 0x189e0f804131 ; [fp + 16] 0x189e0f804131 <undefined>
-      4: 0x5c52a161421 ; [fp - 24] 0x5c52a161421 <FixedArray[18]>
-  translating frame ok => node=3, height=0
-    0x7fff5fbf6488: [top + 48] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #1)
-    0x7fff5fbf6480: [top + 40] <- 0xc5a0b08cfb9 ;  0xc5a0b08cfb9 <a Socket with map 0x2a74a385769>  (input #2)
-    0x7fff5fbf6478: [top + 32] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #3)
-    0x7fff5fbf6470: [top + 24] <- 0x3e0680a19774 ;  caller's pc
-    0x7fff5fbf6468: [top + 16] <- 0x7fff5fbf64a8 ;  caller's fp
-    0x7fff5fbf6460: [top + 8] <- 0x5c52a161421 ;  context    0x5c52a161421 <FixedArray[18]>  (input #4)
-    0x7fff5fbf6458: [top + 0] <- 0x5c52a1907a1 ;  function    0x5c52a1907a1 <JS Function ok (SharedFunctionInfo 0x331df4086499)>  (input #0)
-[deoptimizing (eager): end 0x5c52a1907a1 <JS Function ok (SharedFunctionInfo 0x331df4086499)> @1 => node=3, pc=0x3e0680ab4366, state=NO_REGISTERS, alignment=no padding, took 0.039 ms]
-[removing optimized code for: ok]
-[deoptimizing (DEOPT eager): begin 0x5c52a1b33e1 <JS Function append (SharedFunctionInfo 0x331df4085339)> (opt #85) @3, FP to SP delta: 32]
-            ;;; deoptimize at 843: Unknown map in polymorphic access
-  reading input frame append => node=3, args=6, height=2; inputs:
-      0: 0x5c52a1b33e1 ; (frame function) 0x5c52a1b33e1 <JS Function append (SharedFunctionInfo 0x331df4085339)>
-      1: 0x5c52a1b4771 ; [fp + 32] 0x5c52a1b4771 <an Object with map 0x2a74a3822d1>
-      2: 0x256a98498ac1 ; [fp + 24] 0x256a98498ac1 <an Object with map 0x2a74a322559>
-      3: 0xc5a0a4e8ae9 ; rdi 0xc5a0a4e8ae9 <a Socket with map 0x2a74a382591>
-      4: 0x5c52a1b4ae9 ; rbx 0x5c52a1b4ae9 <FixedArray[5]>
-      5: 0x5c52a1b3399 ; rcx 0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>
-  reading input frame remove => node=2, args=2, height=1; inputs:
-      0: 0x5c52a1b3399 ; (literal 2) 0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>
-      1: 0x189e0f804131 ; (literal 3) 0x189e0f804131 <undefined>
-      2: 0xc5a0a4e8ae9 ; rdi 0xc5a0a4e8ae9 <a Socket with map 0x2a74a382591>
-      3: 0x5c52a1b4ae9 ; (literal 4) 0x5c52a1b4ae9 <FixedArray[5]>
-  translating frame append => node=6, height=8
-    0x7fff5fbf6d78: [top + 56] <- 0x5c52a1b4771 ;  0x5c52a1b4771 <an Object with map 0x2a74a3822d1>  (input #1)
-    0x7fff5fbf6d70: [top + 48] <- 0x256a98498ac1 ;  0x256a98498ac1 <an Object with map 0x2a74a322559>  (input #2)
-    0x7fff5fbf6d68: [top + 40] <- 0xc5a0a4e8ae9 ;  0xc5a0a4e8ae9 <a Socket with map 0x2a74a382591>  (input #3)
-    0x7fff5fbf6d60: [top + 32] <- 0x3e0680bb0e02 ;  caller's pc
-    0x7fff5fbf6d58: [top + 24] <- 0x7fff5fbf6db0 ;  caller's fp
-    0x7fff5fbf6d50: [top + 16] <- 0x5c52a1b4ae9 ;  context    0x5c52a1b4ae9 <FixedArray[5]>  (input #4)
-    0x7fff5fbf6d48: [top + 8] <- 0x5c52a1b33e1 ;  function    0x5c52a1b33e1 <JS Function append (SharedFunctionInfo 0x331df4085339)>  (input #0)
-    0x7fff5fbf6d40: [top + 0] <- 0x5c52a1b3399 ;  0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>  (input #5)
-  translating frame remove => node=2, height=0
-    0x7fff5fbf6d38: [top + 40] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #1)
-    0x7fff5fbf6d30: [top + 32] <- 0xc5a0a4e8ae9 ;  0xc5a0a4e8ae9 <a Socket with map 0x2a74a382591>  (input #2)
-    0x7fff5fbf6d28: [top + 24] <- 0x3e0680bb1435 ;  caller's pc
-    0x7fff5fbf6d20: [top + 16] <- 0x7fff5fbf6d58 ;  caller's fp
-    0x7fff5fbf6d18: [top + 8] <- 0x5c52a1b4ae9 ;  context    0x5c52a1b4ae9 <FixedArray[5]>  (input #3)
-    0x7fff5fbf6d10: [top + 0] <- 0x5c52a1b3399 ;  function    0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>  (input #0)
-[deoptimizing (eager): end 0x5c52a1b33e1 <JS Function append (SharedFunctionInfo 0x331df4085339)> @3 => node=2, pc=0x3e0680bb0e86, state=NO_REGISTERS, alignment=no padding, took 0.095 ms]
-[removing optimized code for: append]
-[deoptimizing (DEOPT eager): begin 0x331df408ff11 <JS Function exports._unrefActive (SharedFunctionInfo 0x331df4083b21)> (opt #154) @2, FP to SP delta: 112]
-            ;;; deoptimize at -1: Unknown map in polymorphic access
-  reading input frame exports._unrefActive => node=2, args=3, height=4; inputs:
-      0: 0x331df408ff11 ; (frame function) 0x331df408ff11 <JS Function exports._unrefActive (SharedFunctionInfo 0x331df4083b21)>
-      1: 0x5c52a1b4739 ; [fp + 24] 0x5c52a1b4739 <an Object with map 0x2a74a322819>
-      2: 0x256a984cc331 ; rax 0x256a984cc331 <JS Function utcDate (SharedFunctionInfo 0x1c801a161481)>
-      3: 0x5c52a1622c1 ; [fp - 24] 0x5c52a1622c1 <FixedArray[26]>
-      4: 0x189e0f804131 ; (literal 5) 0x189e0f804131 <undefined>
-      5: 0x189e0f804131 ; (literal 5) 0x189e0f804131 <undefined>
-      6: 0x189e0f804131 ; (literal 5) 0x189e0f804131 <undefined>
-  translating frame exports._unrefActive => node=3, height=24
-    0x7fff5fbf62b0: [top + 64] <- 0x5c52a1b4739 ;  0x5c52a1b4739 <an Object with map 0x2a74a322819>  (input #1)
-    0x7fff5fbf62a8: [top + 56] <- 0x256a984cc331 ;  0x256a984cc331 <JS Function utcDate (SharedFunctionInfo 0x1c801a161481)>  (input #2)
-    0x7fff5fbf62a0: [top + 48] <- 0x3e0680bec914 ;  caller's pc
-    0x7fff5fbf6298: [top + 40] <- 0x7fff5fbf62d8 ;  caller's fp
-    0x7fff5fbf6290: [top + 32] <- 0x5c52a1622c1 ;  context    0x5c52a1622c1 <FixedArray[26]>  (input #3)
-    0x7fff5fbf6288: [top + 24] <- 0x331df408ff11 ;  function    0x331df408ff11 <JS Function exports._unrefActive (SharedFunctionInfo 0x331df4083b21)>  (input #0)
-    0x7fff5fbf6280: [top + 16] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #4)
-    0x7fff5fbf6278: [top + 8] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #5)
-    0x7fff5fbf6270: [top + 0] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #6)
-[deoptimizing (eager): end 0x331df408ff11 <JS Function exports._unrefActive (SharedFunctionInfo 0x331df4083b21)> @2 => node=3, pc=0x3e0680bb068d, state=NO_REGISTERS, alignment=no padding, took 0.048 ms]
-[removing optimized code for: exports._unrefActive]
-[deoptimizing (DEOPT eager): begin 0x331df408f919 <JS Function exports.active (SharedFunctionInfo 0x331df4083299)> (opt #142) @10, FP to SP delta: 64]
-            ;;; deoptimize at 1205: hole
-  reading input frame exports.active => node=2, args=57, height=3; inputs:
-      0: 0x331df408f919 ; (frame function) 0x331df408f919 <JS Function exports.active (SharedFunctionInfo 0x331df4083299)>
-      1: 0x5c52a1b4739 ; [fp + 24] 0x5c52a1b4739 <an Object with map 0x2a74a322819>
-      2: 0xc5a0a55ccf1 ; rbx 0xc5a0a55ccf1 <JS Object>
-      3: 0x5c52a1622c1 ; rax 0x5c52a1622c1 <FixedArray[26]>
-      4: 1 ; r8 
-      5: 0x189e0f804131 ; (literal 6) 0x189e0f804131 <undefined>
-  translating frame exports.active => node=57, height=16
-    0x7fff5fbf6d60: [top + 56] <- 0x5c52a1b4739 ;  0x5c52a1b4739 <an Object with map 0x2a74a322819>  (input #1)
-    0x7fff5fbf6d58: [top + 48] <- 0xc5a0a55ccf1 ;  0xc5a0a55ccf1 <JS Object>  (input #2)
-    0x7fff5fbf6d50: [top + 40] <- 0x3e0680bf55c4 ;  caller's pc
-    0x7fff5fbf6d48: [top + 32] <- 0x7fff5fbf6db0 ;  caller's fp
-    0x7fff5fbf6d40: [top + 24] <- 0x5c52a1622c1 ;  context    0x5c52a1622c1 <FixedArray[26]>  (input #3)
-    0x7fff5fbf6d38: [top + 16] <- 0x331df408f919 ;  function    0x331df408f919 <JS Function exports.active (SharedFunctionInfo 0x331df4083299)>  (input #0)
-    0x7fff5fbf6d30: [top + 8] <- 0x100000000 ;  1  (input #4)
-    0x7fff5fbf6d28: [top + 0] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #5)
-[deoptimizing (eager): end 0x331df408f919 <JS Function exports.active (SharedFunctionInfo 0x331df4083299)> @10 => node=57, pc=0x3e0680bf597b, state=NO_REGISTERS, alignment=no padding, took 0.037 ms]
-[removing optimized code for: exports.active]
-[deoptimizing (DEOPT eager): begin 0x1c801a162eb9 <JS Function OutgoingMessage.setTimeout (SharedFunctionInfo 0x1c801a161919)> (opt #178) @28, FP to SP delta: 112]
-            ;;; deoptimize at 3202: Unknown map in polymorphic access
-  reading input frame OutgoingMessage.setTimeout => node=3, args=73, height=2; inputs:
-      0: 0x1c801a162eb9 ; (frame function) 0x1c801a162eb9 <JS Function OutgoingMessage.setTimeout (SharedFunctionInfo 0x1c801a161919)>
-      1: 0xc5a0a19b529 ; [fp + 32] 0xc5a0a19b529 <a ServerResponse with map 0x2a74a386001>
-      2: 0x1d4c000000000 ; [fp + 24] 120000
-      3: 0xc5a0a19c161 ; [fp + 16] 0xc5a0a19c161 <JS Function (SharedFunctionInfo 0x30558df492b1)>
-      4: 0xc5a0a19c1a9 ; [fp - 24] 0xc5a0a19c1a9 <FixedArray[5]>
-      5: 0xb720a379e49 ; (literal 6) 0xb720a379e49 <JS Function Socket.setTimeout (SharedFunctionInfo 0xb720a36ff39)>
-  reading arguments adaptor frame OutgoingMessage.setTimeout => height=2; inputs:
-      0: 0xb720a379e49 ; (literal 6) 0xb720a379e49 <JS Function Socket.setTimeout (SharedFunctionInfo 0xb720a36ff39)>
-      1: 0x189e0f8b3ca9 ; rax 0x189e0f8b3ca9 <a Socket with map 0x2a74a385769>
-      2: 0x1d4c000000000 ; [fp - 48] 120000
-  reading input frame Socket.setTimeout => node=3, args=70, height=2; inputs:
-      0: 0xb720a379e49 ; (literal 6) 0xb720a379e49 <JS Function Socket.setTimeout (SharedFunctionInfo 0xb720a36ff39)>
-      1: 0x189e0f8b3ca9 ; rax 0x189e0f8b3ca9 <a Socket with map 0x2a74a385769>
-      2: 0x1d4c000000000 ; [fp - 48] 120000
-      3: 0x189e0f804131 ; (literal 7) 0x189e0f804131 <undefined>
-      4: 0x1c801a1a2f19 ; (literal 8) 0x1c801a1a2f19 <FixedArray[53]>
-      5: 0x331df408f9c1 ; (literal 9) 0x331df408f9c1 <JS Function exports.enroll (SharedFunctionInfo 0x331df40833e9)>
-  reading input frame exports.enroll => node=3, args=97, height=2; inputs:
-      0: 0x331df408f9c1 ; (literal 9) 0x331df408f9c1 <JS Function exports.enroll (SharedFunctionInfo 0x331df40833e9)>
-      1: 0x5c52a1b4739 ; [fp - 56] 0x5c52a1b4739 <an Object with map 0x2a74a322819>
-      2: 0x189e0f8b3ca9 ; rax 0x189e0f8b3ca9 <a Socket with map 0x2a74a385769>
-      3: 0x1d4c000000000 ; [fp - 48] 120000
-      4: 0x5c52a1622c1 ; (literal 10) 0x5c52a1622c1 <FixedArray[26]>
-      5: 0x331df408f961 ; rbx 0x331df408f961 <JS Function exports.unenroll (SharedFunctionInfo 0x331df4083341)>
-  reading input frame exports.unenroll => node=2, args=19, height=3; inputs:
-      0: 0x331df408f961 ; (literal 11) 0x331df408f961 <JS Function exports.unenroll (SharedFunctionInfo 0x331df4083341)>
-      1: 0x189e0f804131 ; (literal 7) 0x189e0f804131 <undefined>
-      2: 0x189e0f8b3ca9 ; rax 0x189e0f8b3ca9 <a Socket with map 0x2a74a385769>
-      3: 0x5c52a1622c1 ; (literal 10) 0x5c52a1622c1 <FixedArray[26]>
-      4: 0x189e0f804131 ; (literal 7) 0x189e0f804131 <undefined>
-      5: 0x5c52a1b4871 ; rdi 0x5c52a1b4871 <JS Function reuse (SharedFunctionInfo 0x331df4082e01)>
-  reading input frame reuse => node=2, args=9, height=3; inputs:
-      0: 0x5c52a1b4871 ; (literal 12) 0x5c52a1b4871 <JS Function reuse (SharedFunctionInfo 0x331df4082e01)>
-      1: 0x189e0f804131 ; (literal 7) 0x189e0f804131 <undefined>
-      2: 0x189e0f8b3ca9 ; rax 0x189e0f8b3ca9 <a Socket with map 0x2a74a385769>
-      3: 0x5c52a1622c1 ; (literal 10) 0x5c52a1622c1 <FixedArray[26]>
-      4: 0x189e0f804131 ; (literal 7) 0x189e0f804131 <undefined>
-      5: 0x5c52a1b3399 ; (literal 13) 0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>
-  reading input frame remove => node=2, args=38, height=3; inputs:
-      0: 0x5c52a1b3399 ; (literal 13) 0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>
-      1: 0x5c52a1b4771 ; rdx 0x5c52a1b4771 <an Object with map 0x2a74a3822d1>
-      2: 0x189e0f8b3ca9 ; rax 0x189e0f8b3ca9 <a Socket with map 0x2a74a385769>
-      3: 0x5c52a1b4ae9 ; (literal 14) 0x5c52a1b4ae9 <FixedArray[5]>
-      4: 0x256a98498ac1 ; rcx 0x256a98498ac1 <an Object with map 0x2a74a322559>
-      5: 0x189e0f8b3e39 ; rsi 0x189e0f8b3e39 <a Socket with map 0x2a74a382fe1>
-  translating frame OutgoingMessage.setTimeout => node=73, height=8
-    0x7fff5fbf6a10: [top + 56] <- 0xc5a0a19b529 ;  0xc5a0a19b529 <a ServerResponse with map 0x2a74a386001>  (input #1)
-    0x7fff5fbf6a08: [top + 48] <- 0x1d4c000000000 ;  120000  (input #2)
-    0x7fff5fbf6a00: [top + 40] <- 0xc5a0a19c161 ;  0xc5a0a19c161 <JS Function (SharedFunctionInfo 0x30558df492b1)>  (input #3)
-    0x7fff5fbf69f8: [top + 32] <- 0x3e0680c201e3 ;  caller's pc
-    0x7fff5fbf69f0: [top + 24] <- 0x7fff5fbf6a78 ;  caller's fp
-    0x7fff5fbf69e8: [top + 16] <- 0xc5a0a19c1a9 ;  context    0xc5a0a19c1a9 <FixedArray[5]>  (input #4)
-    0x7fff5fbf69e0: [top + 8] <- 0x1c801a162eb9 ;  function    0x1c801a162eb9 <JS Function OutgoingMessage.setTimeout (SharedFunctionInfo 0x1c801a161919)>  (input #0)
-    0x7fff5fbf69d8: [top + 0] <- 0xb720a379e49 ;  0xb720a379e49 <JS Function Socket.setTimeout (SharedFunctionInfo 0xb720a36ff39)>  (input #5)
-  translating arguments adaptor => height=16
-    0x7fff5fbf69d0: [top + 48] <- 0x189e0f8b3ca9 ;  0x189e0f8b3ca9 <a Socket with map 0x2a74a385769>  (input #1)
-    0x7fff5fbf69c8: [top + 40] <- 0x1d4c000000000 ;  120000  (input #2)
-    0x7fff5fbf69c0: [top + 32] <- 0x3e0680bc6560 ;  caller's pc
-    0x7fff5fbf69b8: [top + 24] <- 0x7fff5fbf69f0 ;  caller's fp
-    0x7fff5fbf69b0: [top + 16] <- 0xa00000000 ;  context (adaptor sentinel)
-    0x7fff5fbf69a8: [top + 8] <- 0xb720a379e49 ;  function    0xb720a379e49 <JS Function Socket.setTimeout (SharedFunctionInfo 0xb720a36ff39)>  (input #0)
-    0x7fff5fbf69a0: [top + 0] <- 0x100000000 ;  argc (1)
-  translating frame Socket.setTimeout => node=70, height=8
-    0x7fff5fbf6998: [top + 56] <- 0x189e0f8b3ca9 ;  0x189e0f8b3ca9 <a Socket with map 0x2a74a385769>  (input #1)
-    0x7fff5fbf6990: [top + 48] <- 0x1d4c000000000 ;  120000  (input #2)
-    0x7fff5fbf6988: [top + 40] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #3)
-    0x7fff5fbf6980: [top + 32] <- 0x3e0680a19774 ;  caller's pc
-    0x7fff5fbf6978: [top + 24] <- 0x7fff5fbf69b8 ;  caller's fp
-    0x7fff5fbf6970: [top + 16] <- 0x1c801a1a2f19 ;  context    0x1c801a1a2f19 <FixedArray[53]>  (input #4)
-    0x7fff5fbf6968: [top + 8] <- 0xb720a379e49 ;  function    0xb720a379e49 <JS Function Socket.setTimeout (SharedFunctionInfo 0xb720a36ff39)>  (input #0)
-    0x7fff5fbf6960: [top + 0] <- 0x331df408f9c1 ;  0x331df408f9c1 <JS Function exports.enroll (SharedFunctionInfo 0x331df40833e9)>  (input #5)
-  translating frame exports.enroll => node=97, height=8
-    0x7fff5fbf6958: [top + 56] <- 0x5c52a1b4739 ;  0x5c52a1b4739 <an Object with map 0x2a74a322819>  (input #1)
-    0x7fff5fbf6950: [top + 48] <- 0x189e0f8b3ca9 ;  0x189e0f8b3ca9 <a Socket with map 0x2a74a385769>  (input #2)
-    0x7fff5fbf6948: [top + 40] <- 0x1d4c000000000 ;  120000  (input #3)
-    0x7fff5fbf6940: [top + 32] <- 0x3e0680bafe2b ;  caller's pc
-    0x7fff5fbf6938: [top + 24] <- 0x7fff5fbf6978 ;  caller's fp
-    0x7fff5fbf6930: [top + 16] <- 0x5c52a1622c1 ;  context    0x5c52a1622c1 <FixedArray[26]>  (input #4)
-    0x7fff5fbf6928: [top + 8] <- 0x331df408f9c1 ;  function    0x331df408f9c1 <JS Function exports.enroll (SharedFunctionInfo 0x331df40833e9)>  (input #0)
-    0x7fff5fbf6920: [top + 0] <- 0x331df408f961 ;  0x331df408f961 <JS Function exports.unenroll (SharedFunctionInfo 0x331df4083341)>  (input #5)
-  translating frame exports.unenroll => node=19, height=16
-    0x7fff5fbf6918: [top + 56] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #1)
-    0x7fff5fbf6910: [top + 48] <- 0x189e0f8b3ca9 ;  0x189e0f8b3ca9 <a Socket with map 0x2a74a385769>  (input #2)
-    0x7fff5fbf6908: [top + 40] <- 0x3e0680bb01c2 ;  caller's pc
-    0x7fff5fbf6900: [top + 32] <- 0x7fff5fbf6938 ;  caller's fp
-    0x7fff5fbf68f8: [top + 24] <- 0x5c52a1622c1 ;  context    0x5c52a1622c1 <FixedArray[26]>  (input #3)
-    0x7fff5fbf68f0: [top + 16] <- 0x331df408f961 ;  function    0x331df408f961 <JS Function exports.unenroll (SharedFunctionInfo 0x331df4083341)>  (input #0)
-    0x7fff5fbf68e8: [top + 8] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #4)
-    0x7fff5fbf68e0: [top + 0] <- 0x5c52a1b4871 ;  0x5c52a1b4871 <JS Function reuse (SharedFunctionInfo 0x331df4082e01)>  (input #5)
-  translating frame reuse => node=9, height=16
-    0x7fff5fbf68d8: [top + 56] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #1)
-    0x7fff5fbf68d0: [top + 48] <- 0x189e0f8b3ca9 ;  0x189e0f8b3ca9 <a Socket with map 0x2a74a385769>  (input #2)
-    0x7fff5fbf68c8: [top + 40] <- 0x3e0680bc6859 ;  caller's pc
-    0x7fff5fbf68c0: [top + 32] <- 0x7fff5fbf6900 ;  caller's fp
-    0x7fff5fbf68b8: [top + 24] <- 0x5c52a1622c1 ;  context    0x5c52a1622c1 <FixedArray[26]>  (input #3)
-    0x7fff5fbf68b0: [top + 16] <- 0x5c52a1b4871 ;  function    0x5c52a1b4871 <JS Function reuse (SharedFunctionInfo 0x331df4082e01)>  (input #0)
-    0x7fff5fbf68a8: [top + 8] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #4)
-    0x7fff5fbf68a0: [top + 0] <- 0x5c52a1b3399 ;  0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>  (input #5)
-  translating frame remove => node=38, height=16
-    0x7fff5fbf6898: [top + 56] <- 0x5c52a1b4771 ;  0x5c52a1b4771 <an Object with map 0x2a74a3822d1>  (input #1)
-    0x7fff5fbf6890: [top + 48] <- 0x189e0f8b3ca9 ;  0x189e0f8b3ca9 <a Socket with map 0x2a74a385769>  (input #2)
-    0x7fff5fbf6888: [top + 40] <- 0x3e0680bc6a62 ;  caller's pc
-    0x7fff5fbf6880: [top + 32] <- 0x7fff5fbf68c0 ;  caller's fp
-    0x7fff5fbf6878: [top + 24] <- 0x5c52a1b4ae9 ;  context    0x5c52a1b4ae9 <FixedArray[5]>  (input #3)
-    0x7fff5fbf6870: [top + 16] <- 0x5c52a1b3399 ;  function    0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>  (input #0)
-    0x7fff5fbf6868: [top + 8] <- 0x256a98498ac1 ;  0x256a98498ac1 <an Object with map 0x2a74a322559>  (input #4)
-    0x7fff5fbf6860: [top + 0] <- 0x189e0f8b3e39 ;  0x189e0f8b3e39 <a Socket with map 0x2a74a382fe1>  (input #5)
-[deoptimizing (eager): end 0x1c801a162eb9 <JS Function OutgoingMessage.setTimeout (SharedFunctionInfo 0x1c801a161919)> @28 => node=38, pc=0x3e0680bb0f03, state=TOS_REG, alignment=no padding, took 0.215 ms]
-[removing optimized code for: OutgoingMessage.setTimeout]
-[deoptimizing (DEOPT eager): begin 0x331df408f919 <JS Function exports.active (SharedFunctionInfo 0x331df4083299)> (opt #233) @25, FP to SP delta: 48]
-            ;;; deoptimize at 1341: out of bounds
-  reading input frame exports.active => node=2, args=187, height=3; inputs:
-      0: 0x331df408f919 ; (frame function) 0x331df408f919 <JS Function exports.active (SharedFunctionInfo 0x331df4083299)>
-      1: 0x5c52a1b4739 ; [fp + 24] 0x5c52a1b4739 <an Object with map 0x2a74a322819>
-      2: 0xc5a0b41bf39 ; [fp + 16] 0xc5a0b41bf39 <JS Object>
-      3: 0x5c52a1622c1 ; rax 0x5c52a1622c1 <FixedArray[26]>
-      4: 0x189e0f804131 ; (literal 6) 0x189e0f804131 <undefined>
-      5: 0xc5a0b41bf89 ; rbx 0xc5a0b41bf89 <a Timer with map 0x2a74a38d381>
-  translating frame exports.active => node=187, height=16
-    0x7fff5fbf6d60: [top + 56] <- 0x5c52a1b4739 ;  0x5c52a1b4739 <an Object with map 0x2a74a322819>  (input #1)
-    0x7fff5fbf6d58: [top + 48] <- 0xc5a0b41bf39 ;  0xc5a0b41bf39 <JS Object>  (input #2)
-    0x7fff5fbf6d50: [top + 40] <- 0x3e0680bf55c4 ;  caller's pc
-    0x7fff5fbf6d48: [top + 32] <- 0x7fff5fbf6db0 ;  caller's fp
-    0x7fff5fbf6d40: [top + 24] <- 0x5c52a1622c1 ;  context    0x5c52a1622c1 <FixedArray[26]>  (input #3)
-    0x7fff5fbf6d38: [top + 16] <- 0x331df408f919 ;  function    0x331df408f919 <JS Function exports.active (SharedFunctionInfo 0x331df4083299)>  (input #0)
-    0x7fff5fbf6d30: [top + 8] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #4)
-    0x7fff5fbf6d28: [top + 0] <- 0xc5a0b41bf89 ;  0xc5a0b41bf89 <a Timer with map 0x2a74a38d381>  (input #5)
-[deoptimizing (eager): end 0x331df408f919 <JS Function exports.active (SharedFunctionInfo 0x331df4083299)> @25 => node=187, pc=0x3e0680bf5b03, state=NO_REGISTERS, alignment=no padding, took 0.054 ms]
-[removing optimized code for: exports.active]
-[marking dependent code 0x3e0680c4c0e1 (opt #145) for deoptimization, reason: allocation-site-tenuring-changed]
-[marking dependent code 0x3e0680c9e061 (opt #251) for deoptimization, reason: allocation-site-tenuring-changed]
-[marking dependent code 0x3e0680c87401 (opt #234) for deoptimization, reason: allocation-site-tenuring-changed]
-[marking dependent code 0x3e0680c3f6c1 (opt #133) for deoptimization, reason: allocation-site-tenuring-changed]
-[marking dependent code 0x3e0680c407c1 (opt #134) for deoptimization, reason: allocation-site-tenuring-changed]
-[marking dependent code 0x3e0680b587e1 (opt #53) for deoptimization, reason: allocation-site-tenuring-changed]
-[marking dependent code 0x3e0680b2c181 (opt #40) for deoptimization, reason: allocation-site-tenuring-changed]
-[marking dependent code 0x3e0680b7d721 (opt #60) for deoptimization, reason: allocation-site-tenuring-changed]
-[deoptimize marked code in all contexts]
-[deoptimizer unlinked: connectionListener / 256a984cc671]
-[deoptimizer unlinked: ReadableState / 5c52a1b63c9]
-[deoptimizer unlinked: addListener / 331df4074999]
-[deoptimizer unlinked: EventEmitter.init / 331df4074849]
-[deoptimizer unlinked: EventEmitter / 5c52a140859]
-[deoptimizer unlinked: NativeModule.require / 331df406eda1]
-[deoptimizer unlinked: Module / 5c52a140599]
-[deoptimizer unlinked: NativeModule.wrap / 331df40700d1]
-[deoptimize marked code in all contexts]
-[deoptimizing (DEOPT eager): begin 0x331df408ff11 <JS Function exports._unrefActive (SharedFunctionInfo 0x331df4083b21)> (opt #241) @12, FP to SP delta: 96]
-            ;;; deoptimize at 14671: Unknown map in polymorphic access
-  reading input frame exports._unrefActive => node=2, args=77, height=5; inputs:
-      0: 0x331df408ff11 ; (frame function) 0x331df408ff11 <JS Function exports._unrefActive (SharedFunctionInfo 0x331df4083b21)>
-      1: 0x5c52a1b4739 ; [fp + 24] 0x5c52a1b4739 <an Object with map 0x2a74a322819>
-      2: 0x256a984cc331 ; rbx 0x256a984cc331 <JS Function utcDate (SharedFunctionInfo 0x1c801a161481)>
-      3: 0x5c52a1622c1 ; [fp - 24] 0x5c52a1622c1 <FixedArray[26]>
-      4: 970 ; (int) [fp - 32] 
-      5: 0x189e0f804131 ; (literal 5) 0x189e0f804131 <undefined>
-      6: 0x189e0f804131 ; (literal 5) 0x189e0f804131 <undefined>
-      7: 0x5c52a1b3399 ; (literal 8) 0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>
-  reading input frame remove => node=2, args=29, height=2; inputs:
-      0: 0x5c52a1b3399 ; (literal 8) 0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>
-      1: 0x5c52a1b4771 ; [fp - 40] 0x5c52a1b4771 <an Object with map 0x2a74a3822d1>
-      2: 0x256a984cc331 ; rbx 0x256a984cc331 <JS Function utcDate (SharedFunctionInfo 0x1c801a161481)>
-      3: 0x5c52a1b4ae9 ; (literal 9) 0x5c52a1b4ae9 <FixedArray[5]>
-      4: 0x256a984cc331 ; rax 0x256a984cc331 <JS Function utcDate (SharedFunctionInfo 0x1c801a161481)>
-  translating frame exports._unrefActive => node=77, height=32
-    0x7fff5fbf6130: [top + 72] <- 0x5c52a1b4739 ;  0x5c52a1b4739 <an Object with map 0x2a74a322819>  (input #1)
-    0x7fff5fbf6128: [top + 64] <- 0x256a984cc331 ;  0x256a984cc331 <JS Function utcDate (SharedFunctionInfo 0x1c801a161481)>  (input #2)
-    0x7fff5fbf6120: [top + 56] <- 0x3e0680cc0010 ;  caller's pc
-    0x7fff5fbf6118: [top + 48] <- 0x7fff5fbf6200 ;  caller's fp
-    0x7fff5fbf6110: [top + 40] <- 0x5c52a1622c1 ;  context    0x5c52a1622c1 <FixedArray[26]>  (input #3)
-    0x7fff5fbf6108: [top + 32] <- 0x331df408ff11 ;  function    0x331df408ff11 <JS Function exports._unrefActive (SharedFunctionInfo 0x331df4083b21)>  (input #0)
-    0x7fff5fbf6100: [top + 24] <- 0x3ca00000000 ;  970  (input #4)
-    0x7fff5fbf60f8: [top + 16] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #5)
-    0x7fff5fbf60f0: [top + 8] <- 0x189e0f804131 ;  0x189e0f804131 <undefined>  (input #6)
-    0x7fff5fbf60e8: [top + 0] <- 0x5c52a1b3399 ;  0x5c52a1b3399 <JS Function remove (SharedFunctionInfo 0x331df4085291)>  (input #7)
-  translating frame remove => node=29, height=8
-    0x7fff5fbf60e0: [top + 48] <- 0x5c52a1b4771 ;  0x5c52a1b4771 <an Object with map 0x2a74a3822d1>  (input #1)
-    0x7fff5fbf60d8: [to
+posix.dirname called from Module._resolveLookupPaths.
+Inlined debugs.(anonymous function) called from Module._resolveLookupPaths.
+Inlining builtin 0x3bfefcc54a99 <JS Function shift (SharedFunctionInfo 0x3bfefcc54a09)>
+Inlined posixSplitPath called from posix.dirname.
+Inlined posix.dirname called from Module._resolveLookupPaths.
+Inlined nullCheck called from fs.lstatSync.
+Inlined posix._makeLong called from fs.lstatSync.
+Inlining api function 0x1490849a9a81 <JS Function lstat (SharedFunctionInfo 0x1490849a99f1)>
+Did not inline emit called from addListener (target text too big).
+Inlined $getMaxListeners called from addListener.
+Did not inline addListener called from Readable.on (target text too big).
+Inlined debugs.(anonymous function) called from Readable.resume.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Object.defineProperty.get called from TickObject.
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from resume.
+Inlined resume called from Readable.resume.
+Inlined Readable.resume called from Readable.on.
+Inlined NativeModule.getCached called from NativeModule.require.
+Inlined NativeModule.exists called from NativeModule.require.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined NativeModule called from NativeModule.require.
+Inlined NativeModule.cache called from NativeModule.require.
+Inlined NativeModule.getSource called from NativeModule.compile.
+Inlined NativeModule.wrap called from NativeModule.compile.
+Did not inline ContextifyScript called from runInThisContext (target is api function).
+Inlining api function 0x3bfefccb0f21 <JS Function runInThisContext (SharedFunctionInfo 0x3bfefccb0e91)>
+Inlined runInThisContext called from NativeModule.compile.
+Inlined NativeModule.compile called from NativeModule.require.
+Inlined NativeModule.require called from EventEmitter.init.
+Inlined EventEmitter.init called from EventEmitter.
+Did not inline Readable.read called from Socket.read (target text too big).
+Did not inline Readable.read called from Socket.read (target text too big).
+Inlined debugs.(anonymous function) called from onconnection.
+Did not inline Socket called from onconnection (target text too big).
+Inlining api function 0x3bfefccaeff9 <JS Function (SharedFunctionInfo 0x3bfefccaef69)>
+Did not inline emit called from onconnection (target text too big).
+Did not inline addListener called from OutgoingMessage.setTimeout (target text too big).
+Inlined remove called from reuse.
+Inlined reuse called from exports.unenroll.
+Inlined exports.unenroll called from exports.enroll.
+Inlined exports.enroll called from Socket.setTimeout.
+Did not inline exports._unrefActive called from Socket.setTimeout (target text too big).
+Inlined Socket.setTimeout called from OutgoingMessage.setTimeout.
+Did not inline ReadableState called from Readable (target text too big).
+Inlined remove called from append.
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Url called from urlParse.
+Did not inline Url.parse called from urlParse (target text too big).
+Inlined NativeModule.getCached called from NativeModule.require.
+Inlined NativeModule.exists called from NativeModule.require.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined NativeModule called from NativeModule.require.
+Inlined NativeModule.cache called from NativeModule.require.
+Inlined NativeModule.getSource called from NativeModule.compile.
+Inlined NativeModule.wrap called from NativeModule.compile.
+Did not inline ContextifyScript called from runInThisContext (target is api function).
+Inlining api function 0x3bfefccb0f21 <JS Function runInThisContext (SharedFunctionInfo 0x3bfefccb0e91)>
+Inlined runInThisContext called from NativeModule.compile.
+Inlined NativeModule.compile called from NativeModule.require.
+Inlined NativeModule.require called from EventEmitter.init.
+Inlined EventEmitter.init called from EventEmitter.
+Did not inline tryConvertToPromise called from Promise.cast (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.cast.
+Inlined Promise._captureStackTrace called from Promise.cast.
+Inlined Promise._setFulfilled called from Promise.cast.
+Inlined Object.defineProperty.get called from getDomain.
+Inlined arrayMove called from Queue._resizeTo.
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Promise._setFulfilled called from Promise._fulfill.
+Inlined Queue.length called from Queue._pushOne.
+Inlined arrayMove called from Queue._resizeTo.
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from AsyncSettlePromises.
+Inlined Async._queueTick called from AsyncSettlePromises.
+Inlined AsyncSettlePromises called from Promise._fulfill.
+Inlined exports.default called from _class.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined exports.default called from _class.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from .
+Inlined create called from wrap.
+Inlined reset called from Context.
+Inlined Context called from wrap.
+Did not inline makeInvokeMethod called from wrap (target text too big).
+Inlined reset called from Context.
+Inlined Promise._captureStackTrace called from Promise._resolveFromExecutor.
+Inlined Promise._pushContext called from Promise._resolveFromExecutor.
+Did not inline Promise._execute called from Promise._resolveFromExecutor (target not inlineable).
+Inlined Promise._popContext called from Promise._resolveFromExecutor.
+Did not inline tryConvertToPromise called from Promise.cast (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.cast.
+Inlined Promise._captureStackTrace called from Promise.cast.
+Inlined Promise._setFulfilled called from Promise.cast.
+Inlined Promise.cast called from Hook.exec.
+Did not inline _execItemMiddleware called from Hook.exec (target has context-allocated variables).
+Inlined exports.default called from _class.
+Inlined Queue.length called from Queue.push.
+Inlined Queue._willBeOverCapacity called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Inlined arrayMove called from Queue._resizeTo.
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Inlined arrayMove called from Queue._resizeTo.
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Inlined arrayMove called from Queue._resizeTo.
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Did not inline Queue._checkCapacity called from Queue.push (cumulative AST node limit reached).
+Inlined Queue.push called from AsyncInvoke.
+Did not inline Async._queueTick called from AsyncInvoke (cumulative AST node limit reached).
+Did not inline Promise._settlePromise called from Promise._settlePromiseCtx (target text too big).
+Inlined _typeof called from exports.default.
+Did not inline Promise._then called from Promise.then (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise._then.
+Inlined Promise._isFollowing called from Promise._target.
+Inlined Promise._target called from Promise._then.
+Inlined Promise._propagateFrom called from Promise._then.
+Inlined Promise._captureStackTrace called from Promise._then.
+Inlined Object.defineProperty.get called from getDomain.
+Inlined getDomain called from Promise._then.
+Inlined Queue.length called from Queue.push.
+Inlined Queue._willBeOverCapacity called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Did not inline arrayMove called from Queue._resizeTo (inline depth limit reached).
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Did not inline arrayMove called from Queue._resizeTo (inline depth limit reached).
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Did not inline arrayMove called from Queue._resizeTo (inline depth limit reached).
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Did not inline Queue._checkCapacity called from Queue.push (cumulative AST node limit reached).
+Inlined Queue.push called from AsyncInvoke.
+Did not inline Async._queueTick called from AsyncInvoke (cumulative AST node limit reached).
+Inlined AsyncInvoke called from Promise._then.
+Did not inline Promise._addCallbacks called from Promise._then (target text too big).
+Inlined isString called from think.require.
+Inlined assertPath called from posix.normalize.
+Inlined assertPath called from posix.isAbsolute.
+Inlined posix.isAbsolute called from posix.normalize.
+Inlining builtin 0x3bfefcc548d1 <JS Function pop (SharedFunctionInfo 0x3bfefcc54841)>
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined normalizeArray called from posix.normalize.
+Inlined posix.normalize called from think.require.
+Did not inline think.safeRequire called from _loadRequire (target not inlineable).
+Inlined isFunction called from _loadRequire.
+Inlined _loadRequire called from think.require.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined Promise._isBound called from Promise._receiverAt.
+Inlined Promise._receiverAt called from Promise._settlePromise0.
+Did not inline Promise._settlePromise called from Promise._settlePromise0 (target text too big).
+Did not inline tryConvertToPromise called from Promise.cast (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.cast.
+Inlined Promise._captureStackTrace called from Promise.cast.
+Inlined Promise._setFulfilled called from Promise.cast.
+Inlined Promise.cast called from Hook.exec.
+Did not inline _execItemMiddleware called from Hook.exec (target has context-allocated variables).
+Inlined Hook.exec called from hook.
+Did not inline Middleware.exec called from _execItemMiddleware (target text too big).
+Did not inline Promise._then called from Promise.then (target text too big).
+Inlined Promise.then called from _execItemMiddleware.
+Inlined exports.default called from _class.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined exports.default called from _class.
+Did not inline Config called from config (target text too big).
+Did not inline tryConvertToPromise called from Promise.cast (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.cast.
+Inlined Promise._captureStackTrace called from Promise.cast.
+Inlined Promise._setFulfilled called from Promise.cast.
+Inlined Promise.cast called from think.co.
+Inlined Promise._isBound called from Promise._receiverAt.
+Inlined think.getPath called from _getModuleConfig.
+Did not inline think.safeRequire called from _getModuleConfig (target not inlineable).
+Did not inline _getConfig called from _getModuleConfig (target has context-allocated variables).
+Did not inline think.safeRequire called from _getModuleConfig (target not inlineable).
+Did not inline _getConfig called from _getModuleConfig (target has context-allocated variables).
+Did not inline extend called from _getModuleConfig (target text too big).
+Did not inline extend called from _getModuleConfig (target text too big).
+Did not inline _getModuleConfig called from _getModuleConfig (target text too big).
+Did not inline _getModuleConfig called from _getModuleConfig (target text too big).
+Did not inline think.safeRequire called from _getModuleConfig (target not inlineable).
+Inlined isFunction called from _transformConfig.
+Did not inline _transformConfig called from _transformConfig (target is recursive).
+Inlined _transformConfig called from _getModuleConfig.
+Inlined isBuffer called from isObject.
+Inlined isObject called from Config.
+Did not inline _getModuleConfig called from Config (target text too big).
+Inlined isBuffer called from isObject.
+Inlined isObject called from Config.
+Inlined exports.default called from _class.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined exports.default called from _class.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from _class.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined exports.default called from _class.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined exports.default called from _class.
+Did not inline Config called from config (target text too big).
+Inlined Promise._pushContext called from Promise._settlePromiseFromHandler.
+Inlined tryCatch called from Promise._settlePromiseFromHandler.
+Inlined Promise._popContext called from Promise._settlePromiseFromHandler.
+Did not inline Promise._resolveCallback called from Promise._settlePromiseFromHandler (target text too big).
+Inlined Promise._length called from Promise._addCallbacks.
+Inlined Promise._setLength called from Promise._addCallbacks.
+Inlined Object.defineProperty.get called from TickObject.
+Inlined Object.defineProperty.get called from header.
+Inlined OutgoingMessage.setHeader called from header.
+Inlined Promise._isBound called from Promise._receiverAt.
+Inlined Promise._receiverAt called from Promise._migrateCallback0.
+Did not inline Promise._addCallbacks called from Promise._migrateCallback0 (target text too big).
+Inlined Promise._attachExtraTrace called from Promise._rejectCallback.
+Inlined Promise._setRejected called from Promise._reject.
+Inlined Promise._isFinal called from Promise._reject.
+Inlined Queue.length called from Queue._pushOne.
+Did not inline arrayMove called from Queue._resizeTo (inline depth limit reached).
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from AsyncSettlePromises.
+Inlined Async._queueTick called from AsyncSettlePromises.
+Inlined AsyncSettlePromises called from Promise._reject.
+Inlined Promise._setRejectionIsUnhandled called from Promise._ensurePossibleRejectionHandled.
+Inlined Queue.length called from Queue.push.
+Inlined Queue._willBeOverCapacity called from Queue.push.
+Did not inline Queue.length called from Queue._pushOne (inline depth limit reached).
+Did not inline Queue._checkCapacity called from Queue._pushOne (inline depth limit reached).
+Inlined Queue._pushOne called from Queue.push.
+Did not inline Queue.length called from Queue._pushOne (inline depth limit reached).
+Did not inline Queue._checkCapacity called from Queue._pushOne (inline depth limit reached).
+Inlined Queue._pushOne called from Queue.push.
+Did not inline Queue.length called from Queue._pushOne (inline depth limit reached).
+Did not inline Queue._checkCapacity called from Queue._pushOne (inline depth limit reached).
+Inlined Queue._pushOne called from Queue.push.
+Did not inline Queue._resizeTo called from Queue._checkCapacity (inline depth limit reached).
+Inlined Queue._checkCapacity called from Queue.push.
+Inlined Queue.push called from AsyncInvokeLater.
+Did not inline Async._queueTick called from AsyncInvokeLater (cumulative AST node limit reached).
+Inlined AsyncInvokeLater called from Promise._ensurePossibleRejectionHandled.
+Inlined Promise._ensurePossibleRejectionHandled called from Promise._reject.
+Inlined Promise._reject called from Promise._rejectCallback.
+Inlined canAttachTrace called from .
+Inlined Queue.length called from Queue._pushOne.
+Inlined arrayMove called from Queue._resizeTo.
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from AsyncSettlePromises.
+Inlined Async._queueTick called from AsyncSettlePromises.
+Inlined debugs.(anonymous function) called from Readable.resume.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Object.defineProperty.get called from TickObject.
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from resume.
+Inlined resume called from Readable.resume.
+Inlined isBuffer called from isObject.
+Inlined isObject called from Config.
+Did not inline _getModuleConfig called from Config (target text too big).
+Inlined isBuffer called from isObject.
+Inlined isObject called from Config.
+Inlined needFinish called from finishMaybe.
+Did not inline emit called from prefinish (target text too big).
+Inlined prefinish called from finishMaybe.
+Did not inline emit called from finishMaybe (target text too big).
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Object.defineProperty.get called from TickObject.
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from endReadable.
+Did not inline emit called from endReadableNT (target text too big).
+Inlined remove called from reuse.
+Inlined reuse called from exports.unenroll.
+Inlined exports.unenroll called from exports.enroll.
+Inlined exports.enroll called from Socket.setTimeout.
+Did not inline exports._unrefActive called from Socket.setTimeout (target text too big).
+Inlined map called from mapDomain.
+Inlined create called from wrap.
+Inlined reset called from Context.
+Inlined Context called from wrap.
+Did not inline makeInvokeMethod called from wrap (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise._then.
+Inlined Promise._isFollowing called from Promise._target.
+Inlined Promise._target called from Promise._then.
+Inlined Promise._propagateFrom called from Promise._then.
+Inlined Promise._captureStackTrace called from Promise._then.
+Inlined Object.defineProperty.get called from getDomain.
+Inlined getDomain called from Promise._then.
+Inlined Promise._isUnhandledRejectionNotified called from Promise._unsetRejectionIsUnhandled.
+Inlined Promise._unsetRejectionIsUnhandled called from Promise._then.
+Inlined Queue.length called from Queue.push.
+Inlined Queue._willBeOverCapacity called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Did not inline arrayMove called from Queue._resizeTo (inline depth limit reached).
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Did not inline arrayMove called from Queue._resizeTo (inline depth limit reached).
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Did not inline Queue._pushOne called from Queue.push (cumulative AST node limit reached).
+Did not inline Queue._checkCapacity called from Queue.push (cumulative AST node limit reached).
+Inlined Queue.push called from AsyncInvoke.
+Did not inline Async._queueTick called from AsyncInvoke (cumulative AST node limit reached).
+Inlined AsyncInvoke called from Promise._then.
+Did not inline Promise._addCallbacks called from Promise._then (target text too big).
+Inlined _typeof called from exports.default.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined Promise._isBound called from Promise._receiverAt.
+Inlined Promise._receiverAt called from Promise._settlePromise0.
+Did not inline Promise._settlePromise called from Promise._settlePromise0 (target text too big).
+Inlined Promise._settlePromise0 called from Promise._settlePromises.
+Inlined Promise._rejectPromises called from Promise._settlePromises.
+Inlined Promise._isBound called from Promise._receiverAt.
+Inlined Promise._receiverAt called from Promise._settlePromise0.
+Did not inline Promise._settlePromise called from Promise._settlePromise0 (target text too big).
+Inlined Promise._settlePromise0 called from Promise._settlePromises.
+Inlined Promise._fulfillPromises called from Promise._settlePromises.
+Inlined Promise._setLength called from Promise._settlePromises.
+Inlined Promise._clearCancellationData called from Promise._settlePromises.
+Did not inline Middleware.exec called from _execItemMiddleware (target text too big).
+Did not inline Promise._then called from Promise.then (target text too big).
+Inlined Promise.then called from _execItemMiddleware.
+Did not inline tryConvertToPromise called from Promise.cast (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.cast.
+Inlined Promise._captureStackTrace called from Promise.cast.
+Inlined Promise._setFulfilled called from Promise.cast.
+Inlined Promise.cast called from think.co.
+Inlined exports.default called from _class.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined exports.default called from _class.
+Did not inline Promise._settlePromiseFromHandler called from Promise._settlePromise (target text too big).
+Inlined Promise._setFulfilled called from Promise._fulfill.
+Inlined Queue.length called from Queue._pushOne.
+Did not inline arrayMove called from Queue._resizeTo (inline depth limit reached).
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from AsyncSettlePromises.
+Inlined  called from Async._queueTick.
+Inlined Async._queueTick called from AsyncSettlePromises.
+Inlined AsyncSettlePromises called from Promise._fulfill.
+Inlined Promise._fulfill called from Promise._settlePromise.
+Inlined remove called from append.
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.reject.Promise.rejected.
+Inlined Promise._captureStackTrace called from Promise.reject.Promise.rejected.
+Inlined Promise._attachExtraTrace called from Promise._rejectCallback.
+Inlined Promise._setRejected called from Promise._reject.
+Inlined Promise._isFinal called from Promise._reject.
+Inlined Queue.length called from Queue._pushOne.
+Did not inline Queue._resizeTo called from Queue._checkCapacity (inline depth limit reached).
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from AsyncSettlePromises.
+Inlined  called from Async._queueTick.
+Inlined Async._queueTick called from AsyncSettlePromises.
+Inlined AsyncSettlePromises called from Promise._reject.
+Inlined Promise._setRejectionIsUnhandled called from Promise._ensurePossibleRejectionHandled.
+Did not inline Queue.length called from Queue.push (inline depth limit reached).
+Did not inline Queue._willBeOverCapacity called from Queue.push (inline depth limit reached).
+Did not inline Queue._pushOne called from Queue.push (inline depth limit reached).
+Did not inline Queue._pushOne called from Queue.push (inline depth limit reached).
+Did not inline Queue._pushOne called from Queue.push (inline depth limit reached).
+Did not inline Queue._checkCapacity called from Queue.push (inline depth limit reached).
+Inlined Queue.push called from AsyncInvokeLater.
+Did not inline  called from Async._queueTick (inline depth limit reached).
+Inlined Async._queueTick called from AsyncInvokeLater.
+Inlined AsyncInvokeLater called from Promise._ensurePossibleRejectionHandled.
+Inlined Promise._ensurePossibleRejectionHandled called from Promise._reject.
+Inlined Promise._reject called from Promise._rejectCallback.
+Inlined Promise._rejectCallback called from Promise.reject.Promise.rejected.
+Did not inline emit called from addListener (target text too big).
+Inlined $getMaxListeners called from addListener.
+Did not inline addListener called from Readable.on (target text too big).
+Inlined debugs.(anonymous function) called from Readable.resume.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Object.defineProperty.get called from TickObject.
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from resume.
+Inlined resume called from Readable.resume.
+Inlined Readable.resume called from Readable.on.
+Inlined debugs.(anonymous function) called from Readable.read.
+Did not inline howMuchToRead called from Readable.read (target text too big).
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Object.defineProperty.get called from TickObject.
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from endReadable.
+Inlined endReadable called from Readable.read.
+Inlined debugs.(anonymous function) called from Readable.read.
+Inlined debugs.(anonymous function) called from Readable.read.
+Inlined debugs.(anonymous function) called from Readable.read.
+Inlined debugs.(anonymous function) called from Readable.read.
+Inlined debugs.(anonymous function) called from Socket._read.
+Inlined debugs.(anonymous function) called from Socket._read.
+Inlining api function 0x39fada67a261 <JS Function readStart (SharedFunctionInfo 0x39fada67a1d1)>
+Inlined Socket._read called from Readable.read.
+Did not inline WritableState called from Writable (target text too big).
+Did not inline Readable.on called from once (target text too big).
+Did not inline removeListener called from httpSocketSetup (target text too big).
+Did not inline Readable.on called from httpSocketSetup (target text too big).
+Inlining builtin 0x3bfefcc54a99 <JS Function shift (SharedFunctionInfo 0x3bfefcc54a09)>
+Inlined debugs.(anonymous function) called from flow.
+Did not inline Readable.read called from flow (target text too big).
+Trying to inline the polymorphic call to read from flow
+Did not inline Readable.read called from flow (target text too big).
+Trying to inline the polymorphic call to read from flow
+Did not inline Readable.read called from Socket.read (target text too big).
+Did not inline Readable.read called from Socket.read (target text too big).
+Inlined Socket.read called from flow.
+Inlined debugs.(anonymous function) called from resume_.
+Did not inline Readable.read called from IncomingMessage.read (target text too big).
+Inlined IncomingMessage.read called from resume_.
+Did not inline emit called from resume_ (target text too big).
+Did not inline emit called from resume_ (target text too big).
+Trying to inline the polymorphic call to emit from resume_
+Did not inline emit called from resume_ (target text too big).
+Trying to inline the polymorphic call to emit from resume_
+Did not inline emit called from resume_ (target text too big).
+Inlined debugs.(anonymous function) called from flow.
+Did not inline Readable.read called from flow (target text too big).
+Trying to inline the polymorphic call to read from flow
+Did not inline Readable.read called from flow (target text too big).
+Trying to inline the polymorphic call to read from flow
+Did not inline Readable.read called from Socket.read (target text too big).
+Did not inline Readable.read called from Socket.read (target text too big).
+Inlined Socket.read called from flow.
+Inlined flow called from resume_.
+Did not inline Readable.read called from resume_ (target text too big).
+Inlined remove called from reuse.
+Inlined reuse called from exports.unenroll.
+Inlined remove called from reuse.
+Inlined Url.parseHost called from Url.parse.
+Did not inline Url.format called from Url.parse (target text too big).
+Inlined ok called from ServerResponse.assignSocket.
+Did not inline Readable.on called from socketOnWrap (target text too big).
+Inlined socketOnWrap called from ServerResponse.assignSocket.
+Did not inline emit called from ServerResponse.assignSocket (target text too big).
+Did not inline _flushOutput called from OutgoingMessage._flush (target text too big).
+Inlined OutgoingMessage._flush called from ServerResponse.assignSocket.
+Did not inline Readable.on called from socketOnWrap (target text too big).
+Did not inline _flushOutput called from OutgoingMessage._flush (target text too big).
+Inlined exports.default called from _class.
+Did not inline init called from _class (target has context-allocated variables).
+Inlined _class called from think.http.
+Inlined run called from think.http.
+Inlined think.http called from callback.
+Did not inline Promise._then called from Promise.then (target text too big).
+Inlined Promise.then called from callback.
+Inlined exports.default called from _class.
+Did not inline init called from _class (target has context-allocated variables).
+Inlined _class called from think.http.
+Inlined run called from think.http.
+Inlined exports.default called from _class.
+Did not inline init called from _class (target has context-allocated variables).
+Did not inline parseRequest called from init (target text too big).
+Did not inline Config called from init (target text too big).
+Did not inline OutgoingMessage.setTimeout called from init (target has context-allocated variables).
+Inlined map called from mapDomain.
+Inlined mapDomain called from toASCII.
+Inlined create called from wrap.
+Inlined reset called from Context.
+Inlined Context called from wrap.
+Did not inline makeInvokeMethod called from wrap (target text too big).
+Inlined wrap called from _callee.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Did not inline IncomingMessage._addHeaderLine called from IncomingMessage._addHeaderLines (target text too big).
+Inlined IncomingMessage._addHeaderLines called from parserOnMessageComplete.
+Did not inline readableAddChunk called from Readable.push (target text too big).
+Inlined Readable.push called from parserOnMessageComplete.
+Inlined debugs.(anonymous function) called from Readable.resume.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Did not inline Object.defineProperty.get called from TickObject (inline depth limit reached).
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from resume.
+Inlined resume called from Readable.resume.
+Inlined Readable.resume called from readStart.
+Inlined readStart called from parserOnMessageComplete.
+Did not inline readableAddChunk called from Readable.push (target text too big).
+Inlined debugs.(anonymous function) called from emitReadable.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Object.defineProperty.get called from TickObject.
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from emitReadable.
+Inlined emitReadable called from onEofChunk.
+Inlined debugs.(anonymous function) called from emitReadable.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Object.defineProperty.get called from TickObject.
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from emitReadable.
+Inlined debugs.(anonymous function) called from Readable.resume.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Object.defineProperty.get called from TickObject.
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from resume.
+Inlined resume called from Readable.resume.
+Inlined Readable.resume called from readStart.
+Inlined debugs.(anonymous function) called from emitReadable_.
+Did not inline emit called from emitReadable_ (target text too big).
+Inlined debugs.(anonymous function) called from flow.
+Did not inline Readable.read called from flow (target text too big).
+Trying to inline the polymorphic call to read from flow
+Did not inline Readable.read called from flow (target text too big).
+Trying to inline the polymorphic call to read from flow
+Did not inline Readable.read called from Socket.read (target text too big).
+Did not inline Readable.read called from Socket.read (target text too big).
+Inlined Socket.read called from flow.
+Inlined flow called from emitReadable_.
+Inlined exports.default called from _class.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined exports.default called from _class.
+Inlined create called from wrap.
+Inlined reset called from Context.
+Inlined Context called from wrap.
+Did not inline makeInvokeMethod called from wrap (target text too big).
+Inlined wrap called from _callee.
+Inlined exports.default called from _class.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined exports.default called from _class.
+Inlined exports.default called from _class.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined exports.default called from _class.
+Inlined isBuffer called from isObject.
+Inlined isObject called from Route.
+Inlined _getRoute called from Route.
+Inlined cleanPathname called from run.
+Did not inline Config called from config (target text too big).
+Inlined config called from run.
+Inlined isBuffer called from isObject.
+Inlined isObject called from Route.
+Inlined _getRoute called from Route.
+Inlined Route called from run.
+Inlined isBuffer called from isObject.
+Inlined isObject called from isEmpty.
+Inlined isString called from isEmpty.
+Inlined isNumber called from isEmpty.
+Inlined isEmpty called from run.
+Did not inline parsePathname called from run (target text too big).
+Did not inline Config called from getModule (target text too big).
+Did not inline checkLowerCase called from getController (target has context-allocated variables).
+Did not inline checkLowerCase called from getAction (target has context-allocated variables).
+Inlined isFunction called from cls.
+Did not inline Config called from invokeLogic (target text too big).
+Did not inline tryConvertToPromise called from Promise.cast (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.cast.
+Inlined Promise._captureStackTrace called from Promise.cast.
+Inlined Promise._setFulfilled called from Promise.cast.
+Inlined Promise.cast called from Hook.exec.
+Did not inline _execItemMiddleware called from Hook.exec (target has context-allocated variables).
+Inlined Hook.exec called from hook.
+Inlined hook called from invokeController.
+Did not inline Promise._then called from Promise.then (target text too big).
+Inlined Promise.then called from invokeController.
+Did not inline Promise.caught.Promise.catch called from invokeController (target text too big).
+Did not inline Promise._then called from Promise.then (target text too big).
+Inlined Promise.then called from invokeController.
+Did not inline end called from end (target has context-allocated variables).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.reject.Promise.rejected.
+Inlined Promise._captureStackTrace called from Promise.reject.Promise.rejected.
+Inlined Promise._attachExtraTrace called from Promise._rejectCallback.
+Did not inline Promise._setRejected called from Promise._reject (inline depth limit reached).
+Did not inline Promise._isFinal called from Promise._reject (inline depth limit reached).
+Did not inline AsyncSettlePromises called from Promise._reject (inline depth limit reached).
+Did not inline Promise._ensurePossibleRejectionHandled called from Promise._reject (inline depth limit reached).
+Inlined Promise._reject called from Promise._rejectCallback.
+Inlined Promise._rejectCallback called from Promise.reject.Promise.rejected.
+Inlined Promise.reject.Promise.rejected called from think.prevent.
+Inlined think.prevent called from end.
+Inlined end called from module.exports.think.controller.testAction.
+Did not inline end called from end (target has context-allocated variables).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.reject.Promise.rejected.
+Inlined Promise._captureStackTrace called from Promise.reject.Promise.rejected.
+Inlined Promise._attachExtraTrace called from Promise._rejectCallback.
+Inlined Promise._setRejected called from Promise._reject.
+Inlined Promise._isFinal called from Promise._reject.
+Did not inline Queue._pushOne called from AsyncSettlePromises (inline depth limit reached).
+Did not inline Async._queueTick called from AsyncSettlePromises (inline depth limit reached).
+Inlined AsyncSettlePromises called from Promise._reject.
+Did not inline Promise._setRejectionIsUnhandled called from Promise._ensurePossibleRejectionHandled (inline depth limit reached).
+Did not inline AsyncInvokeLater called from Promise._ensurePossibleRejectionHandled (inline depth limit reached).
+Inlined Promise._ensurePossibleRejectionHandled called from Promise._reject.
+Inlined Promise._reject called from Promise._rejectCallback.
+Inlined Promise._rejectCallback called from Promise.reject.Promise.rejected.
+Inlined Promise.reject.Promise.rejected called from think.prevent.
+Inlined think.prevent called from end.
+Did not inline write called from end (target text too big).
+Did not inline _end called from end (target has context-allocated variables).
+Did not inline ServerResponse.writeHead called from ServerResponse._implicitHeader (target text too big).
+Inlined validChunk called from Writable.write.
+Did not inline writeOrBuffer called from Writable.write (target text too big).
+Did not inline Socket._writeGeneric called from Socket._write (target text too big).
+Inlined Socket._write called from doWrite.
+Did not inline Socket._writeGeneric called from Socket._write (target text too big).
+Inlined onwriteStateUpdate called from onwrite.
+Inlined needFinish called from onwrite.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Object.defineProperty.get called from TickObject.
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from onwrite.
+Did not inline cookie called from _end (target text too big).
+Did not inline OutgoingMessage.end called from _end (target text too big).
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Object.defineProperty.get called from TickObject.
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from _end.
+Inlining api function 0x3bfefccaf651 <JS Function (SharedFunctionInfo 0x3bfefccaf5c1)>
+Inlined ok called from OutgoingMessage._finish.
+Did not inline emit called from OutgoingMessage._finish (target text too big).
+Inlined OutgoingMessage._finish called from ServerResponse._finish.
+Inlined ok called from OutgoingMessage._finish.
+Did not inline emit called from OutgoingMessage._finish (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.reject.Promise.rejected.
+Inlined Promise._captureStackTrace called from Promise.reject.Promise.rejected.
+Inlined Promise._attachExtraTrace called from Promise._rejectCallback.
+Inlined Promise._setRejected called from Promise._reject.
+Inlined Promise._isFinal called from Promise._reject.
+Did not inline Queue.length called from Queue._pushOne (inline depth limit reached).
+Did not inline Queue._checkCapacity called from Queue._pushOne (inline depth limit reached).
+Inlined Queue._pushOne called from AsyncSettlePromises.
+Did not inline  called from Async._queueTick (inline depth limit reached).
+Inlined Async._queueTick called from AsyncSettlePromises.
+Inlined AsyncSettlePromises called from Promise._reject.
+Inlined Promise._setRejectionIsUnhandled called from Promise._ensurePossibleRejectionHandled.
+Did not inline Queue.push called from AsyncInvokeLater (inline depth limit reached).
+Did not inline Async._queueTick called from AsyncInvokeLater (inline depth limit reached).
+Inlined AsyncInvokeLater called from Promise._ensurePossibleRejectionHandled.
+Inlined Promise._ensurePossibleRejectionHandled called from Promise._reject.
+Inlined Promise._reject called from Promise._rejectCallback.
+Inlined Promise._rejectCallback called from Promise.reject.Promise.rejected.
+Inlined Promise.reject.Promise.rejected called from think.prevent.
+Did not inline OutgoingMessage._send called from OutgoingMessage.end (target text too big).
+Inlined debugs.(anonymous function) called from OutgoingMessage.end.
+Inlining api function 0x3bfefccaf651 <JS Function (SharedFunctionInfo 0x3bfefccaf5c1)>
+Inlined ok called from OutgoingMessage._finish.
+Did not inline emit called from OutgoingMessage._finish (target text too big).
+Inlined OutgoingMessage._finish called from ServerResponse._finish.
+Inlined ServerResponse._finish called from OutgoingMessage.end.
+Inlined ok called from exports._unrefActive.
+Inlined remove called from exports._unrefActive.
+Inlined debugs.(anonymous function) called from exports._unrefActive.
+Inlined debugs.(anonymous function) called from exports._unrefActive.
+Did not inline Timer called from exports._unrefActive (target is api function).
+Inlining api function 0x149084982d91 <JS Function now (SharedFunctionInfo 0x149084982d01)>
+Inlining api function 0x149084983469 <JS Function start (SharedFunctionInfo 0x1490849833d9)>
+Inlined debugs.(anonymous function) called from exports._unrefActive.
+Inlined debugs.(anonymous function) called from exports._unrefActive.
+Inlined remove called from append.
+Inlined append called from exports._unrefActive.
+Inlined objectToString called from isError.
+Inlined objectToString called from isError.
+Inlined isError called from think.isPrevent.
+Inlined Promise._settledValue called from Promise._value.
+Inlined Queue.length called from Async._drainQueue.
+Inlined Queue.shift called from Async._drainQueue.
+Inlined Promise._isBound called from Promise._receiverAt.
+Inlined Promise._receiverAt called from Promise._settlePromise0.
+Did not inline Promise._settlePromise called from Promise._settlePromise0 (target text too big).
+Inlined Promise._settlePromise0 called from Promise._settlePromises.
+Inlined Promise._rejectPromises called from Promise._settlePromises.
+Inlined Promise._isBound called from Promise._receiverAt.
+Inlined Promise._receiverAt called from Promise._settlePromise0.
+Did not inline Promise._settlePromise called from Promise._settlePromise0 (target text too big).
+Inlined Promise._settlePromise0 called from Promise._settlePromises.
+Inlined Promise._fulfillPromises called from Promise._settlePromises.
+Inlined Promise._setLength called from Promise._settlePromises.
+Inlined Promise._clearCancellationData called from Promise._settlePromises.
+Inlined Promise._settlePromises called from Async._drainQueue.
+Did not inline Queue.shift called from Async._drainQueue (cumulative AST node limit reached).
+Did not inline Queue.shift called from Async._drainQueue (cumulative AST node limit reached).
+Inlined Promise._isRejectionUnhandled called from Promise._notifyUnhandledRejection.
+Did not inline createWritableStdioStream called from  (target text too big).
+Inlined onwriteDrain called from afterWrite.
+Inlined nop called from afterWrite.
+Inlined needFinish called from finishMaybe.
+Did not inline emit called from prefinish (target text too big).
+Inlined prefinish called from finishMaybe.
+Did not inline emit called from finishMaybe (target text too big).
+Inlined finishMaybe called from afterWrite.
+Inlined debugs.(anonymous function) called from Readable.resume.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Object.defineProperty.get called from TickObject.
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from resume.
+Inlined resume called from Readable.resume.
+Inlined Readable.resume called from IncomingMessage._dump.
+Inlined ok called from ServerResponse.detachSocket.
+Did not inline removeListener called from ServerResponse.detachSocket (target text too big).
+Inlined needFinish called from finishMaybe.
+Did not inline emit called from prefinish (target text too big).
+Inlined prefinish called from finishMaybe.
+Did not inline emit called from finishMaybe (target text too big).
+Inlined finishMaybe called from endWritable.
+Inlined endWritable called from Writable.end.
+Inlined Writable.end called from Socket.end.
+Inlining api function 0x3bfefccaf219 <JS Function (SharedFunctionInfo 0x3bfefccaf189)>
+Did not inline Readable.read called from Socket.end (target text too big).
+Inlined Socket.end called from Socket.destroySoon.
+Inlined debugs.(anonymous function) called from Socket.destroy.
+Did not inline Socket._destroy called from Socket.destroy (target text too big).
+Inlined Socket.destroy called from Socket.destroySoon.
+Inlined needFinish called from finishMaybe.
+Did not inline emit called from prefinish (target text too big).
+Inlined prefinish called from finishMaybe.
+Did not inline emit called from finishMaybe (target text too big).
+Inlined finishMaybe called from endWritable.
+Inlined endWritable called from Writable.end.
+Inlined Writable.end called from Socket.end.
+Inlining api function 0x3bfefccaf219 <JS Function (SharedFunctionInfo 0x3bfefccaf189)>
+Did not inline Readable.read called from Socket.end (target text too big).
+Inlined needFinish called from finishMaybe.
+Did not inline emit called from prefinish (target text too big).
+Inlined prefinish called from finishMaybe.
+Did not inline emit called from finishMaybe (target text too big).
+Inlined finishMaybe called from endWritable.
+Inlined endWritable called from Writable.end.
+Inlined needFinish called from finishMaybe.
+Did not inline emit called from prefinish (target text too big).
+Inlined prefinish called from finishMaybe.
+Did not inline emit called from finishMaybe (target text too big).
+Inlined finishMaybe called from endWritable.
+Inlined debugs.(anonymous function) called from Socket.destroy.
+Did not inline Socket._destroy called from Socket.destroy (target text too big).
+Inlined debugs.(anonymous function) called from Server._emitCloseIfDrained.
+Inlined debugs.(anonymous function) called from Server._emitCloseIfDrained.
+Inlining builtin 0x3bfefcc548d1 <JS Function pop (SharedFunctionInfo 0x3bfefcc54841)>
+Inlined debugs.(anonymous function) called from afterShutdown.
+Inlining api function 0x384b2b6113a1 <JS Function unconsume (SharedFunctionInfo 0x384b2b611311)>
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined exports.FreeList.free called from freeParser.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Did not inline doNTCallback0 called from _tickDomainCallback (target not inlineable).
+Did not inline doNTCallback1 called from _tickDomainCallback (target not inlineable).
+Did not inline doNTCallback2 called from _tickDomainCallback (target not inlineable).
+Did not inline doNTCallback3 called from _tickDomainCallback (target not inlineable).
+Did not inline doNTCallbackMany called from _tickDomainCallback (target not inlineable).
+Inlined tickDone called from _tickDomainCallback.
+Inlining api function 0x149084994459 <JS Function runMicrotasks (SharedFunctionInfo 0x1490849943c9)>
+Did not inline emitPendingUnhandledRejections called from _tickDomainCallback (target text too big).
+Inlined isString called from Middleware.exec.
+Inlined isString called from think.require.
+Inlined assertPath called from posix.normalize.
+Inlined assertPath called from posix.isAbsolute.
+Inlined posix.isAbsolute called from posix.normalize.
+Inlining builtin 0x3bfefcc548d1 <JS Function pop (SharedFunctionInfo 0x3bfefcc54841)>
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined normalizeArray called from posix.normalize.
+Inlined posix.normalize called from think.require.
+Did not inline think.safeRequire called from _loadRequire (target not inlineable).
+Inlined isFunction called from _loadRequire.
+Inlined _loadRequire called from think.require.
+Inlined think.require called from Middleware.exec.
+Trying to inline the polymorphic call to run from Middleware.exec
+Inlined cleanPathname called from run.
+Did not inline config called from run (cumulative AST node limit reached).
+Did not inline Route called from run (cumulative AST node limit reached).
+Did not inline isEmpty called from run (cumulative AST node limit reached).
+Did not inline parsePathname called from run (target text too big).
+Inlined run called from Middleware.exec.
+Trying to inline the polymorphic call to run from Middleware.exec
+Did not inline run called from Middleware.exec (cumulative AST node limit reached).
+Trying to inline the polymorphic call to run from Middleware.exec
+Did not inline run called from Middleware.exec (cumulative AST node limit reached).
+Did not inline think.co called from Middleware.exec (cumulative AST node limit reached).
+Inlined escapeHeaderValue called from storeHeader.
+Did not inline OutgoingMessage._writeRaw called from OutgoingMessage._send (target text too big).
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined Object.defineProperty.get called from TickObject.
+Inlined TickObject called from nextTick.
+Did not inline push called from nextTick (target not inlineable).
+Inlined nextTick called from OutgoingMessage._writeRaw.
+Inlined validChunk called from Writable.write.
+Did not inline writeOrBuffer called from Writable.write (target text too big).
+Inlined Writable.write called from Socket.write.
+Inlined Socket.write called from OutgoingMessage._writeRaw.
+Inlined Promise._setRejectionIsUnhandled called from Promise._ensurePossibleRejectionHandled.
+Inlined Queue.length called from Queue.push.
+Inlined Queue._willBeOverCapacity called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Did not inline arrayMove called from Queue._resizeTo (inline depth limit reached).
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Did not inline arrayMove called from Queue._resizeTo (inline depth limit reached).
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Did not inline arrayMove called from Queue._resizeTo (inline depth limit reached).
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Inlined arrayMove called from Queue._resizeTo.
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue.push.
+Inlined Queue.push called from AsyncInvokeLater.
+Did not inline Async._queueTick called from AsyncInvokeLater (cumulative AST node limit reached).
+Inlined AsyncInvokeLater called from Promise._ensurePossibleRejectionHandled.
+Inlined Queue.length called from Queue.push.
+Inlined Queue._willBeOverCapacity called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Inlined arrayMove called from Queue._resizeTo.
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Inlined arrayMove called from Queue._resizeTo.
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Inlined Queue.length called from Queue._pushOne.
+Inlined arrayMove called from Queue._resizeTo.
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from Queue.push.
+Did not inline Queue._checkCapacity called from Queue.push (cumulative AST node limit reached).
+Inlined Queue.push called from AsyncInvokeLater.
+Did not inline Async._queueTick called from AsyncInvokeLater (cumulative AST node limit reached).
+Did not inline addListener called from OutgoingMessage.setTimeout (target text too big).
+Inlined remove called from reuse.
+Inlined reuse called from exports.unenroll.
+Inlined exports.unenroll called from exports.enroll.
+Inlined exports.enroll called from Socket.setTimeout.
+Did not inline exports._unrefActive called from Socket.setTimeout (target text too big).
+Inlined Socket.setTimeout called from OutgoingMessage.setTimeout.
+Did not inline IncomingMessage called from parserOnHeadersComplete (target text too big).
+Inlining builtin 0x14908495d1a9 <JS Function min (SharedFunctionInfo 0x3bfefcc5d089)>
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Did not inline IncomingMessage._addHeaderLine called from IncomingMessage._addHeaderLines (target text too big).
+Inlined IncomingMessage._addHeaderLines called from parserOnHeadersComplete.
+Did not inline once called from Duplex (target has context-allocated variables).
+Inlined Duplex called from Socket.
+Did not inline Readable.on called from Socket (target text too big).
+Did not inline Readable.on called from Socket (target text too big).
+Inlined initSocketHandle called from Socket.
+Did not inline Readable.read called from Socket.read (target text too big).
+Did not inline Readable.read called from Socket.read (target text too big).
+Inlined Socket.read called from Socket.
+Did not inline once called from Duplex (target has context-allocated variables).
+Inlined debugs.(anonymous function) called from connectionListener.
+Did not inline removeListener called from httpSocketSetup (target text too big).
+Did not inline Readable.on called from httpSocketSetup (target text too big).
+Inlined httpSocketSetup called from connectionListener.
+Inlined remove called from reuse.
+Inlined reuse called from exports.unenroll.
+Inlined exports.unenroll called from exports.enroll.
+Inlined exports.enroll called from Socket.setTimeout.
+Did not inline exports._unrefActive called from Socket.setTimeout (target text too big).
+Inlined Socket.setTimeout called from connectionListener.
+Did not inline Readable.on called from connectionListener (target text too big).
+Inlining builtin 0x3bfefcc54a99 <JS Function shift (SharedFunctionInfo 0x3bfefcc54a09)>
+Did not inline HTTPParser called from  (target is api function).
+Inlined  called from exports.FreeList.alloc.
+Inlined exports.FreeList.alloc called from connectionListener.
+Inlining api function 0x384b2b610cb9 <JS Function reinitialize (SharedFunctionInfo 0x384b2b610c29)>
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Inlining api function 0x384b2b6111d9 <JS Function consume (SharedFunctionInfo 0x384b2b611149)>
+Did not inline ReadableState called from Readable (target text too big).
+Inlined Readable called from IncomingMessage.
+Inlined Url called from urlParse.
+Did not inline Url.parse called from urlParse (target text too big).
+Inlined urlParse called from parseRequest.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined normalizePathname called from parseRequest.
+Inlined isBuffer called from isObject.
+Inlined isObject called from isEmpty.
+Inlined isString called from isEmpty.
+Inlined isNumber called from isEmpty.
+Inlined isEmpty called from parseRequest.
+Inlining builtin 0x14908495d2a1 <JS Function charAt (SharedFunctionInfo 0x3bfefcc57bb9)>
+Inlined Object.defineProperty.get called from header.
+Inlined OutgoingMessage.setHeader called from header.
+Inlined header called from run.
+Did not inline Config called from run (target text too big).
+Inlined exec called from run.
+Did not inline Promise.caught.Promise.catch called from run (target text too big).
+Did not inline Config called from config (target text too big).
+Inlined config called from run.
+Did not inline Config called from config (target text too big).
+Inlined config called from run.
+Did not inline parseModule called from parsePathname (target text too big).
+Did not inline parseController called from parsePathname (target text too big).
+Inlining builtin 0x3bfefcc54a99 <JS Function shift (SharedFunctionInfo 0x3bfefcc54a09)>
+Inlined parseExtPath called from parsePathname.
+Did not inline checkLowerCase called from getController (target has context-allocated variables).
+Inlined getController called from parsePathname.
+Did not inline checkLowerCase called from getAction (target has context-allocated variables).
+Inlined getAction called from parsePathname.
+Did not inline Config called from parseModule (target text too big).
+Inlining builtin 0x14908495cef9 <JS Function indexOf (SharedFunctionInfo 0x3bfefcc531e1)>
+Did not inline Config called from getModule (target text too big).
+Inlined getModule called from parseModule.
+Inlined isString called from think.require.
+Inlined assertPath called from posix.normalize.
+Inlined assertPath called from posix.isAbsolute.
+Inlined posix.isAbsolute called from posix.normalize.
+Inlining builtin 0x3bfefcc548d1 <JS Function pop (SharedFunctionInfo 0x3bfefcc54841)>
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined normalizeArray called from posix.normalize.
+Inlined posix.normalize called from think.require.
+Did not inline think.safeRequire called from _loadRequire (target not inlineable).
+Inlined isFunction called from _loadRequire.
+Inlined _loadRequire called from think.require.
+Inlined think.require called from getControllerInstance.
+Inlined isFunction called from cls.
+Inlined init called from cls.
+Inlined cls called from getControllerInstance.
+Inlined camelCase called from execAction.
+Inlined isString called from action.
+Inlined camelCase called from action.
+Inlined invoke called from action.
+Inlined action called from execAction.
+Inlined isString called from action.
+Inlined camelCase called from action.
+Inlined invoke called from action.
+Did not inline Config called from config (target text too big).
+Inlined config called from write.
+Did not inline Config called from config (target text too big).
+Inlined config called from write.
+Did not inline Config called from config (target text too big).
+Inlined config called from type.
+Inlined Object.defineProperty.get called from header.
+Inlined OutgoingMessage.setHeader called from header.
+Inlined header called from type.
+Inlined type called from write.
+Did not inline cookie called from write (target text too big).
+Inlined isPromise called from write.
+Inlined isBuffer called from isObject.
+Inlined isObject called from write.
+Inlined isBuffer called from write.
+Did not inline Config called from config (target text too big).
+Inlined config called from write.
+Did not inline OutgoingMessage.write called from write (target text too big).
+Did not inline Config called from config (target text too big).
+Inlined config called from type.
+Inlined Object.defineProperty.get called from header.
+Inlined OutgoingMessage.setHeader called from header.
+Inlined header called from type.
+Did not inline ServerResponse.writeHead called from ServerResponse._implicitHeader (target text too big).
+Inlined ServerResponse._implicitHeader called from OutgoingMessage.write.
+Did not inline OutgoingMessage._send called from OutgoingMessage.write (target text too big).
+Inlined debugs.(anonymous function) called from OutgoingMessage.write.
+Inlined decodeChunk called from writeOrBuffer.
+Did not inline Socket._writeGeneric called from Socket._write (target text too big).
+Inlined Socket._write called from doWrite.
+Inlined doWrite called from writeOrBuffer.
+Inlining api function 0x39fada67ac51 <JS Function writeUtf8String (SharedFunctionInfo 0x39fada67abc1)>
+Inlined isObject called from tryConvertToPromise.
+Did not inline getThen called from tryConvertToPromise (target not inlineable).
+Did not inline tryConvertToPromise called from Promise.cast (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.cast.
+Inlined Promise._captureStackTrace called from Promise.cast.
+Inlined Promise._setFulfilled called from Promise.cast.
+Inlined Promise.cast called from Hook.exec.
+Did not inline _execItemMiddleware called from Hook.exec (target has context-allocated variables).
+Inlined Hook.exec called from hook.
+Inlined hook called from _callee$.
+Did not inline tryConvertToPromise called from Promise.cast (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.cast.
+Inlined Promise._captureStackTrace called from Promise.cast.
+Inlined Promise._setFulfilled called from Promise.cast.
+Inlined Promise.cast called from Hook.exec.
+Did not inline _execItemMiddleware called from Hook.exec (target has context-allocated variables).
+Inlined Hook.exec called from hook.
+Inlined hook called from _callee$.
+Did not inline getControllerInstance called from _callee$ (target text too big).
+Did not inline invokeLogic called from _callee$ (target has context-allocated variables).
+Did not inline invokeController called from _callee$ (target has context-allocated variables).
+Did not inline tryConvertToPromise called from Promise.cast (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (cumulative AST node limit reached).
+Did not inline Promise._promiseCreated called from Promise (cumulative AST node limit reached).
+Inlined Promise called from Promise.cast.
+Did not inline Promise._captureStackTrace called from Promise.cast (cumulative AST node limit reached).
+Did not inline Promise._setFulfilled called from Promise.cast (cumulative AST node limit reached).
+Inlined Promise.cast called from Hook.exec.
+Did not inline _execItemMiddleware called from Hook.exec (cumulative AST node limit reached).
+Inlined Hook.exec called from hook.
+Inlined hook called from _callee$.
+Did not inline stop called from _callee$ (cumulative AST node limit reached).
+Inlined exports.default called from _class.
+Inlined _typeof called from exports.default.
+Inlined exports.default called from exports.default.
+Inlined exports.default called from _class.
+Did not inline dispatchException called from invoke (target text too big).
+Did not inline tryCatch called from invoke (target not inlineable).
+Inlined ok called from exports._unrefActive.
+Inlined remove called from exports._unrefActive.
+Inlined debugs.(anonymous function) called from exports._unrefActive.
+Inlined debugs.(anonymous function) called from exports._unrefActive.
+Did not inline Timer called from exports._unrefActive (target is api function).
+Inlining api function 0x149084982d91 <JS Function now (SharedFunctionInfo 0x149084982d01)>
+Inlining api function 0x149084983469 <JS Function start (SharedFunctionInfo 0x1490849833d9)>
+Inlined debugs.(anonymous function) called from exports._unrefActive.
+Inlined debugs.(anonymous function) called from exports._unrefActive.
+Inlined remove called from append.
+Inlined append called from exports._unrefActive.
+Did not inline storeHeader called from OutgoingMessage._storeHeader (target text too big).
+Inlined remove called from reuse.
+Inlined reuse called from exports.unenroll.
+Inlined exports.unenroll called from exports.enroll.
+Inlined exports.enroll called from utcDate.
+Did not inline exports._unrefActive called from utcDate (target text too big).
+Inlined utcDate called from OutgoingMessage._storeHeader.
+Inlined debugs.(anonymous function) called from onSocketFinish.
+Inlined debugs.(anonymous function) called from onSocketFinish.
+Did not inline ShutdownWrap called from onSocketFinish (target is api function).
+Inlining api function 0x39fada67a5b1 <JS Function shutdown (SharedFunctionInfo 0x39fada67a521)>
+Did not inline tryConvertToPromise called from Promise.cast (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.cast.
+Inlined Promise._captureStackTrace called from Promise.cast.
+Inlined Promise._setFulfilled called from Promise.cast.
+Inlined Promise.cast called from Hook.exec.
+Did not inline _execItemMiddleware called from Hook.exec (target has context-allocated variables).
+Inlined Hook.exec called from _callee$.
+Inlining builtin 0x14908495cef9 <JS Function indexOf (SharedFunctionInfo 0x3bfefcc531e1)>
+Did not inline abrupt called from _callee$ (target text too big).
+Inlined stop called from _callee$.
+Inlined emitNone called from emit.
+Did not inline Array called from arrayClone (Dont inline [new] Array(n) where n isn't constant.).
+Inlined arrayClone called from emitOne.
+Inlined emitOne called from emit.
+Inlined emitTwo called from emit.
+Did not inline tryConvertToPromise called from Promise._resolveCallback (target text too big).
+Inlined Promise._setFulfilled called from Promise._fulfill.
+Inlined Queue.length called from Queue._pushOne.
+Did not inline arrayMove called from Queue._resizeTo (inline depth limit reached).
+Inlined Queue._resizeTo called from Queue._checkCapacity.
+Inlined Queue._checkCapacity called from Queue._pushOne.
+Inlined Queue._pushOne called from AsyncSettlePromises.
+Inlined  called from Async._queueTick.
+Inlined Async._queueTick called from AsyncSettlePromises.
+Inlined AsyncSettlePromises called from Promise._fulfill.
+Inlined Promise._fulfill called from Promise._resolveCallback.
+Inlined Promise._isFollowing called from Promise._target.
+Inlined Promise._target called from Promise._resolveCallback.
+Inlined Promise._length called from Promise._resolveCallback.
+Inlined Promise._isBound called from Promise._receiverAt.
+Inlined Promise._receiverAt called from Promise._migrateCallback0.
+Did not inline Promise._addCallbacks called from Promise._migrateCallback0 (target text too big).
+Inlined Promise._migrateCallback0 called from Promise._resolveCallback.
+Did not inline Promise._setFollowing called from Promise._resolveCallback (cumulative AST node limit reached).
+Did not inline Promise._setLength called from Promise._resolveCallback (cumulative AST node limit reached).
+Did not inline Promise._setFollowee called from Promise._resolveCallback (cumulative AST node limit reached).
+Did not inline Promise._value called from Promise._resolveCallback (cumulative AST node limit reached).
+Did not inline Promise._fulfill called from Promise._resolveCallback (cumulative AST node limit reached).
+Did not inline Array called from _callee (Dont inline [new] Array(n) where n isn't constant.).
+Inlined create called from wrap.
+Inlined reset called from Context.
+Inlined Context called from wrap.
+Did not inline makeInvokeMethod called from wrap (target text too big).
+Inlined wrap called from _callee.
+Did not inline apply called from _callee$ (target not inlineable).
+Did not inline tryConvertToPromise called from Promise.cast (target text too big).
+Inlined check called from Promise.
+Did not inline Promise._resolveFromExecutor called from Promise (target has context-allocated variables).
+Inlined Promise._promiseCreated called from Promise.
+Inlined Promise called from Promise.cast.
+Inlined Promise._captureStackTrace called from Promise.cast.
+Inlined Promise._setFulfilled called from Promise.cast.
+Inlined Promise.cast called from think.co.
+Inlined think.co called from _callee$.
+Inlined stop called from _callee$.
+Inlined isBuffer called from isObject.
+Inlined isObject called from isEmpty.
+Inlined isString called from isEmpty.
+Inlined isNumber called from isEmpty.
+Inlined remove called from shift.
+Inlined Queue.length called from Async._drainQueue.
+Inlined Queue.shift called from Async._drainQueue.
+Did not inline Promise._isBound called from Promise._receiverAt (inline depth limit reached).
+Inlined Promise._receiverAt called from Promise._settlePromise0.
+Did not inline Promise._settlePromise called from Promise._settlePromise0 (target text too big).
+Inlined Promise._settlePromise0 called from Promise._settlePromises.
+Inlined Promise._rejectPromises called from Promise._settlePromises.
+Did not inline Promise._isBound called from Promise._receiverAt (inline depth limit reached).
+Inlined Promise._receiverAt called from Promise._settlePromise0.
+Did not inline Promise._settlePromise called from Promise._settlePromise0 (target text too big).
+Inlined Promise._settlePromise0 called from Promise._settlePromises.
+Inlined Promise._fulfillPromises called from Promise._settlePromises.
+Inlined Promise._setLength called from Promise._settlePromises.
+Inlined Promise._clearCancellationData called from Promise._settlePromises.
+Inlined Promise._settlePromises called from Async._drainQueue.
+Did not inline Queue.shift called from Async._drainQueue (cumulative AST node limit reached).
+Did not inline Queue.shift called from Async._drainQueue (cumulative AST node limit reached).
+Inlined Async._drainQueue called from Async._drainQueues.
+Did not inline Async._reset called from Async._drainQueues (cumulative AST node limit reached).
+Did not inline Async._drainQueue called from Async._drainQueues (cumulative AST node limit reached).
+Inlined Async._drainQueues called from Async.drainQueues.
+Inlined Queue.length called from Async._drainQueue.
+Inlined Queue.shift called from Async._drainQueue.
+Inlined Promise._isBound called from Promise._receiverAt.
+Inlined Promise._receiverAt called from Promise._settlePromise0.
+Did not inline Promise._settlePromise called from Promise._settlePromise0 (target text too big).
+Inlined Promise._settlePromise0 called from Promise._settlePromises.
+Inlined Promise._rejectPromises called from Promise._settlePromises.
+Inlined Promise._isBound called from Promise._receiverAt.
+Inlined Promise._receiverAt called from Promise._settlePromise0.
+Did not inline Promise._settlePromise called from Promise._settlePromise0 (target text too big).
+Inlined Promise._settlePromise0 called from Promise._settlePromises.
+Inlined Promise._fulfillPromises called from Promise._settlePromises.
+Inlined Promise._setLength called from Promise._settlePromises.
+Inlined Promise._clearCancellationData called from Promise._settlePromises.
+Inlined Promise._settlePromises called from Async._drainQueue.
+Did not inline Queue.shift called from Async._drainQueue (cumulative AST node limit reached).
+Did not inline Queue.shift called from Async._drainQueue (cumulative AST node limit reached).
+Inlined Async._drainQueue called from Async._drainQueues.
+Did not inline Async._reset called from Async._drainQueues (cumulative AST node limit reached).
+Did not inline Async._drainQueue called from Async._drainQueues (cumulative AST node limit reached).
+Did not inline emit called from addListener (target text too big).
+Inlined $getMaxListeners called from addListener.
+Inlined NativeModule.getCached called from NativeModule.require.
+Inlined NativeModule.exists called from NativeModule.require.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined NativeModule called from NativeModule.require.
+Inlined NativeModule.cache called from NativeModule.require.
+Inlined NativeModule.getSource called from NativeModule.compile.
+Inlined NativeModule.wrap called from NativeModule.compile.
+Did not inline ContextifyScript called from runInThisContext (target is api function).
+Inlining api function 0x3bfefccb0f21 <JS Function runInThisContext (SharedFunctionInfo 0x3bfefccb0e91)>
+Inlined runInThisContext called from NativeModule.compile.
+Inlined NativeModule.compile called from NativeModule.require.
+Inlined NativeModule.require called from EventEmitter.init.
+Inlined EventEmitter.init called from EventEmitter.
+Inlined NativeModule.getCached called from NativeModule.require.
+Inlined NativeModule.exists called from NativeModule.require.
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined NativeModule called from NativeModule.require.
+Inlined NativeModule.cache called from NativeModule.require.
+Inlined NativeModule.getSource called from NativeModule.compile.
+Inlined NativeModule.wrap called from NativeModule.compile.
+Did not inline ContextifyScript called from runInThisContext (target is api function).
+Inlining api function 0x3bfefccb0f21 <JS Function runInThisContext (SharedFunctionInfo 0x3bfefccb0e91)>
+Inlined runInThisContext called from NativeModule.compile.
+Inlined NativeModule.compile called from NativeModule.require.
+Inlined NativeModule.require called from EventEmitter.init.
+Inlining api function 0x384b2b6113a1 <JS Function unconsume (SharedFunctionInfo 0x384b2b611311)>
+Inlining builtin 0x3bfefcc549a9 <JS Function push (SharedFunctionInfo 0x3bfefcc54919)>
+Inlined exports.FreeList.free called from freeParser.
+Inlined complete called from abrupt.
+Inlined OutgoingMessage._renderHeaders called from ServerResponse.writeHead.
+Trying to inline the polymorphic call to toString from ServerResponse.writeHead
+Did not inline OutgoingMessage._storeHeader called from ServerResponse.writeHead (target text too big).
+Did not inline Config called from config (target text too big).
+Inlined config called from _afterEnd.
+Inlined isBuffer called from isObject.
+Inlined isObject called from isEmpty.
+Inlined isString called from isEmpty.
+Inlined isNumber called from isEmpty.
+Inlined isEmpty called from _afterEnd.
+Inlined debugs.(anonymous function) called from connectionListener.
+Did not inline removeListener called from httpSocketSetup (target text too big).
+Did not inline Readable.on called from httpSocketSetup (target text too big).
+Inlined httpSocketSetup called from connectionListener.
+Inlined remove called from reuse.
+Inlined reuse called from exports.unenroll.
+Inlined exports.unenroll called from exports.enroll.
+Inlined exports.enroll called from Socket.setTimeout.
+Did not inline exports._unrefActive called from Socket.setTimeout (target text too big).
+Inlined Socket.setTimeout called from connectionListener.
+Did not inline Readable.on called from connectionListener (target text too big).
+Inlining builtin 0x3bfefcc54a99 <JS Function shift (SharedFunctionInfo 0x3bfefcc54a09)>
+Did not inline HTTPParser called from  (target is api function).
+Inlined  called from exports.FreeList.alloc.
+Inlined exports.FreeList.alloc called from connectionListener.
+Inlining api function 0x384b2b610cb9 <JS Function reinitialize (SharedFunctionInfo 0x384b2b610c29)>
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Inlining api function 0x384b2b6111d9 <JS Function consume (SharedFunctionInfo 0x384b2b611149)>
+Inlined debugs.(anonymous function) called from connectionListener.
+Did not inline removeListener called from httpSocketSetup (target text too big).
+Did not inline Readable.on called from httpSocketSetup (target text too big).
+Inlined httpSocketSetup called from connectionListener.
+Inlined remove called from reuse.
+Inlined reuse called from exports.unenroll.
+Inlined exports.unenroll called from exports.enroll.
+Inlined exports.enroll called from Socket.setTimeout.
+Did not inline exports._unrefActive called from Socket.setTimeout (target text too big).
+Inlined Socket.setTimeout called from connectionListener.
+Did not inline Readable.on called from connectionListener (target text too big).
+Inlining builtin 0x3bfefcc54a99 <JS Function shift (SharedFunctionInfo 0x3bfefcc54a09)>
+Did not inline HTTPParser called from  (target is api function).
+Inlined  called from exports.FreeList.alloc.
+Inlined exports.FreeList.alloc called from connectionListener.
+Inlining api function 0x384b2b610cb9 <JS Function reinitialize (SharedFunctionInfo 0x384b2b610c29)>
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Did not inline Readable.on called from connectionListener (target text too big).
+Inlining api function 0x384b2b6111d9 <JS Function consume (SharedFunctionInfo 0x384b2b611149)>
+Inlined isBuffer called from isObject.
+Inlined isObject called from Class.cls.extend.
+Did not inline exports._unrefActive called from unrefTimer (target text too big).
+Inlined debugs.(anonymous function) called from Socket._destroy.
+Inlined remove called from reuse.
+Inlined reuse called from exports.unenroll.
+Inlined exports.unenroll called from Socket._destroy.
+Inlined debugs.(anonymous function) called from Socket._destroy.
+Did not inline createWritableStdioStream called from  (target text too big).
+Inlined  called from Socket._destroy.
+Inlined debugs.(anonymous function) called from Socket._destroy.
+Inlining api function 0x39fada679b19 <JS Function close (SharedFunctionInfo 0x39fada679a89)>
+Inlined debugs.(anonymous function) called from Socket._destroy.
+Inlined debugs.(anonymous function) called from Server._emitCloseIfDrained.
+Inlined debugs.(anonymous function) called from Server._emitCloseIfDrained.
+Inlined Server._emitCloseIfDrained called from Socket._destroy.
+Inlined isBuffer called from isObject.
+Inlined isObject called from isEmpty.
+Inlined isString ca

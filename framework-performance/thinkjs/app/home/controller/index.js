@@ -10,5 +10,10 @@ module.exports = think.controller(Base, {
   indexAction: function(self){
     //auto render template file index_index.html
     return this.end('hello word');
+  },
+  
+  testAction: function(self){
+    //auto render template file index_index.html
+    return this.end('hello word');
   }
 });

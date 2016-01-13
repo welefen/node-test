@@ -14,21 +14,24 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, Promi
 /**
  * base adapter
  */
-var default_1 = (function () {
-    function default_1() {
+class {
+    constructor() {
+        this.list = [1, 2, 3];
     }
-    default_1.prototype.printDelayed = function (elements) {
-        for (var _i = 0; _i < elements.length; _i++) {
-            var element = elements[_i];
-            yield this.delay(200);
-            console.log(element);
-        }
-    };
-    default_1.prototype.delay = function (milliseconds) {
-        return new Promise(function (resolve) {
-            setTimeout(resolve, milliseconds);
+    printDelayed(elements) {
+        return __awaiter(this, void 0, Promise, function* () {
+            for (const element of elements) {
+                yield this.delay(200);
+                console.log(element);
+            }
         });
-    };
-    return default_1;
-})();
-exports["default"] = default_1;
+    }
+    delay(milliseconds, ...args) {
+        return __awaiter(this, void 0, Promise, function* () {
+            return new Promise(resolve => {
+                setTimeout(resolve, milliseconds);
+            });
+        });
+    }
+}
+exports. = default_1;

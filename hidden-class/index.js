@@ -40,6 +40,6 @@ suite.add('hidden class 1', function () {
 .on('cycle', function (event) {
   console.log(String(event.target));
 }).on('complete', function () {
-  console.log('Fastest is ' + this.filter('fastest').pluck('name'));
+  console.log('Fastest is ' + this.filter('fastest'));
 })
 .run({ async: true });

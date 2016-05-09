@@ -1,0 +1,996 @@
+[deoptimizing (DEOPT eager): begin 0x254b751ac4f9 <JS Function finishToken (SharedFunctionInfo 0x254b751a4509)> (opt #10) @15, FP to SP delta: 64]
+  reading input frame finishToken => node=3, args=117, height=3; inputs:
+      0: 0x254b751ac4f9 ; (frame function) 0x254b751ac4f9 <JS Function finishToken (SharedFunctionInfo 0x254b751a4509)>
+      1: 0x35438f1c40b1 ; rax 0x35438f1c40b1 <a Parser with map 0xa2459f24601>
+      2: 0x35438f18e471 ; rcx 0x35438f18e471 <a TokenType with deprecated map 0xa2459f1ab51>
+      3: 0x200000000 ; rsi 2
+      4: 0x35438f19c749 ; [fp - 24] 0x35438f19c749 <FixedArray[5]>
+      5: 0x35438f190b71 ; rdx 0x35438f190b71 <a TokenType with map 0xa2459f1af71>
+      6: 0x5ba065041b9 ; (literal 4) 0x5ba065041b9 <undefined>
+  translating frame finishToken => node=117, height=16
+    0x7fff5fbfe7c8: [top + 64] <- 0x35438f1c40b1 ;  0x35438f1c40b1 <a Parser with map 0xa2459f24601>  (input #1)
+    0x7fff5fbfe7c0: [top + 56] <- 0x35438f18e471 ;  0x35438f18e471 <a TokenType with deprecated map 0xa2459f1ab51>  (input #2)
+    0x7fff5fbfe7b8: [top + 48] <- 0x200000000 ;  2  (input #3)
+    0x7fff5fbfe7b0: [top + 40] <- 0x3459969b10c8 ;  caller's pc
+    0x7fff5fbfe7a8: [top + 32] <- 0x7fff5fbfe820 ;  caller's fp
+    0x7fff5fbfe7a0: [top + 24] <- 0x35438f19c749 ;  context    0x35438f19c749 <FixedArray[5]>  (input #4)
+    0x7fff5fbfe798: [top + 16] <- 0x254b751ac4f9 ;  function    0x254b751ac4f9 <JS Function finishToken (SharedFunctionInfo 0x254b751a4509)>  (input #0)
+    0x7fff5fbfe790: [top + 8] <- 0x35438f190b71 ;  0x35438f190b71 <a TokenType with map 0xa2459f1af71>  (input #5)
+    0x7fff5fbfe788: [top + 0] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #6)
+[deoptimizing (eager): end 0x254b751ac4f9 <JS Function finishToken (SharedFunctionInfo 0x254b751a4509)> @15 => node=117, pc=0x3459969757df, state=NO_REGISTERS, alignment=no padding, took 0.130 ms]
+[removing optimized code for: finishToken]
+[deoptimizing (DEOPT eager): begin 0x254b751ac181 <JS Function match (SharedFunctionInfo 0x254b751a3d29)> (opt #0) @3, FP to SP delta: 24]
+            ;;; deoptimize at 148928: wrong map
+  reading input frame match => node=2, args=3, height=2; inputs:
+      0: 0x254b751ac181 ; (frame function) 0x254b751ac181 <JS Function match (SharedFunctionInfo 0x254b751a3d29)>
+      1: 0x35438f1c40b1 ; rax 0x35438f1c40b1 <a Parser with map 0xa2459f24601>
+      2: 0x35438f18fa91 ; [fp + 16] 0x35438f18fa91 <a TokenType with map 0xa2459f1af71>
+      3: 0x35438f19c749 ; [fp - 24] 0x35438f19c749 <FixedArray[5]>
+      4: 0x5ba06504179 ; (literal 1) 0x5ba06504179 <the hole>
+  translating frame match => node=3, height=8
+    0x7fff5fbfe738: [top + 48] <- 0x35438f1c40b1 ;  0x35438f1c40b1 <a Parser with map 0xa2459f24601>  (input #1)
+    0x7fff5fbfe730: [top + 40] <- 0x35438f18fa91 ;  0x35438f18fa91 <a TokenType with map 0xa2459f1af71>  (input #2)
+    0x7fff5fbfe728: [top + 32] <- 0x3459969759b5 ;  caller's pc
+    0x7fff5fbfe720: [top + 24] <- 0x7fff5fbfe760 ;  caller's fp
+    0x7fff5fbfe718: [top + 16] <- 0x35438f19c749 ;  context    0x35438f19c749 <FixedArray[5]>  (input #3)
+    0x7fff5fbfe710: [top + 8] <- 0x254b751ac181 ;  function    0x254b751ac181 <JS Function match (SharedFunctionInfo 0x254b751a3d29)>  (input #0)
+    0x7fff5fbfe708: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #4)
+[deoptimizing (eager): end 0x254b751ac181 <JS Function match (SharedFunctionInfo 0x254b751a3d29)> @3 => node=3, pc=0x345996976072, state=NO_REGISTERS, alignment=no padding, took 0.031 ms]
+[removing optimized code for: match]
+[deoptimizing (DEOPT eager): begin 0x254b751acbc1 <JS Function updateContext (SharedFunctionInfo 0x254b751a5421)> (opt #11) @3, FP to SP delta: 32]
+            ;;; deoptimize at -1: wrong map
+  reading input frame updateContext => node=2, args=3, height=4; inputs:
+      0: 0x254b751acbc1 ; (frame function) 0x254b751acbc1 <JS Function updateContext (SharedFunctionInfo 0x254b751a5421)>
+      1: 0x35438f1c40b1 ; rbx 0x35438f1c40b1 <a Parser with map 0xa2459f24601>
+      2: 0x35438f190b71 ; [fp + 16] 0x35438f190b71 <a TokenType with map 0xa2459f1af71>
+      3: 0x35438f19c749 ; [fp - 24] 0x35438f19c749 <FixedArray[5]>
+      4: 0x5ba065041b9 ; (literal 1) 0x5ba065041b9 <undefined>
+      5: 0x5ba065041b9 ; (literal 1) 0x5ba065041b9 <undefined>
+      6: 0x5ba06504179 ; (literal 2) 0x5ba06504179 <the hole>
+  translating frame updateContext => node=3, height=24
+    0x7fff5fbfe738: [top + 64] <- 0x35438f1c40b1 ;  0x35438f1c40b1 <a Parser with map 0xa2459f24601>  (input #1)
+    0x7fff5fbfe730: [top + 56] <- 0x35438f190b71 ;  0x35438f190b71 <a TokenType with map 0xa2459f1af71>  (input #2)
+    0x7fff5fbfe728: [top + 48] <- 0x345996975fa7 ;  caller's pc
+    0x7fff5fbfe720: [top + 40] <- 0x7fff5fbfe760 ;  caller's fp
+    0x7fff5fbfe718: [top + 32] <- 0x35438f19c749 ;  context    0x35438f19c749 <FixedArray[5]>  (input #3)
+    0x7fff5fbfe710: [top + 24] <- 0x254b751acbc1 ;  function    0x254b751acbc1 <JS Function updateContext (SharedFunctionInfo 0x254b751a5421)>  (input #0)
+    0x7fff5fbfe708: [top + 16] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfe700: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #5)
+    0x7fff5fbfe6f8: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #6)
+[deoptimizing (eager): end 0x254b751acbc1 <JS Function updateContext (SharedFunctionInfo 0x254b751a5421)> @3 => node=3, pc=0x345996976295, state=NO_REGISTERS, alignment=no padding, took 0.055 ms]
+[removing optimized code for: updateContext]
+[deoptimizing (DEOPT eager): begin 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)> (opt #12) @3, FP to SP delta: 112]
+            ;;; deoptimize at 148406: wrong map
+  reading input frame next => node=1, args=17, height=2; inputs:
+      0: 0x254b751ac0f1 ; (frame function) 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>
+      1: 0x35438f1c40b1 ; rdx 0x35438f1c40b1 <a Parser with map 0xa2459f24601>
+      2: 0x35438f19c749 ; [fp - 24] 0x35438f19c749 <FixedArray[5]>
+      3: 0x254b751ac0f1 ; rbx 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>
+  translating frame next => node=17, height=8
+    0x7fff5fbfe6f8: [top + 40] <- 0x35438f1c40b1 ;  0x35438f1c40b1 <a Parser with map 0xa2459f24601>  (input #1)
+    0x7fff5fbfe6f0: [top + 32] <- 0x34599697fcf8 ;  caller's pc
+    0x7fff5fbfe6e8: [top + 24] <- 0x7fff5fbfe720 ;  caller's fp
+    0x7fff5fbfe6e0: [top + 16] <- 0x35438f19c749 ;  context    0x35438f19c749 <FixedArray[5]>  (input #2)
+    0x7fff5fbfe6d8: [top + 8] <- 0x254b751ac0f1 ;  function    0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>  (input #0)
+    0x7fff5fbfe6d0: [top + 0] <- 0x254b751ac0f1 ;  0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>  (input #3)
+[deoptimizing (eager): end 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)> @3 => node=17, pc=0x3459969801d6, state=NO_REGISTERS, alignment=no padding, took 0.027 ms]
+[removing optimized code for: next]
+[deoptimizing (DEOPT eager): begin 0x35438f19c599 <JS Function Token (SharedFunctionInfo 0x254b751a3551)> (opt #13) @6, FP to SP delta: 72]
+            ;;; deoptimize at 192218: wrong map
+  reading input frame Token => node=2, args=16, height=2; inputs:
+      0: 0x35438f19c599 ; (frame function) 0x35438f19c599 <JS Function Token (SharedFunctionInfo 0x254b751a3551)>
+      1: 0x35438f1ea581 ; [fp + 24] 0x35438f1ea581 <a Token with map 0xa2459f24c31>
+      2: 0x35438f1c4731 ; rbx 0x35438f1c4731 <a State with map 0xa2459f264f1>
+      3: 0x35438f18c3d1 ; [fp - 24] 0x35438f18c3d1 <FixedArray[13]>
+      4: 0x5ba065041b9 ; (literal 4) 0x5ba065041b9 <undefined>
+  translating frame Token => node=16, height=8
+    0x7fff5fbfe670: [top + 48] <- 0x35438f1ea581 ;  0x35438f1ea581 <a Token with map 0xa2459f24c31>  (input #1)
+    0x7fff5fbfe668: [top + 40] <- 0x35438f1c4731 ;  0x35438f1c4731 <a State with map 0xa2459f264f1>  (input #2)
+    0x7fff5fbfe660: [top + 32] <- 0x345996831147 ;  caller's pc
+    0x7fff5fbfe658: [top + 24] <- 0x7fff5fbfe6a0 ;  caller's fp
+    0x7fff5fbfe650: [top + 16] <- 0x35438f18c3d1 ;  context    0x35438f18c3d1 <FixedArray[13]>  (input #3)
+    0x7fff5fbfe648: [top + 8] <- 0x35438f19c599 ;  function    0x35438f19c599 <JS Function Token (SharedFunctionInfo 0x254b751a3551)>  (input #0)
+    0x7fff5fbfe640: [top + 0] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+[deoptimizing (eager): end 0x35438f19c599 <JS Function Token (SharedFunctionInfo 0x254b751a3551)> @6 => node=16, pc=0x345996980594, state=NO_REGISTERS, alignment=no padding, took 0.035 ms]
+[removing optimized code for: Token]
+[marking dependent code 0x3459969b57c1 (opt #12) for deoptimization, reason: transition]
+[marking dependent code 0x3459969b2801 (opt #13) for deoptimization, reason: transition]
+[deoptimize marked code in all contexts]
+[deoptimizing (DEOPT eager): begin 0x254b751ac2a1 <JS Function curContext (SharedFunctionInfo 0x254b751a3fc9)> (opt #6) @3, FP to SP delta: 24]
+            ;;; deoptimize at -1: wrong map
+  reading input frame curContext => node=1, args=3, height=2; inputs:
+      0: 0x254b751ac2a1 ; (frame function) 0x254b751ac2a1 <JS Function curContext (SharedFunctionInfo 0x254b751a3fc9)>
+      1: 0x35438f1c40b1 ; rax 0x35438f1c40b1 <a Parser with map 0xa2459f24601>
+      2: 0x35438f19c749 ; [fp - 24] 0x35438f19c749 <FixedArray[5]>
+      3: 0x5ba06504179 ; (literal 1) 0x5ba06504179 <the hole>
+  translating frame curContext => node=3, height=8
+    0x7fff5fbfe680: [top + 40] <- 0x35438f1c40b1 ;  0x35438f1c40b1 <a Parser with map 0xa2459f24601>  (input #1)
+    0x7fff5fbfe678: [top + 32] <- 0x345996970186 ;  caller's pc
+    0x7fff5fbfe670: [top + 24] <- 0x7fff5fbfe6b0 ;  caller's fp
+    0x7fff5fbfe668: [top + 16] <- 0x35438f19c749 ;  context    0x35438f19c749 <FixedArray[5]>  (input #2)
+    0x7fff5fbfe660: [top + 8] <- 0x254b751ac2a1 ;  function    0x254b751ac2a1 <JS Function curContext (SharedFunctionInfo 0x254b751a3fc9)>  (input #0)
+    0x7fff5fbfe658: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #3)
+[deoptimizing (eager): end 0x254b751ac2a1 <JS Function curContext (SharedFunctionInfo 0x254b751a3fc9)> @3 => node=3, pc=0x345996970692, state=NO_REGISTERS, alignment=no padding, took 0.023 ms]
+[removing optimized code for: curContext]
+[deoptimizing (DEOPT eager): begin 0x254b751abe99 <JS Function curPosition (SharedFunctionInfo 0x254b751ab919)> (opt #2) @4, FP to SP delta: 56]
+            ;;; deoptimize at 176363: wrong map
+  reading input frame curPosition => node=1, args=3, height=2; inputs:
+      0: 0x254b751abe99 ; (frame function) 0x254b751abe99 <JS Function curPosition (SharedFunctionInfo 0x254b751ab919)>
+      1: 0x35438f1c4731 ; rdx 0x35438f1c4731 <a State with map 0xa2459f264f1>
+      2: 0x35438f19c191 ; rbx 0x35438f19c191 <FixedArray[5]>
+      3: 0x5ba06504179 ; (literal 3) 0x5ba06504179 <the hole>
+  translating frame curPosition => node=3, height=8
+    0x7fff5fbfe678: [top + 40] <- 0x35438f1c4731 ;  0x35438f1c4731 <a State with map 0xa2459f264f1>  (input #1)
+    0x7fff5fbfe670: [top + 32] <- 0x345996970374 ;  caller's pc
+    0x7fff5fbfe668: [top + 24] <- 0x7fff5fbfe6b0 ;  caller's fp
+    0x7fff5fbfe660: [top + 16] <- 0x35438f19c191 ;  context    0x35438f19c191 <FixedArray[5]>  (input #2)
+    0x7fff5fbfe658: [top + 8] <- 0x254b751abe99 ;  function    0x254b751abe99 <JS Function curPosition (SharedFunctionInfo 0x254b751ab919)>  (input #0)
+    0x7fff5fbfe650: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #3)
+[deoptimizing (eager): end 0x254b751abe99 <JS Function curPosition (SharedFunctionInfo 0x254b751ab919)> @4 => node=3, pc=0x345996966bf2, state=NO_REGISTERS, alignment=no padding, took 0.019 ms]
+[removing optimized code for: curPosition]
+[deoptimizing (DEOPT eager): begin 0x254b751ac379 <JS Function fullCharCodeAtPos (SharedFunctionInfo 0x254b751a41c1)> (opt #3) @4, FP to SP delta: 24]
+            ;;; deoptimize at 151142: wrong map
+  reading input frame fullCharCodeAtPos => node=1, args=3, height=4; inputs:
+      0: 0x254b751ac379 ; (frame function) 0x254b751ac379 <JS Function fullCharCodeAtPos (SharedFunctionInfo 0x254b751a41c1)>
+      1: 0x35438f1c40b1 ; rbx 0x35438f1c40b1 <a Parser with map 0xa2459f24601>
+      2: 0x35438f19c749 ; [fp - 24] 0x35438f19c749 <FixedArray[5]>
+      3: 0x5ba065041b9 ; (literal 1) 0x5ba065041b9 <undefined>
+      4: 0x5ba065041b9 ; (literal 1) 0x5ba065041b9 <undefined>
+      5: 0x5ba06504179 ; (literal 2) 0x5ba06504179 <the hole>
+  translating frame fullCharCodeAtPos => node=3, height=24
+    0x7fff5fbfe670: [top + 56] <- 0x35438f1c40b1 ;  0x35438f1c40b1 <a Parser with map 0xa2459f24601>  (input #1)
+    0x7fff5fbfe668: [top + 48] <- 0x3459969705ca ;  caller's pc
+    0x7fff5fbfe660: [top + 40] <- 0x7fff5fbfe6b0 ;  caller's fp
+    0x7fff5fbfe658: [top + 32] <- 0x35438f19c749 ;  context    0x35438f19c749 <FixedArray[5]>  (input #2)
+    0x7fff5fbfe650: [top + 24] <- 0x254b751ac379 ;  function    0x254b751ac379 <JS Function fullCharCodeAtPos (SharedFunctionInfo 0x254b751a41c1)>  (input #0)
+    0x7fff5fbfe648: [top + 16] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #3)
+    0x7fff5fbfe640: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfe638: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #5)
+[deoptimizing (eager): end 0x254b751ac379 <JS Function fullCharCodeAtPos (SharedFunctionInfo 0x254b751a41c1)> @4 => node=3, pc=0x3459969717d5, state=NO_REGISTERS, alignment=no padding, took 0.035 ms]
+[removing optimized code for: fullCharCodeAtPos]
+[deoptimizing (DEOPT eager): begin 0x35438f1c7cb9 <JS Function (SharedFunctionInfo 0x254b751c2689)> (opt #7) @3, FP to SP delta: 24]
+            ;;; deoptimize at -1: wrong map
+  reading input frame  => node=2, args=3, height=1; inputs:
+      0: 0x35438f1c7cb9 ; (frame function) 0x35438f1c7cb9 <JS Function (SharedFunctionInfo 0x254b751c2689)>
+      1: 0x35438f1c40b1 ; rax 0x35438f1c40b1 <a Parser with map 0xa2459f24601>
+      2: 0x3b00000000 ; [fp + 16] 59
+      3: 0x35438f1c7c81 ; [fp - 24] 0x35438f1c7c81 <FixedArray[5]>
+  translating frame  => node=3, height=0
+    0x7fff5fbfe680: [top + 40] <- 0x35438f1c40b1 ;  0x35438f1c40b1 <a Parser with map 0xa2459f24601>  (input #1)
+    0x7fff5fbfe678: [top + 32] <- 0x3b00000000 ;  59  (input #2)
+    0x7fff5fbfe670: [top + 24] <- 0x3459969705e6 ;  caller's pc
+    0x7fff5fbfe668: [top + 16] <- 0x7fff5fbfe6b0 ;  caller's fp
+    0x7fff5fbfe660: [top + 8] <- 0x35438f1c7c81 ;  context    0x35438f1c7c81 <FixedArray[5]>  (input #3)
+    0x7fff5fbfe658: [top + 0] <- 0x35438f1c7cb9 ;  function    0x35438f1c7cb9 <JS Function (SharedFunctionInfo 0x254b751c2689)>  (input #0)
+[deoptimizing (eager): end 0x35438f1c7cb9 <JS Function (SharedFunctionInfo 0x254b751c2689)> @3 => node=3, pc=0x345996971aa6, state=NO_REGISTERS, alignment=no padding, took 0.017 ms]
+[removing optimized code for: ]
+[deoptimizing (DEOPT eager): begin 0x254b751ac331 <JS Function readToken (SharedFunctionInfo 0x254b751a4119)> (opt #8) @18, FP to SP delta: 112]
+            ;;; deoptimize at 173540: wrong map
+  reading input frame readToken => node=2, args=54, height=3; inputs:
+      0: 0x254b751ac331 ; (frame function) 0x254b751ac331 <JS Function readToken (SharedFunctionInfo 0x254b751a4119)>
+      1: 0x35438f1c40b1 ; rdx 0x35438f1c40b1 <a Parser with map 0xa2459f24601>
+      2: 0x6c00000000 ; [fp + 16] 108
+      3: 0x35438f19c749 ; [fp - 24] 0x35438f19c749 <FixedArray[5]>
+      4: 0x5ba065041b9 ; (literal 9) 0x5ba065041b9 <undefined>
+      5: 0x254b751acb31 ; (literal 13) 0x254b751acb31 <JS Function readWord (SharedFunctionInfo 0x254b751a52d1)>
+  reading input frame readWord => node=1, args=32, height=5; inputs:
+      0: 0x254b751acb31 ; (literal 13) 0x254b751acb31 <JS Function readWord (SharedFunctionInfo 0x254b751a52d1)>
+      1: 0x35438f1c40b1 ; rdx 0x35438f1c40b1 <a Parser with map 0xa2459f24601>
+      2: 0x35438f19c749 ; (literal 14) 0x35438f19c749 <FixedArray[5]>
+      3: 0x5ba065041b9 ; (literal 9) 0x5ba065041b9 <undefined>
+      4: 0x5ba065041b9 ; (literal 9) 0x5ba065041b9 <undefined>
+      5: 0x5ba065041b9 ; (literal 9) 0x5ba065041b9 <undefined>
+      6: 0x35438f1eb591 ; rax 0x35438f1eb591 <String[3]: let>
+  translating frame readToken => node=54, height=16
+    0x7fff5fbfe900: [top + 56] <- 0x35438f1c40b1 ;  0x35438f1c40b1 <a Parser with map 0xa2459f24601>  (input #1)
+    0x7fff5fbfe8f8: [top + 48] <- 0x6c00000000 ;  108  (input #2)
+    0x7fff5fbfe8f0: [top + 40] <- 0x345996972385 ;  caller's pc
+    0x7fff5fbfe8e8: [top + 32] <- 0x7fff5fbfe928 ;  caller's fp
+    0x7fff5fbfe8e0: [top + 24] <- 0x35438f19c749 ;  context    0x35438f19c749 <FixedArray[5]>  (input #3)
+    0x7fff5fbfe8d8: [top + 16] <- 0x254b751ac331 ;  function    0x254b751ac331 <JS Function readToken (SharedFunctionInfo 0x254b751a4119)>  (input #0)
+    0x7fff5fbfe8d0: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfe8c8: [top + 0] <- 0x254b751acb31 ;  0x254b751acb31 <JS Function readWord (SharedFunctionInfo 0x254b751a52d1)>  (input #5)
+  translating frame readWord => node=32, height=32
+    0x7fff5fbfe8c0: [top + 64] <- 0x35438f1c40b1 ;  0x35438f1c40b1 <a Parser with map 0xa2459f24601>  (input #1)
+    0x7fff5fbfe8b8: [top + 56] <- 0x3459969727ab ;  caller's pc
+    0x7fff5fbfe8b0: [top + 48] <- 0x7fff5fbfe8e8 ;  caller's fp
+    0x7fff5fbfe8a8: [top + 40] <- 0x35438f19c749 ;  context    0x35438f19c749 <FixedArray[5]>  (input #2)
+    0x7fff5fbfe8a0: [top + 32] <- 0x254b751acb31 ;  function    0x254b751acb31 <JS Function readWord (SharedFunctionInfo 0x254b751a52d1)>  (input #0)
+    0x7fff5fbfe898: [top + 24] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #3)
+    0x7fff5fbfe890: [top + 16] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfe888: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #5)
+    0x7fff5fbfe880: [top + 0] <- 0x35438f1eb591 ;  0x35438f1eb591 <String[3]: let>  (input #6)
+[deoptimizing (eager): end 0x254b751ac331 <JS Function readToken (SharedFunctionInfo 0x254b751a4119)> @18 => node=32, pc=0x345996985f8f, state=TOS_REG, alignment=no padding, took 0.060 ms]
+[removing optimized code for: readToken]
+[deoptimizing (DEOPT soft): begin 0x35438f1891f9 <JS Function isIdentifierStart (SharedFunctionInfo 0x254b751a25c1)> (opt #9) @6, FP to SP delta: 40]
+            ;;; deoptimize at 189259: Insufficient type feedback for combined type of binary operation
+  reading input frame isIdentifierStart => node=2, args=41, height=1; inputs:
+      0: 0x35438f1891f9 ; (frame function) 0x35438f1891f9 <JS Function isIdentifierStart (SharedFunctionInfo 0x254b751a25c1)>
+      1: 0x35438f188221 ; [fp + 24] 0x35438f188221 <an Object with map 0xa2459f19449>
+      2: 0x5b00000000 ; [fp + 16] 91
+      3: 0x35438f189111 ; [fp - 24] 0x35438f189111 <FixedArray[9]>
+  translating frame isIdentifierStart => node=41, height=0
+    0x7fff5fbfe5f0: [top + 40] <- 0x35438f188221 ;  0x35438f188221 <an Object with map 0xa2459f19449>  (input #1)
+    0x7fff5fbfe5e8: [top + 32] <- 0x5b00000000 ;  91  (input #2)
+    0x7fff5fbfe5e0: [top + 24] <- 0x34599697272b ;  caller's pc
+    0x7fff5fbfe5d8: [top + 16] <- 0x7fff5fbfe618 ;  caller's fp
+    0x7fff5fbfe5d0: [top + 8] <- 0x35438f189111 ;  context    0x35438f189111 <FixedArray[9]>  (input #3)
+    0x7fff5fbfe5c8: [top + 0] <- 0x35438f1891f9 ;  function    0x35438f1891f9 <JS Function isIdentifierStart (SharedFunctionInfo 0x254b751a25c1)>  (input #0)
+[deoptimizing (soft): end 0x35438f1891f9 <JS Function isIdentifierStart (SharedFunctionInfo 0x254b751a25c1)> @6 => node=41, pc=0x3459969729dc, state=NO_REGISTERS, alignment=no padding, took 0.025 ms]
+[removing optimized code for: isIdentifierStart]
+[deoptimizing (DEOPT soft): begin 0x35438f189241 <JS Function isIdentifierChar (SharedFunctionInfo 0x254b751a2669)> (opt #18) @1, FP to SP delta: 24]
+            ;;; deoptimize at 189763: Insufficient type feedback for combined type of binary operation
+  reading input frame isIdentifierChar => node=2, args=93, height=1; inputs:
+      0: 0x35438f189241 ; (frame function) 0x35438f189241 <JS Function isIdentifierChar (SharedFunctionInfo 0x254b751a2669)>
+      1: 0x35438f188221 ; [fp + 24] 0x35438f188221 <an Object with map 0xa2459f19449>
+      2: 0x7b00000000 ; [fp + 16] 123
+      3: 0x35438f189111 ; [fp - 24] 0x35438f189111 <FixedArray[9]>
+  translating frame isIdentifierChar => node=93, height=0
+    0x7fff5fbfe3e0: [top + 40] <- 0x35438f188221 ;  0x35438f188221 <an Object with map 0xa2459f19449>  (input #1)
+    0x7fff5fbfe3d8: [top + 32] <- 0x7b00000000 ;  123  (input #2)
+    0x7fff5fbfe3d0: [top + 24] <- 0x3459969863c5 ;  caller's pc
+    0x7fff5fbfe3c8: [top + 16] <- 0x7fff5fbfe438 ;  caller's fp
+    0x7fff5fbfe3c0: [top + 8] <- 0x35438f189111 ;  context    0x35438f189111 <FixedArray[9]>  (input #3)
+    0x7fff5fbfe3b8: [top + 0] <- 0x35438f189241 ;  function    0x35438f189241 <JS Function isIdentifierChar (SharedFunctionInfo 0x254b751a2669)>  (input #0)
+[deoptimizing (soft): end 0x35438f189241 <JS Function isIdentifierChar (SharedFunctionInfo 0x254b751a2669)> @1 => node=93, pc=0x345996986e0b, state=NO_REGISTERS, alignment=no padding, took 0.050 ms]
+[removing optimized code for: isIdentifierChar]
+[deoptimizing (DEOPT eager): begin 0x254b751ac139 <JS Function eat (SharedFunctionInfo 0x254b751a3c81)> (opt #23) @53, FP to SP delta: 104]
+            ;;; deoptimize at 150506: unexpected object
+  reading input frame eat => node=2, args=41, height=3; inputs:
+      0: 0x254b751ac139 ; (frame function) 0x254b751ac139 <JS Function eat (SharedFunctionInfo 0x254b751a3c81)>
+      1: 0x35438f1c40b1 ; rax 0x35438f1c40b1 <a Parser with map 0xa2459f24601>
+      2: 0x35438f18fb41 ; [fp + 16] 0x35438f18fb41 <a TokenType with map 0xa2459f1af71>
+      3: 0x35438f19c749 ; [fp - 24] 0x35438f19c749 <FixedArray[5]>
+      4: 0x5ba065041b9 ; (literal 12) 0x5ba065041b9 <undefined>
+      5: 0x254b751ac0f1 ; (literal 15) 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>
+  reading input frame next => node=1, args=214, height=3; inputs:
+      0: 0x254b751ac0f1 ; (literal 15) 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>
+      1: 0x35438f1c40b1 ; rax 0x35438f1c40b1 <a Parser with map 0xa2459f24601>
+      2: 0x35438f19c749 ; (literal 14) 0x35438f19c749 <FixedArray[5]>
+      3: 0x254b751ac0f1 ; (literal 15) 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>
+      4: 0x254b751ac2e9 ; (literal 23) 0x254b751ac2e9 <JS Function nextToken (SharedFunctionInfo 0x254b751a4071)>
+  reading input frame nextToken => node=1, args=203, height=3; inputs:
+      0: 0x254b751ac2e9 ; (literal 23) 0x254b751ac2e9 <JS Function nextToken (SharedFunctionInfo 0x254b751a4071)>
+      1: 0x35438f1c40b1 ; rax 0x35438f1c40b1 <a Parser with map 0xa2459f24601>
+      2: 0x35438f19c749 ; (literal 14) 0x35438f19c749 <FixedArray[5]>
+      3: 0x35438f19b2c1 ; rcx 0x35438f19b2c1 <a TokContext with map 0xa2459f1d019>
+      4: 0x5ba065041b9 ; (literal 12) 0x5ba065041b9 <undefined>
+  translating frame eat => node=41, height=16
+    0x7fff5fbfe6c8: [top + 56] <- 0x35438f1c40b1 ;  0x35438f1c40b1 <a Parser with map 0xa2459f24601>  (input #1)
+    0x7fff5fbfe6c0: [top + 48] <- 0x35438f18fb41 ;  0x35438f18fb41 <a TokenType with map 0xa2459f1af71>  (input #2)
+    0x7fff5fbfe6b8: [top + 40] <- 0x34599699c5b3 ;  caller's pc
+    0x7fff5fbfe6b0: [top + 32] <- 0x7fff5fbfe6e8 ;  caller's fp
+    0x7fff5fbfe6a8: [top + 24] <- 0x35438f19c749 ;  context    0x35438f19c749 <FixedArray[5]>  (input #3)
+    0x7fff5fbfe6a0: [top + 16] <- 0x254b751ac139 ;  function    0x254b751ac139 <JS Function eat (SharedFunctionInfo 0x254b751a3c81)>  (input #0)
+    0x7fff5fbfe698: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfe690: [top + 0] <- 0x254b751ac0f1 ;  0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>  (input #5)
+  translating frame next => node=214, height=16
+    0x7fff5fbfe688: [top + 48] <- 0x35438f1c40b1 ;  0x35438f1c40b1 <a Parser with map 0xa2459f24601>  (input #1)
+    0x7fff5fbfe680: [top + 40] <- 0x3459969771d9 ;  caller's pc
+    0x7fff5fbfe678: [top + 32] <- 0x7fff5fbfe6b0 ;  caller's fp
+    0x7fff5fbfe670: [top + 24] <- 0x35438f19c749 ;  context    0x35438f19c749 <FixedArray[5]>  (input #2)
+    0x7fff5fbfe668: [top + 16] <- 0x254b751ac0f1 ;  function    0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>  (input #0)
+    0x7fff5fbfe660: [top + 8] <- 0x254b751ac0f1 ;  0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>  (input #3)
+    0x7fff5fbfe658: [top + 0] <- 0x254b751ac2e9 ;  0x254b751ac2e9 <JS Function nextToken (SharedFunctionInfo 0x254b751a4071)>  (input #4)
+  translating frame nextToken => node=203, height=16
+    0x7fff5fbfe650: [top + 48] <- 0x35438f1c40b1 ;  0x35438f1c40b1 <a Parser with map 0xa2459f24601>  (input #1)
+    0x7fff5fbfe648: [top + 40] <- 0x345996980490 ;  caller's pc
+    0x7fff5fbfe640: [top + 32] <- 0x7fff5fbfe678 ;  caller's fp
+    0x7fff5fbfe638: [top + 24] <- 0x35438f19c749 ;  context    0x35438f19c749 <FixedArray[5]>  (input #2)
+    0x7fff5fbfe630: [top + 16] <- 0x254b751ac2e9 ;  function    0x254b751ac2e9 <JS Function nextToken (SharedFunctionInfo 0x254b751a4071)>  (input #0)
+    0x7fff5fbfe628: [top + 8] <- 0x35438f19b2c1 ;  0x35438f19b2c1 <a TokContext with map 0xa2459f1d019>  (input #3)
+    0x7fff5fbfe620: [top + 0] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+[deoptimizing (eager): end 0x254b751ac139 <JS Function eat (SharedFunctionInfo 0x254b751a3c81)> @53 => node=203, pc=0x3459969704e7, state=NO_REGISTERS, alignment=no padding, took 0.087 ms]
+[removing optimized code for: eat]
+[deoptimizing (DEOPT eager): begin 0x35438e0761f9 <JS Function Node (SharedFunctionInfo 0x254b751b55d1)> (opt #5) @7, FP to SP delta: 56]
+            ;;; deoptimize at 192218: not a Smi
+  reading input frame Node => node=4, args=18, height=1; inputs:
+      0: 0x35438e0761f9 ; (frame function) 0x35438e0761f9 <JS Function Node (SharedFunctionInfo 0x254b751b55d1)>
+      1: 0x35438e0b0229 ; rbx 0x35438e0b0229 <a Node with map 0xa2459f246b1>
+      2: 0x5ba065041b9 ; [fp + 32] 0x5ba065041b9 <undefined>
+      3: 0x5ba065041b9 ; [fp + 24] 0x5ba065041b9 <undefined>
+      4: 0x5ba065041b9 ; [fp + 16] 0x5ba065041b9 <undefined>
+      5: 0x35438e070c19 ; [fp - 24] 0x35438e070c19 <FixedArray[5]>
+  translating frame Node => node=18, height=0
+    0x7fff5fbfe430: [top + 56] <- 0x35438e0b0229 ;  0x35438e0b0229 <a Node with map 0xa2459f246b1>  (input #1)
+    0x7fff5fbfe428: [top + 48] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #2)
+    0x7fff5fbfe420: [top + 40] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #3)
+    0x7fff5fbfe418: [top + 32] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfe410: [top + 24] <- 0x345996809ff7 ;  caller's pc
+    0x7fff5fbfe408: [top + 16] <- 0x7fff5fbfe450 ;  caller's fp
+    0x7fff5fbfe400: [top + 8] <- 0x35438e070c19 ;  context    0x35438e070c19 <FixedArray[5]>  (input #5)
+    0x7fff5fbfe3f8: [top + 0] <- 0x35438e0761f9 ;  function    0x35438e0761f9 <JS Function Node (SharedFunctionInfo 0x254b751b55d1)>  (input #0)
+[deoptimizing (eager): end 0x35438e0761f9 <JS Function Node (SharedFunctionInfo 0x254b751b55d1)> @7 => node=18, pc=0x34599696f5c1, state=NO_REGISTERS, alignment=no padding, took 0.034 ms]
+[removing optimized code for: Node]
+[marking dependent code 0x3459969ca0c1 (opt #30) for deoptimization, reason: transition]
+[marking dependent code 0x3459969a96c1 (opt #5) for deoptimization, reason: transition]
+[deoptimize marked code in all contexts]
+[deoptimizer unlinked: pp.startNode / 254b751b5df9]
+[deoptimizing (DEOPT eager): begin 0x35438e0044c1 <JS Function SourceLocation (SharedFunctionInfo 0x254b751ab3b9)> (opt #4) @8, FP to SP delta: 40]
+            ;;; deoptimize at 192218: wrong map
+  reading input frame SourceLocation => node=3, args=16, height=2; inputs:
+      0: 0x35438e0044c1 ; (frame function) 0x35438e0044c1 <JS Function SourceLocation (SharedFunctionInfo 0x254b751ab3b9)>
+      1: 0x35438e0b0361 ; rax 0x35438e0b0361 <a SourceLocation with map 0xa2459f247b9>
+      2: 0x5ba065041b9 ; rbx 0x5ba065041b9 <undefined>
+      3: 0x5ba065041b9 ; [fp + 16] 0x5ba065041b9 <undefined>
+      4: 0x35438e07ad19 ; [fp - 24] 0x35438e07ad19 <FixedArray[7]>
+      5: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+  translating frame SourceLocation => node=16, height=8
+    0x7fff5fbfe368: [top + 56] <- 0x35438e0b0361 ;  0x35438e0b0361 <a SourceLocation with map 0xa2459f247b9>  (input #1)
+    0x7fff5fbfe360: [top + 48] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #2)
+    0x7fff5fbfe358: [top + 40] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #3)
+    0x7fff5fbfe350: [top + 32] <- 0x345996809ff7 ;  caller's pc
+    0x7fff5fbfe348: [top + 24] <- 0x7fff5fbfe388 ;  caller's fp
+    0x7fff5fbfe340: [top + 16] <- 0x35438e07ad19 ;  context    0x35438e07ad19 <FixedArray[7]>  (input #4)
+    0x7fff5fbfe338: [top + 8] <- 0x35438e0044c1 ;  function    0x35438e0044c1 <JS Function SourceLocation (SharedFunctionInfo 0x254b751ab3b9)>  (input #0)
+    0x7fff5fbfe330: [top + 0] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #5)
+[deoptimizing (eager): end 0x35438e0044c1 <JS Function SourceLocation (SharedFunctionInfo 0x254b751ab3b9)> @8 => node=16, pc=0x34599696f7b4, state=NO_REGISTERS, alignment=no padding, took 0.046 ms]
+[removing optimized code for: SourceLocation]
+[marking dependent code 0x3459969c0ec1 (opt #23) for deoptimization, reason: field-type]
+[marking dependent code 0x3459969a68a1 (opt #4) for deoptimization, reason: field-type]
+[deoptimize marked code in all contexts]
+[marking dependent code 0x3459969dc521 (opt #41) for deoptimization, reason: prototype-check]
+[marking dependent code 0x3459969ad7a1 (opt #10) for deoptimization, reason: prototype-check]
+[marking dependent code 0x3459969d3e41 (opt #35) for deoptimization, reason: prototype-check]
+[marking dependent code 0x3459969dfbc1 (opt #43) for deoptimization, reason: prototype-check]
+[marking dependent code 0x3459969e0a41 (opt #46) for deoptimization, reason: prototype-check]
+[marking dependent code 0x3459969d6081 (opt #36) for deoptimization, reason: prototype-check]
+[marking dependent code 0x3459969e3821 (opt #45) for deoptimization, reason: prototype-check]
+[marking dependent code 0x3459969d95a1 (opt #38) for deoptimization, reason: prototype-check]
+[marking dependent code 0x3459969e61a1 (opt #49) for deoptimization, reason: prototype-check]
+[marking dependent code 0x3459969c9141 (opt #28) for deoptimization, reason: prototype-check]
+[marking dependent code 0x3459969acbc1 (opt #8) for deoptimization, reason: prototype-check]
+[marking dependent code 0x3459969eb361 (opt #51) for deoptimization, reason: prototype-check]
+[marking dependent code 0x3459969c80c1 (opt #26) for deoptimization, reason: prototype-check]
+[deoptimize marked code in all contexts]
+[deoptimizer unlinked: pp.expect / 254b751ae0f9]
+[deoptimizer unlinked: _types.types.name.updateContext / 254b751aafa9]
+[deoptimizer unlinked: skipSpace / 254b751ac4b1]
+[deoptimizer unlinked: pp.parseExprSubscripts / 254b751b4a99]
+[deoptimizer unlinked: readWord1 / 254b751acae9]
+[deoptimizer unlinked:  / 35438e077601]
+[deoptimizer unlinked: next / 254b751ac0f1]
+[deoptimizer unlinked: eat / 254b751ac139]
+[deoptimizer unlinked: readToken / 254b751ac331]
+[deoptimizer unlinked: readWord / 254b751acb31]
+[deoptimizer unlinked: finishToken / 254b751ac4f9]
+[deoptimizing (DEOPT eager): begin 0x254b751ac2a1 <JS Function curContext (SharedFunctionInfo 0x254b751a3fc9)> (opt #22) @2, FP to SP delta: 24]
+            ;;; deoptimize at -1: wrong map
+  reading input frame curContext => node=1, args=3, height=2; inputs:
+      0: 0x254b751ac2a1 ; (frame function) 0x254b751ac2a1 <JS Function curContext (SharedFunctionInfo 0x254b751a3fc9)>
+      1: 0x35438e004659 ; rax 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e004601 ; [fp - 24] 0x35438e004601 <FixedArray[5]>
+      3: 0x5ba06504179 ; (literal 1) 0x5ba06504179 <the hole>
+  translating frame curContext => node=3, height=8
+    0x7fff5fbfd7a0: [top + 40] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd798: [top + 32] <- 0x345996970186 ;  caller's pc
+    0x7fff5fbfd790: [top + 24] <- 0x7fff5fbfd7d0 ;  caller's fp
+    0x7fff5fbfd788: [top + 16] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #2)
+    0x7fff5fbfd780: [top + 8] <- 0x254b751ac2a1 ;  function    0x254b751ac2a1 <JS Function curContext (SharedFunctionInfo 0x254b751a3fc9)>  (input #0)
+    0x7fff5fbfd778: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #3)
+[deoptimizing (eager): end 0x254b751ac2a1 <JS Function curContext (SharedFunctionInfo 0x254b751a3fc9)> @2 => node=3, pc=0x345996970692, state=NO_REGISTERS, alignment=no padding, took 0.058 ms]
+[removing optimized code for: curContext]
+[deoptimizing (DEOPT eager): begin 0x254b751abe99 <JS Function curPosition (SharedFunctionInfo 0x254b751ab919)> (opt #21) @4, FP to SP delta: 56]
+            ;;; deoptimize at 176363: wrong map
+  reading input frame curPosition => node=1, args=3, height=2; inputs:
+      0: 0x254b751abe99 ; (frame function) 0x254b751abe99 <JS Function curPosition (SharedFunctionInfo 0x254b751ab919)>
+      1: 0x35438e1158e9 ; rdx 0x35438e1158e9 <a State with map 0xa2459f29041>
+      2: 0x35438e06ef41 ; rbx 0x35438e06ef41 <FixedArray[5]>
+      3: 0x5ba06504179 ; (literal 3) 0x5ba06504179 <the hole>
+  translating frame curPosition => node=3, height=8
+    0x7fff5fbfd798: [top + 40] <- 0x35438e1158e9 ;  0x35438e1158e9 <a State with map 0xa2459f29041>  (input #1)
+    0x7fff5fbfd790: [top + 32] <- 0x345996970374 ;  caller's pc
+    0x7fff5fbfd788: [top + 24] <- 0x7fff5fbfd7d0 ;  caller's fp
+    0x7fff5fbfd780: [top + 16] <- 0x35438e06ef41 ;  context    0x35438e06ef41 <FixedArray[5]>  (input #2)
+    0x7fff5fbfd778: [top + 8] <- 0x254b751abe99 ;  function    0x254b751abe99 <JS Function curPosition (SharedFunctionInfo 0x254b751ab919)>  (input #0)
+    0x7fff5fbfd770: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #3)
+[deoptimizing (eager): end 0x254b751abe99 <JS Function curPosition (SharedFunctionInfo 0x254b751ab919)> @4 => node=3, pc=0x345996966bf2, state=NO_REGISTERS, alignment=no padding, took 0.022 ms]
+[removing optimized code for: curPosition]
+[deoptimizing (DEOPT eager): begin 0x254b751ac379 <JS Function fullCharCodeAtPos (SharedFunctionInfo 0x254b751a41c1)> (opt #17) @2, FP to SP delta: 24]
+            ;;; deoptimize at 151142: wrong map
+  reading input frame fullCharCodeAtPos => node=1, args=3, height=4; inputs:
+      0: 0x254b751ac379 ; (frame function) 0x254b751ac379 <JS Function fullCharCodeAtPos (SharedFunctionInfo 0x254b751a41c1)>
+      1: 0x35438e004659 ; rbx 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e004601 ; [fp - 24] 0x35438e004601 <FixedArray[5]>
+      3: 0x5ba065041b9 ; (literal 1) 0x5ba065041b9 <undefined>
+      4: 0x5ba065041b9 ; (literal 1) 0x5ba065041b9 <undefined>
+      5: 0x5ba06504179 ; (literal 2) 0x5ba06504179 <the hole>
+  translating frame fullCharCodeAtPos => node=3, height=24
+    0x7fff5fbfd790: [top + 56] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd788: [top + 48] <- 0x3459969705ca ;  caller's pc
+    0x7fff5fbfd780: [top + 40] <- 0x7fff5fbfd7d0 ;  caller's fp
+    0x7fff5fbfd778: [top + 32] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #2)
+    0x7fff5fbfd770: [top + 24] <- 0x254b751ac379 ;  function    0x254b751ac379 <JS Function fullCharCodeAtPos (SharedFunctionInfo 0x254b751a41c1)>  (input #0)
+    0x7fff5fbfd768: [top + 16] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #3)
+    0x7fff5fbfd760: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfd758: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #5)
+[deoptimizing (eager): end 0x254b751ac379 <JS Function fullCharCodeAtPos (SharedFunctionInfo 0x254b751a41c1)> @2 => node=3, pc=0x3459969717d5, state=NO_REGISTERS, alignment=no padding, took 0.025 ms]
+[removing optimized code for: fullCharCodeAtPos]
+[deoptimizing (DEOPT eager): begin 0x35438e076cb1 <JS Function (SharedFunctionInfo 0x254b751c2689)> (opt #24) @2, FP to SP delta: 24]
+            ;;; deoptimize at -1: wrong map
+  reading input frame  => node=2, args=3, height=1; inputs:
+      0: 0x35438e076cb1 ; (frame function) 0x35438e076cb1 <JS Function (SharedFunctionInfo 0x254b751c2689)>
+      1: 0x35438e004659 ; rax 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x6100000000 ; [fp + 16] 97
+      3: 0x35438e085721 ; [fp - 24] 0x35438e085721 <FixedArray[5]>
+  translating frame  => node=3, height=0
+    0x7fff5fbfd7a0: [top + 40] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd798: [top + 32] <- 0x6100000000 ;  97  (input #2)
+    0x7fff5fbfd790: [top + 24] <- 0x3459969705e6 ;  caller's pc
+    0x7fff5fbfd788: [top + 16] <- 0x7fff5fbfd7d0 ;  caller's fp
+    0x7fff5fbfd780: [top + 8] <- 0x35438e085721 ;  context    0x35438e085721 <FixedArray[5]>  (input #3)
+    0x7fff5fbfd778: [top + 0] <- 0x35438e076cb1 ;  function    0x35438e076cb1 <JS Function (SharedFunctionInfo 0x254b751c2689)>  (input #0)
+[deoptimizing (eager): end 0x35438e076cb1 <JS Function (SharedFunctionInfo 0x254b751c2689)> @2 => node=3, pc=0x345996971aa6, state=NO_REGISTERS, alignment=no padding, took 0.028 ms]
+[removing optimized code for: ]
+[deoptimizing (DEOPT eager): begin 0x35438e0856d9 <JS Function (SharedFunctionInfo 0x254b751bf801)> (opt #34) @2, FP to SP delta: 40]
+            ;;; deoptimize at 138360: wrong map
+  reading input frame  => node=2, args=3, height=2; inputs:
+      0: 0x35438e0856d9 ; (frame function) 0x35438e0856d9 <JS Function (SharedFunctionInfo 0x254b751bf801)>
+      1: 0x35438e004659 ; rax 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x6100000000 ; [fp + 16] 97
+      3: 0x35438e08d3f1 ; [fp - 24] 0x35438e08d3f1 <FixedArray[5]>
+      4: 0x5ba065041b9 ; (literal 2) 0x5ba065041b9 <undefined>
+  translating frame  => node=3, height=8
+    0x7fff5fbfd768: [top + 48] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd760: [top + 40] <- 0x6100000000 ;  97  (input #2)
+    0x7fff5fbfd758: [top + 32] <- 0x345996971c75 ;  caller's pc
+    0x7fff5fbfd750: [top + 24] <- 0x7fff5fbfd788 ;  caller's fp
+    0x7fff5fbfd748: [top + 16] <- 0x35438e08d3f1 ;  context    0x35438e08d3f1 <FixedArray[5]>  (input #3)
+    0x7fff5fbfd740: [top + 8] <- 0x35438e0856d9 ;  function    0x35438e0856d9 <JS Function (SharedFunctionInfo 0x254b751bf801)>  (input #0)
+    0x7fff5fbfd738: [top + 0] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+[deoptimizing (eager): end 0x35438e0856d9 <JS Function (SharedFunctionInfo 0x254b751bf801)> @2 => node=3, pc=0x345996971d0a, state=NO_REGISTERS, alignment=no padding, took 0.019 ms]
+[removing optimized code for: ]
+[deoptimizing (DEOPT eager): begin 0x35438e078d29 <JS Function (SharedFunctionInfo 0x254b751c24c1)> (opt #29) @2, FP to SP delta: 24]
+            ;;; deoptimize at -1: wrong map
+  reading input frame  => node=2, args=3, height=1; inputs:
+      0: 0x35438e078d29 ; (frame function) 0x35438e078d29 <JS Function (SharedFunctionInfo 0x254b751c24c1)>
+      1: 0x35438e004659 ; rax 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x5ba0653eae1 ; [fp + 16] 0x5ba0653eae1 <String[1]: a>
+      3: 0x35438e07b4d9 ; [fp - 24] 0x35438e07b4d9 <FixedArray[5]>
+  translating frame  => node=3, height=0
+    0x7fff5fbfd6a0: [top + 40] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd698: [top + 32] <- 0x5ba0653eae1 ;  0x5ba0653eae1 <String[1]: a>  (input #2)
+    0x7fff5fbfd690: [top + 24] <- 0x345996986060 ;  caller's pc
+    0x7fff5fbfd688: [top + 16] <- 0x7fff5fbfd6d8 ;  caller's fp
+    0x7fff5fbfd680: [top + 8] <- 0x35438e07b4d9 ;  context    0x35438e07b4d9 <FixedArray[5]>  (input #3)
+    0x7fff5fbfd678: [top + 0] <- 0x35438e078d29 ;  function    0x35438e078d29 <JS Function (SharedFunctionInfo 0x254b751c24c1)>  (input #0)
+[deoptimizing (eager): end 0x35438e078d29 <JS Function (SharedFunctionInfo 0x254b751c24c1)> @2 => node=3, pc=0x345996987146, state=NO_REGISTERS, alignment=no padding, took 0.020 ms]
+[removing optimized code for: ]
+[deoptimizing (DEOPT eager): begin 0x254b751ac181 <JS Function match (SharedFunctionInfo 0x254b751a3d29)> (opt #16) @2, FP to SP delta: 24]
+            ;;; deoptimize at 148928: wrong map
+  reading input frame match => node=2, args=3, height=2; inputs:
+      0: 0x254b751ac181 ; (frame function) 0x254b751ac181 <JS Function match (SharedFunctionInfo 0x254b751a3d29)>
+      1: 0x35438e004659 ; rax 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e08b309 ; [fp + 16] 0x35438e08b309 <a TokenType with map 0xa2459f1af71>
+      3: 0x35438e004601 ; [fp - 24] 0x35438e004601 <FixedArray[5]>
+      4: 0x5ba06504179 ; (literal 1) 0x5ba06504179 <the hole>
+  translating frame match => node=3, height=8
+    0x7fff5fbfd610: [top + 48] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd608: [top + 40] <- 0x35438e08b309 ;  0x35438e08b309 <a TokenType with map 0xa2459f1af71>  (input #2)
+    0x7fff5fbfd600: [top + 32] <- 0x3459969759b5 ;  caller's pc
+    0x7fff5fbfd5f8: [top + 24] <- 0x7fff5fbfd638 ;  caller's fp
+    0x7fff5fbfd5f0: [top + 16] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #3)
+    0x7fff5fbfd5e8: [top + 8] <- 0x254b751ac181 ;  function    0x254b751ac181 <JS Function match (SharedFunctionInfo 0x254b751a3d29)>  (input #0)
+    0x7fff5fbfd5e0: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #4)
+[deoptimizing (eager): end 0x254b751ac181 <JS Function match (SharedFunctionInfo 0x254b751a3d29)> @2 => node=3, pc=0x345996976072, state=NO_REGISTERS, alignment=no padding, took 0.032 ms]
+[removing optimized code for: match]
+[deoptimizing (DEOPT eager): begin 0x254b751acbc1 <JS Function updateContext (SharedFunctionInfo 0x254b751a5421)> (opt #42) @2, FP to SP delta: 32]
+            ;;; deoptimize at -1: wrong map
+  reading input frame updateContext => node=2, args=3, height=4; inputs:
+      0: 0x254b751acbc1 ; (frame function) 0x254b751acbc1 <JS Function updateContext (SharedFunctionInfo 0x254b751a5421)>
+      1: 0x35438e004659 ; rbx 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e08b379 ; [fp + 16] 0x35438e08b379 <a TokenType with map 0xa2459f1af71>
+      3: 0x35438e004601 ; [fp - 24] 0x35438e004601 <FixedArray[5]>
+      4: 0x5ba065041b9 ; (literal 1) 0x5ba065041b9 <undefined>
+      5: 0x5ba065041b9 ; (literal 1) 0x5ba065041b9 <undefined>
+      6: 0x5ba06504179 ; (literal 2) 0x5ba06504179 <the hole>
+  translating frame updateContext => node=3, height=24
+    0x7fff5fbfd610: [top + 64] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd608: [top + 56] <- 0x35438e08b379 ;  0x35438e08b379 <a TokenType with map 0xa2459f1af71>  (input #2)
+    0x7fff5fbfd600: [top + 48] <- 0x345996975fa7 ;  caller's pc
+    0x7fff5fbfd5f8: [top + 40] <- 0x7fff5fbfd638 ;  caller's fp
+    0x7fff5fbfd5f0: [top + 32] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #3)
+    0x7fff5fbfd5e8: [top + 24] <- 0x254b751acbc1 ;  function    0x254b751acbc1 <JS Function updateContext (SharedFunctionInfo 0x254b751a5421)>  (input #0)
+    0x7fff5fbfd5e0: [top + 16] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfd5d8: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #5)
+    0x7fff5fbfd5d0: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #6)
+[deoptimizing (eager): end 0x254b751acbc1 <JS Function updateContext (SharedFunctionInfo 0x254b751a5421)> @2 => node=3, pc=0x345996976295, state=NO_REGISTERS, alignment=no padding, took 0.026 ms]
+[removing optimized code for: updateContext]
+[deoptimizing (DEOPT eager): begin 0x254b751ad199 <JS Function hasPlugin (SharedFunctionInfo 0x254b7519dc19)> (opt #27) @2, FP to SP delta: 32]
+  reading input frame hasPlugin => node=2, args=3, height=2; inputs:
+      0: 0x254b751ad199 ; (frame function) 0x254b751ad199 <JS Function hasPlugin (SharedFunctionInfo 0x254b7519dc19)>
+      1: 0x35438e004659 ; rbx 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x254b7514a871 ; [fp + 16] 0x254b7514a871 <String[22]: trailingFunctionCommas>
+      3: 0x35438e005081 ; [fp - 24] 0x35438e005081 <FixedArray[6]>
+      4: 0x5ba06504179 ; (literal 1) 0x5ba06504179 <the hole>
+  translating frame hasPlugin => node=3, height=8
+    0x7fff5fbfd828: [top + 48] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd820: [top + 40] <- 0x254b7514a871 ;  0x254b7514a871 <String[22]: trailingFunctionCommas>  (input #2)
+    0x7fff5fbfd818: [top + 32] <- 0x3459969e8012 ;  caller's pc
+    0x7fff5fbfd810: [top + 24] <- 0x7fff5fbfd890 ;  caller's fp
+    0x7fff5fbfd808: [top + 16] <- 0x35438e005081 ;  context    0x35438e005081 <FixedArray[6]>  (input #3)
+    0x7fff5fbfd800: [top + 8] <- 0x254b751ad199 ;  function    0x254b751ad199 <JS Function hasPlugin (SharedFunctionInfo 0x254b7519dc19)>  (input #0)
+    0x7fff5fbfd7f8: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #4)
+[deoptimizing (eager): end 0x254b751ad199 <JS Function hasPlugin (SharedFunctionInfo 0x254b7519dc19)> @2 => node=3, pc=0x34599698fdd2, state=NO_REGISTERS, alignment=no padding, took 0.035 ms]
+[removing optimized code for: hasPlugin]
+[deoptimizing (DEOPT eager): begin 0x35438e077ec1 <JS Function (SharedFunctionInfo 0x254b751bf5e1)> (opt #44) @2, FP to SP delta: 24]
+            ;;; deoptimize at 137848: wrong map
+  reading input frame  => node=2, args=3, height=2; inputs:
+      0: 0x35438e077ec1 ; (frame function) 0x35438e077ec1 <JS Function (SharedFunctionInfo 0x254b751bf5e1)>
+      1: 0x35438e004659 ; rax 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e118d59 ; [fp + 16] 0x35438e118d59 <an Object with map 0xa2459f24a79>
+      3: 0x35438e085f71 ; [fp - 24] 0x35438e085f71 <FixedArray[5]>
+      4: 0x5ba065041b9 ; (literal 2) 0x5ba065041b9 <undefined>
+  translating frame  => node=3, height=8
+    0x7fff5fbfd598: [top + 48] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd590: [top + 40] <- 0x35438e118d59 ;  0x35438e118d59 <an Object with map 0xa2459f24a79>  (input #2)
+    0x7fff5fbfd588: [top + 32] <- 0x34599697c5fb ;  caller's pc
+    0x7fff5fbfd580: [top + 24] <- 0x7fff5fbfd5d8 ;  caller's fp
+    0x7fff5fbfd578: [top + 16] <- 0x35438e085f71 ;  context    0x35438e085f71 <FixedArray[5]>  (input #3)
+    0x7fff5fbfd570: [top + 8] <- 0x35438e077ec1 ;  function    0x35438e077ec1 <JS Function (SharedFunctionInfo 0x254b751bf5e1)>  (input #0)
+    0x7fff5fbfd568: [top + 0] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+[deoptimizing (eager): end 0x35438e077ec1 <JS Function (SharedFunctionInfo 0x254b751bf5e1)> @2 => node=3, pc=0x34599697c80a, state=NO_REGISTERS, alignment=no padding, took 0.030 ms]
+[removing optimized code for: ]
+[deoptimizing (DEOPT eager): begin 0x254b751b5df9 <JS Function pp.startNode (SharedFunctionInfo 0x254b751b5889)> (opt #40) @2, FP to SP delta: 88]
+            ;;; deoptimize at 55275: wrong map
+  reading input frame pp.startNode => node=1, args=3, height=1; inputs:
+      0: 0x254b751b5df9 ; (frame function) 0x254b751b5df9 <JS Function pp.startNode (SharedFunctionInfo 0x254b751b5889)>
+      1: 0x35438e004659 ; rcx 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e070ca1 ; rbx 0x35438e070ca1 <FixedArray[8]>
+  translating frame pp.startNode => node=3, height=0
+    0x7fff5fbfd4c8: [top + 32] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd4c0: [top + 24] <- 0x34599697dce6 ;  caller's pc
+    0x7fff5fbfd4b8: [top + 16] <- 0x7fff5fbfd540 ;  caller's fp
+    0x7fff5fbfd4b0: [top + 8] <- 0x35438e070ca1 ;  context    0x35438e070ca1 <FixedArray[8]>  (input #2)
+    0x7fff5fbfd4a8: [top + 0] <- 0x254b751b5df9 ;  function    0x254b751b5df9 <JS Function pp.startNode (SharedFunctionInfo 0x254b751b5889)>  (input #0)
+[deoptimizing (eager): end 0x254b751b5df9 <JS Function pp.startNode (SharedFunctionInfo 0x254b751b5889)> @2 => node=3, pc=0x34599696f3c6, state=NO_REGISTERS, alignment=no padding, took 0.019 ms]
+[removing optimized code for: pp.startNode]
+[deoptimizing (DEOPT eager): begin 0x254b751b27c9 <JS Function pp.shouldAllowYieldIdentifier (SharedFunctionInfo 0x254b751b1f39)> (opt #50) @2, FP to SP delta: 24]
+            ;;; deoptimize at 50152: wrong map
+  reading input frame pp.shouldAllowYieldIdentifier => node=1, args=3, height=1; inputs:
+      0: 0x254b751b27c9 ; (frame function) 0x254b751b27c9 <JS Function pp.shouldAllowYieldIdentifier (SharedFunctionInfo 0x254b751b1f39)>
+      1: 0x35438e004659 ; rax 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e0704e9 ; [fp - 24] 0x35438e0704e9 <FixedArray[6]>
+  translating frame pp.shouldAllowYieldIdentifier => node=3, height=0
+    0x7fff5fbfd4c8: [top + 32] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd4c0: [top + 24] <- 0x34599697de5d ;  caller's pc
+    0x7fff5fbfd4b8: [top + 16] <- 0x7fff5fbfd540 ;  caller's fp
+    0x7fff5fbfd4b0: [top + 8] <- 0x35438e0704e9 ;  context    0x35438e0704e9 <FixedArray[6]>  (input #2)
+    0x7fff5fbfd4a8: [top + 0] <- 0x254b751b27c9 ;  function    0x254b751b27c9 <JS Function pp.shouldAllowYieldIdentifier (SharedFunctionInfo 0x254b751b1f39)>  (input #0)
+[deoptimizing (eager): end 0x254b751b27c9 <JS Function pp.shouldAllowYieldIdentifier (SharedFunctionInfo 0x254b751b1f39)> @2 => node=3, pc=0x3459969906c6, state=NO_REGISTERS, alignment=no padding, took 0.031 ms]
+[removing optimized code for: pp.shouldAllowYieldIdentifier]
+[deoptimizing (DEOPT eager): begin 0x254b751b5e89 <JS Function pp.finishNode (SharedFunctionInfo 0x254b751b59d9)> (opt #14) @4, FP to SP delta: 24]
+            ;;; deoptimize at 55705: wrong map
+  reading input frame pp.finishNode => node=3, args=3, height=1; inputs:
+      0: 0x254b751b5e89 ; (frame function) 0x254b751b5e89 <JS Function pp.finishNode (SharedFunctionInfo 0x254b751b59d9)>
+      1: 0x35438e004659 ; rbx 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e1195b1 ; [fp + 24] 0x35438e1195b1 <a Node with map 0xa2459f27411>
+      3: 0x254b75149961 ; [fp + 16] 0x254b75149961 <String[10]: Identifier>
+      4: 0x35438e070ca1 ; rax 0x35438e070ca1 <FixedArray[8]>
+  translating frame pp.finishNode => node=3, height=0
+    0x7fff5fbfd488: [top + 48] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd480: [top + 40] <- 0x35438e1195b1 ;  0x35438e1195b1 <a Node with map 0xa2459f27411>  (input #2)
+    0x7fff5fbfd478: [top + 32] <- 0x254b75149961 ;  0x254b75149961 <String[10]: Identifier>  (input #3)
+    0x7fff5fbfd470: [top + 24] <- 0x34599698ba69 ;  caller's pc
+    0x7fff5fbfd468: [top + 16] <- 0x7fff5fbfd4b0 ;  caller's fp
+    0x7fff5fbfd460: [top + 8] <- 0x35438e070ca1 ;  context    0x35438e070ca1 <FixedArray[8]>  (input #4)
+    0x7fff5fbfd458: [top + 0] <- 0x254b751b5e89 ;  function    0x254b751b5e89 <JS Function pp.finishNode (SharedFunctionInfo 0x254b751b59d9)>  (input #0)
+[deoptimizing (eager): end 0x254b751b5e89 <JS Function pp.finishNode (SharedFunctionInfo 0x254b751b59d9)> @4 => node=3, pc=0x345996981646, state=NO_REGISTERS, alignment=no padding, took 0.026 ms]
+[removing optimized code for: pp.finishNode]
+[deoptimizing (DEOPT eager): begin 0x254b751ae021 <JS Function pp.canInsertSemicolon (SharedFunctionInfo 0x254b751ad899)> (opt #48) @2, FP to SP delta: 32]
+            ;;; deoptimize at 90418: wrong map
+  reading input frame pp.canInsertSemicolon => node=1, args=3, height=1; inputs:
+      0: 0x254b751ae021 ; (frame function) 0x254b751ae021 <JS Function pp.canInsertSemicolon (SharedFunctionInfo 0x254b751ad899)>
+      1: 0x35438e004659 ; rax 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e06fa21 ; [fp - 24] 0x35438e06fa21 <FixedArray[6]>
+  translating frame pp.canInsertSemicolon => node=3, height=0
+    0x7fff5fbfd4c8: [top + 32] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd4c0: [top + 24] <- 0x34599697e4c4 ;  caller's pc
+    0x7fff5fbfd4b8: [top + 16] <- 0x7fff5fbfd540 ;  caller's fp
+    0x7fff5fbfd4b0: [top + 8] <- 0x35438e06fa21 ;  context    0x35438e06fa21 <FixedArray[6]>  (input #2)
+    0x7fff5fbfd4a8: [top + 0] <- 0x254b751ae021 ;  function    0x254b751ae021 <JS Function pp.canInsertSemicolon (SharedFunctionInfo 0x254b751ad899)>  (input #0)
+[deoptimizing (eager): end 0x254b751ae021 <JS Function pp.canInsertSemicolon (SharedFunctionInfo 0x254b751ad899)> @2 => node=3, pc=0x345996991046, state=NO_REGISTERS, alignment=no padding, took 0.018 ms]
+[removing optimized code for: pp.canInsertSemicolon]
+[deoptimizing (DEOPT eager): begin 0x35438e004101 <JS Function Token (SharedFunctionInfo 0x254b751a3551)> (opt #32) @6, FP to SP delta: 72]
+            ;;; deoptimize at 192218: wrong map
+  reading input frame Token => node=2, args=16, height=2; inputs:
+      0: 0x35438e004101 ; (frame function) 0x35438e004101 <JS Function Token (SharedFunctionInfo 0x254b751a3551)>
+      1: 0x35438e11a289 ; [fp + 24] 0x35438e11a289 <a Token with map 0xa2459f24c31>
+      2: 0x35438e004599 ; rbx 0x35438e004599 <a State with map 0xa2459f29ae9>
+      3: 0x35438e004449 ; [fp - 24] 0x35438e004449 <FixedArray[13]>
+      4: 0x5ba065041b9 ; (literal 4) 0x5ba065041b9 <undefined>
+  translating frame Token => node=16, height=8
+    0x7fff5fbfd698: [top + 48] <- 0x35438e11a289 ;  0x35438e11a289 <a Token with map 0xa2459f24c31>  (input #1)
+    0x7fff5fbfd690: [top + 40] <- 0x35438e004599 ;  0x35438e004599 <a State with map 0xa2459f29ae9>  (input #2)
+    0x7fff5fbfd688: [top + 32] <- 0x345996831147 ;  caller's pc
+    0x7fff5fbfd680: [top + 24] <- 0x7fff5fbfd6c8 ;  caller's fp
+    0x7fff5fbfd678: [top + 16] <- 0x35438e004449 ;  context    0x35438e004449 <FixedArray[13]>  (input #3)
+    0x7fff5fbfd670: [top + 8] <- 0x35438e004101 ;  function    0x35438e004101 <JS Function Token (SharedFunctionInfo 0x254b751a3551)>  (input #0)
+    0x7fff5fbfd668: [top + 0] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+[deoptimizing (eager): end 0x35438e004101 <JS Function Token (SharedFunctionInfo 0x254b751a3551)> @6 => node=16, pc=0x345996980594, state=NO_REGISTERS, alignment=no padding, took 0.040 ms]
+[removing optimized code for: Token]
+[deoptimizing (DEOPT lazy): begin 0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)> (opt #46) @10, FP to SP delta: 56]
+  reading input frame pp.parseExprSubscripts => node=2, args=100, height=6; inputs:
+      0: 0x254b751b4a99 ; (frame function) 0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)>
+      1: 0x35438e004659 ; [fp + 24] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e115899 ; [fp + 16] 0x35438e115899 <an Object with map 0xa2459f24a79>
+      3: 0x35438e004731 ; [fp - 24] 0x35438e004731 <FixedArray[7]>
+      4: 5446 ; (int) [fp - 32] 
+      5: 0x35438e115729 ; [fp - 40] 0x35438e115729 <a Position with map 0xa2459f23109>
+      6: 5446 ; (int) [fp - 48] 
+      7: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+      8: 0x35438e077ec1 ; (literal 4) 0x35438e077ec1 <JS Function (SharedFunctionInfo 0x254b751bf5e1)>
+  reading input frame  => node=2, args=155, height=3; inputs:
+      0: 0x35438e077ec1 ; (literal 4) 0x35438e077ec1 <JS Function (SharedFunctionInfo 0x254b751bf5e1)>
+      1: 0x35438e004659 ; [fp + 24] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e115899 ; [fp + 16] 0x35438e115899 <an Object with map 0xa2459f24a79>
+      3: 0x35438e085f71 ; (literal 5) 0x35438e085f71 <FixedArray[5]>
+      4: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+      5: 0x35438e11b4e9 ; rax 0x35438e11b4e9 <a Node with map 0xa2459f28909>
+  translating frame pp.parseExprSubscripts => node=100, height=40
+    0x7fff5fbfd9f0: [top + 80] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd9e8: [top + 72] <- 0x35438e115899 ;  0x35438e115899 <an Object with map 0xa2459f24a79>  (input #2)
+    0x7fff5fbfd9e0: [top + 64] <- 0x34599697c15b ;  caller's pc
+    0x7fff5fbfd9d8: [top + 56] <- 0x7fff5fbfda40 ;  caller's fp
+    0x7fff5fbfd9d0: [top + 48] <- 0x35438e004731 ;  context    0x35438e004731 <FixedArray[7]>  (input #3)
+    0x7fff5fbfd9c8: [top + 40] <- 0x254b751b4a99 ;  function    0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)>  (input #0)
+    0x7fff5fbfd9c0: [top + 32] <- 0x154600000000 ;  5446  (input #4)
+    0x7fff5fbfd9b8: [top + 24] <- 0x35438e115729 ;  0x35438e115729 <a Position with map 0xa2459f23109>  (input #5)
+    0x7fff5fbfd9b0: [top + 16] <- 0x154600000000 ;  5446  (input #6)
+    0x7fff5fbfd9a8: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #7)
+    0x7fff5fbfd9a0: [top + 0] <- 0x35438e077ec1 ;  0x35438e077ec1 <JS Function (SharedFunctionInfo 0x254b751bf5e1)>  (input #8)
+  translating frame  => node=155, height=16
+    0x7fff5fbfd998: [top + 56] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd990: [top + 48] <- 0x35438e115899 ;  0x35438e115899 <an Object with map 0xa2459f24a79>  (input #2)
+    0x7fff5fbfd988: [top + 40] <- 0x34599697c5fb ;  caller's pc
+    0x7fff5fbfd980: [top + 32] <- 0x7fff5fbfd9d8 ;  caller's fp
+    0x7fff5fbfd978: [top + 24] <- 0x35438e085f71 ;  context    0x35438e085f71 <FixedArray[5]>  (input #3)
+    0x7fff5fbfd970: [top + 16] <- 0x35438e077ec1 ;  function    0x35438e077ec1 <JS Function (SharedFunctionInfo 0x254b751bf5e1)>  (input #0)
+    0x7fff5fbfd968: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfd960: [top + 0] <- 0x35438e11b4e9 ;  0x35438e11b4e9 <a Node with map 0xa2459f28909>  (input #5)
+[deoptimizing (lazy): end 0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)> @10 => node=155, pc=0x34599697cacc, state=TOS_REG, alignment=no padding, took 0.113 ms]
+[deoptimizing (DEOPT lazy): begin 0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)> (opt #46) @22, FP to SP delta: 56]
+  reading input frame pp.parseExprSubscripts => node=2, args=183, height=6; inputs:
+      0: 0x254b751b4a99 ; (frame function) 0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)>
+      1: 0x35438e004659 ; [fp + 24] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e10deb9 ; [fp + 16] 0x35438e10deb9 <an Object with map 0xa2459f24a79>
+      3: 0x35438e004731 ; [fp - 24] 0x35438e004731 <FixedArray[7]>
+      4: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+      5: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+      6: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+      7: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+      8: 0x35438e115779 ; rax 0x35438e115779 <a Node with map 0xa2459f27eb9>
+  translating frame pp.parseExprSubscripts => node=183, height=40
+    0x7fff5fbfde08: [top + 80] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfde00: [top + 72] <- 0x35438e10deb9 ;  0x35438e10deb9 <an Object with map 0xa2459f24a79>  (input #2)
+    0x7fff5fbfddf8: [top + 64] <- 0x34599697c15b ;  caller's pc
+    0x7fff5fbfddf0: [top + 56] <- 0x7fff5fbfde58 ;  caller's fp
+    0x7fff5fbfdde8: [top + 48] <- 0x35438e004731 ;  context    0x35438e004731 <FixedArray[7]>  (input #3)
+    0x7fff5fbfdde0: [top + 40] <- 0x254b751b4a99 ;  function    0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)>  (input #0)
+    0x7fff5fbfddd8: [top + 32] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfddd0: [top + 24] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #5)
+    0x7fff5fbfddc8: [top + 16] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #6)
+    0x7fff5fbfddc0: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #7)
+    0x7fff5fbfddb8: [top + 0] <- 0x35438e115779 ;  0x35438e115779 <a Node with map 0xa2459f27eb9>  (input #8)
+[deoptimizing (lazy): end 0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)> @22 => node=183, pc=0x34599697c76f, state=TOS_REG, alignment=no padding, took 0.040 ms]
+[deoptimizing (DEOPT lazy): begin 0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)> (opt #46) @10, FP to SP delta: 56]
+  reading input frame pp.parseExprSubscripts => node=2, args=100, height=6; inputs:
+      0: 0x254b751b4a99 ; (frame function) 0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)>
+      1: 0x35438e004659 ; [fp + 24] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e10a811 ; [fp + 16] 0x35438e10a811 <an Object with map 0xa2459f24a79>
+      3: 0x35438e004731 ; [fp - 24] 0x35438e004731 <FixedArray[7]>
+      4: 5041 ; (int) [fp - 32] 
+      5: 0x35438e10a681 ; [fp - 40] 0x35438e10a681 <a Position with map 0xa2459f23109>
+      6: 5041 ; (int) [fp - 48] 
+      7: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+      8: 0x35438e077ec1 ; (literal 4) 0x35438e077ec1 <JS Function (SharedFunctionInfo 0x254b751bf5e1)>
+  reading input frame  => node=2, args=155, height=3; inputs:
+      0: 0x35438e077ec1 ; (literal 4) 0x35438e077ec1 <JS Function (SharedFunctionInfo 0x254b751bf5e1)>
+      1: 0x35438e004659 ; [fp + 24] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e10a811 ; [fp + 16] 0x35438e10a811 <an Object with map 0xa2459f24a79>
+      3: 0x35438e085f71 ; (literal 5) 0x35438e085f71 <FixedArray[5]>
+      4: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+      5: 0x35438e10a841 ; rax 0x35438e10a841 <a Node with map 0xa2459f28909>
+  translating frame pp.parseExprSubscripts => node=100, height=40
+    0x7fff5fbfe450: [top + 80] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfe448: [top + 72] <- 0x35438e10a811 ;  0x35438e10a811 <an Object with map 0xa2459f24a79>  (input #2)
+    0x7fff5fbfe440: [top + 64] <- 0x34599697c15b ;  caller's pc
+    0x7fff5fbfe438: [top + 56] <- 0x7fff5fbfe4a0 ;  caller's fp
+    0x7fff5fbfe430: [top + 48] <- 0x35438e004731 ;  context    0x35438e004731 <FixedArray[7]>  (input #3)
+    0x7fff5fbfe428: [top + 40] <- 0x254b751b4a99 ;  function    0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)>  (input #0)
+    0x7fff5fbfe420: [top + 32] <- 0x13b100000000 ;  5041  (input #4)
+    0x7fff5fbfe418: [top + 24] <- 0x35438e10a681 ;  0x35438e10a681 <a Position with map 0xa2459f23109>  (input #5)
+    0x7fff5fbfe410: [top + 16] <- 0x13b100000000 ;  5041  (input #6)
+    0x7fff5fbfe408: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #7)
+    0x7fff5fbfe400: [top + 0] <- 0x35438e077ec1 ;  0x35438e077ec1 <JS Function (SharedFunctionInfo 0x254b751bf5e1)>  (input #8)
+  translating frame  => node=155, height=16
+    0x7fff5fbfe3f8: [top + 56] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfe3f0: [top + 48] <- 0x35438e10a811 ;  0x35438e10a811 <an Object with map 0xa2459f24a79>  (input #2)
+    0x7fff5fbfe3e8: [top + 40] <- 0x34599697c5fb ;  caller's pc
+    0x7fff5fbfe3e0: [top + 32] <- 0x7fff5fbfe438 ;  caller's fp
+    0x7fff5fbfe3d8: [top + 24] <- 0x35438e085f71 ;  context    0x35438e085f71 <FixedArray[5]>  (input #3)
+    0x7fff5fbfe3d0: [top + 16] <- 0x35438e077ec1 ;  function    0x35438e077ec1 <JS Function (SharedFunctionInfo 0x254b751bf5e1)>  (input #0)
+    0x7fff5fbfe3c8: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfe3c0: [top + 0] <- 0x35438e10a841 ;  0x35438e10a841 <a Node with map 0xa2459f28909>  (input #5)
+[deoptimizing (lazy): end 0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)> @10 => node=155, pc=0x34599697cacc, state=TOS_REG, alignment=no padding, took 0.075 ms]
+[deoptimizing (DEOPT lazy): begin 0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)> (opt #46) @22, FP to SP delta: 56]
+  reading input frame pp.parseExprSubscripts => node=2, args=183, height=6; inputs:
+      0: 0x254b751b4a99 ; (frame function) 0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)>
+      1: 0x35438e004659 ; [fp + 24] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e109e81 ; [fp + 16] 0x35438e109e81 <an Object with map 0xa2459f24a79>
+      3: 0x35438e004731 ; [fp - 24] 0x35438e004731 <FixedArray[7]>
+      4: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+      5: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+      6: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+      7: 0x5ba065041b9 ; (literal 3) 0x5ba065041b9 <undefined>
+      8: 0x35438e10a6f1 ; rax 0x35438e10a6f1 <a Node with map 0xa2459f27eb9>
+  translating frame pp.parseExprSubscripts => node=183, height=40
+    0x7fff5fbfe868: [top + 80] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfe860: [top + 72] <- 0x35438e109e81 ;  0x35438e109e81 <an Object with map 0xa2459f24a79>  (input #2)
+    0x7fff5fbfe858: [top + 64] <- 0x34599697c15b ;  caller's pc
+    0x7fff5fbfe850: [top + 56] <- 0x7fff5fbfe8b8 ;  caller's fp
+    0x7fff5fbfe848: [top + 48] <- 0x35438e004731 ;  context    0x35438e004731 <FixedArray[7]>  (input #3)
+    0x7fff5fbfe840: [top + 40] <- 0x254b751b4a99 ;  function    0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)>  (input #0)
+    0x7fff5fbfe838: [top + 32] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfe830: [top + 24] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #5)
+    0x7fff5fbfe828: [top + 16] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #6)
+    0x7fff5fbfe820: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #7)
+    0x7fff5fbfe818: [top + 0] <- 0x35438e10a6f1 ;  0x35438e10a6f1 <a Node with map 0xa2459f27eb9>  (input #8)
+[deoptimizing (lazy): end 0x254b751b4a99 <JS Function pp.parseExprSubscripts (SharedFunctionInfo 0x254b751b31b9)> @22 => node=183, pc=0x34599697c76f, state=TOS_REG, alignment=no padding, took 0.042 ms]
+[deoptimizing (DEOPT eager): begin 0x254b751ac2a1 <JS Function curContext (SharedFunctionInfo 0x254b751a3fc9)> (opt #53) @3, FP to SP delta: 24]
+            ;;; deoptimize at -1: wrong map
+  reading input frame curContext => node=1, args=3, height=2; inputs:
+      0: 0x254b751ac2a1 ; (frame function) 0x254b751ac2a1 <JS Function curContext (SharedFunctionInfo 0x254b751a3fc9)>
+      1: 0x35438e004659 ; rax 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e004601 ; [fp - 24] 0x35438e004601 <FixedArray[5]>
+      3: 0x5ba06504179 ; (literal 1) 0x5ba06504179 <the hole>
+  translating frame curContext => node=3, height=8
+    0x7fff5fbfd3e8: [top + 40] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd3e0: [top + 32] <- 0x345996970186 ;  caller's pc
+    0x7fff5fbfd3d8: [top + 24] <- 0x7fff5fbfd418 ;  caller's fp
+    0x7fff5fbfd3d0: [top + 16] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #2)
+    0x7fff5fbfd3c8: [top + 8] <- 0x254b751ac2a1 ;  function    0x254b751ac2a1 <JS Function curContext (SharedFunctionInfo 0x254b751a3fc9)>  (input #0)
+    0x7fff5fbfd3c0: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #3)
+[deoptimizing (eager): end 0x254b751ac2a1 <JS Function curContext (SharedFunctionInfo 0x254b751a3fc9)> @3 => node=3, pc=0x345996970692, state=NO_REGISTERS, alignment=no padding, took 0.029 ms]
+[removing optimized code for: curContext]
+[deoptimizing (DEOPT eager): begin 0x254b751abe99 <JS Function curPosition (SharedFunctionInfo 0x254b751ab919)> (opt #54) @4, FP to SP delta: 56]
+            ;;; deoptimize at 176363: wrong map
+  reading input frame curPosition => node=1, args=3, height=2; inputs:
+      0: 0x254b751abe99 ; (frame function) 0x254b751abe99 <JS Function curPosition (SharedFunctionInfo 0x254b751ab919)>
+      1: 0x35438e135869 ; rdx 0x35438e135869 <a State with map 0xa2459f29ca1>
+      2: 0x35438e06ef41 ; rbx 0x35438e06ef41 <FixedArray[5]>
+      3: 0x5ba06504179 ; (literal 3) 0x5ba06504179 <the hole>
+  translating frame curPosition => node=3, height=8
+    0x7fff5fbfd3e0: [top + 40] <- 0x35438e135869 ;  0x35438e135869 <a State with map 0xa2459f29ca1>  (input #1)
+    0x7fff5fbfd3d8: [top + 32] <- 0x345996970374 ;  caller's pc
+    0x7fff5fbfd3d0: [top + 24] <- 0x7fff5fbfd418 ;  caller's fp
+    0x7fff5fbfd3c8: [top + 16] <- 0x35438e06ef41 ;  context    0x35438e06ef41 <FixedArray[5]>  (input #2)
+    0x7fff5fbfd3c0: [top + 8] <- 0x254b751abe99 ;  function    0x254b751abe99 <JS Function curPosition (SharedFunctionInfo 0x254b751ab919)>  (input #0)
+    0x7fff5fbfd3b8: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #3)
+[deoptimizing (eager): end 0x254b751abe99 <JS Function curPosition (SharedFunctionInfo 0x254b751ab919)> @4 => node=3, pc=0x345996966bf2, state=NO_REGISTERS, alignment=no padding, took 0.022 ms]
+[removing optimized code for: curPosition]
+[deoptimizing (DEOPT eager): begin 0x254b751ac379 <JS Function fullCharCodeAtPos (SharedFunctionInfo 0x254b751a41c1)> (opt #57) @4, FP to SP delta: 24]
+            ;;; deoptimize at 151142: wrong map
+  reading input frame fullCharCodeAtPos => node=1, args=3, height=4; inputs:
+      0: 0x254b751ac379 ; (frame function) 0x254b751ac379 <JS Function fullCharCodeAtPos (SharedFunctionInfo 0x254b751a41c1)>
+      1: 0x35438e004659 ; rbx 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e004601 ; [fp - 24] 0x35438e004601 <FixedArray[5]>
+      3: 0x5ba065041b9 ; (literal 1) 0x5ba065041b9 <undefined>
+      4: 0x5ba065041b9 ; (literal 1) 0x5ba065041b9 <undefined>
+      5: 0x5ba06504179 ; (literal 2) 0x5ba06504179 <the hole>
+  translating frame fullCharCodeAtPos => node=3, height=24
+    0x7fff5fbfd3d8: [top + 56] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd3d0: [top + 48] <- 0x3459969705ca ;  caller's pc
+    0x7fff5fbfd3c8: [top + 40] <- 0x7fff5fbfd418 ;  caller's fp
+    0x7fff5fbfd3c0: [top + 32] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #2)
+    0x7fff5fbfd3b8: [top + 24] <- 0x254b751ac379 ;  function    0x254b751ac379 <JS Function fullCharCodeAtPos (SharedFunctionInfo 0x254b751a41c1)>  (input #0)
+    0x7fff5fbfd3b0: [top + 16] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #3)
+    0x7fff5fbfd3a8: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfd3a0: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #5)
+[deoptimizing (eager): end 0x254b751ac379 <JS Function fullCharCodeAtPos (SharedFunctionInfo 0x254b751a41c1)> @4 => node=3, pc=0x3459969717d5, state=NO_REGISTERS, alignment=no padding, took 0.026 ms]
+[removing optimized code for: fullCharCodeAtPos]
+[deoptimizing (DEOPT eager): begin 0x35438e076cb1 <JS Function (SharedFunctionInfo 0x254b751c2689)> (opt #59) @3, FP to SP delta: 24]
+            ;;; deoptimize at -1: wrong map
+  reading input frame  => node=2, args=3, height=1; inputs:
+      0: 0x35438e076cb1 ; (frame function) 0x35438e076cb1 <JS Function (SharedFunctionInfo 0x254b751c2689)>
+      1: 0x35438e004659 ; rax 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x2900000000 ; [fp + 16] 41
+      3: 0x35438e085721 ; [fp - 24] 0x35438e085721 <FixedArray[5]>
+  translating frame  => node=3, height=0
+    0x7fff5fbfd3e8: [top + 40] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd3e0: [top + 32] <- 0x2900000000 ;  41  (input #2)
+    0x7fff5fbfd3d8: [top + 24] <- 0x3459969705e6 ;  caller's pc
+    0x7fff5fbfd3d0: [top + 16] <- 0x7fff5fbfd418 ;  caller's fp
+    0x7fff5fbfd3c8: [top + 8] <- 0x35438e085721 ;  context    0x35438e085721 <FixedArray[5]>  (input #3)
+    0x7fff5fbfd3c0: [top + 0] <- 0x35438e076cb1 ;  function    0x35438e076cb1 <JS Function (SharedFunctionInfo 0x254b751c2689)>  (input #0)
+[deoptimizing (eager): end 0x35438e076cb1 <JS Function (SharedFunctionInfo 0x254b751c2689)> @3 => node=3, pc=0x345996971aa6, state=NO_REGISTERS, alignment=no padding, took 0.019 ms]
+[removing optimized code for: ]
+[deoptimizing (DEOPT eager): begin 0x254b751ac181 <JS Function match (SharedFunctionInfo 0x254b751a3d29)> (opt #52) @3, FP to SP delta: 24]
+            ;;; deoptimize at 148928: wrong map
+  reading input frame match => node=2, args=3, height=2; inputs:
+      0: 0x254b751ac181 ; (frame function) 0x254b751ac181 <JS Function match (SharedFunctionInfo 0x254b751a3d29)>
+      1: 0x35438e004659 ; rax 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e08b309 ; [fp + 16] 0x35438e08b309 <a TokenType with map 0xa2459f1af71>
+      3: 0x35438e004601 ; [fp - 24] 0x35438e004601 <FixedArray[5]>
+      4: 0x5ba06504179 ; (literal 1) 0x5ba06504179 <the hole>
+  translating frame match => node=3, height=8
+    0x7fff5fbfd220: [top + 48] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd218: [top + 40] <- 0x35438e08b309 ;  0x35438e08b309 <a TokenType with map 0xa2459f1af71>  (input #2)
+    0x7fff5fbfd210: [top + 32] <- 0x3459969759b5 ;  caller's pc
+    0x7fff5fbfd208: [top + 24] <- 0x7fff5fbfd248 ;  caller's fp
+    0x7fff5fbfd200: [top + 16] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #3)
+    0x7fff5fbfd1f8: [top + 8] <- 0x254b751ac181 ;  function    0x254b751ac181 <JS Function match (SharedFunctionInfo 0x254b751a3d29)>  (input #0)
+    0x7fff5fbfd1f0: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #4)
+[deoptimizing (eager): end 0x254b751ac181 <JS Function match (SharedFunctionInfo 0x254b751a3d29)> @3 => node=3, pc=0x345996976072, state=NO_REGISTERS, alignment=no padding, took 0.041 ms]
+[removing optimized code for: match]
+[deoptimizing (DEOPT eager): begin 0x254b751acbc1 <JS Function updateContext (SharedFunctionInfo 0x254b751a5421)> (opt #56) @3, FP to SP delta: 32]
+            ;;; deoptimize at -1: wrong map
+  reading input frame updateContext => node=2, args=3, height=4; inputs:
+      0: 0x254b751acbc1 ; (frame function) 0x254b751acbc1 <JS Function updateContext (SharedFunctionInfo 0x254b751a5421)>
+      1: 0x35438e004659 ; rbx 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e08b379 ; [fp + 16] 0x35438e08b379 <a TokenType with map 0xa2459f1af71>
+      3: 0x35438e004601 ; [fp - 24] 0x35438e004601 <FixedArray[5]>
+      4: 0x5ba065041b9 ; (literal 1) 0x5ba065041b9 <undefined>
+      5: 0x5ba065041b9 ; (literal 1) 0x5ba065041b9 <undefined>
+      6: 0x5ba06504179 ; (literal 2) 0x5ba06504179 <the hole>
+  translating frame updateContext => node=3, height=24
+    0x7fff5fbfd220: [top + 64] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfd218: [top + 56] <- 0x35438e08b379 ;  0x35438e08b379 <a TokenType with map 0xa2459f1af71>  (input #2)
+    0x7fff5fbfd210: [top + 48] <- 0x345996975fa7 ;  caller's pc
+    0x7fff5fbfd208: [top + 40] <- 0x7fff5fbfd248 ;  caller's fp
+    0x7fff5fbfd200: [top + 32] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #3)
+    0x7fff5fbfd1f8: [top + 24] <- 0x254b751acbc1 ;  function    0x254b751acbc1 <JS Function updateContext (SharedFunctionInfo 0x254b751a5421)>  (input #0)
+    0x7fff5fbfd1f0: [top + 16] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfd1e8: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #5)
+    0x7fff5fbfd1e0: [top + 0] <- 0x5ba06504179 ;  0x5ba06504179 <the hole>  (input #6)
+[deoptimizing (eager): end 0x254b751acbc1 <JS Function updateContext (SharedFunctionInfo 0x254b751a5421)> @3 => node=3, pc=0x345996976295, state=NO_REGISTERS, alignment=no padding, took 0.028 ms]
+[removing optimized code for: updateContext]
+[deoptimizing (DEOPT eager): begin 0x254b751ac781 <JS Function getTokenFromCode (SharedFunctionInfo 0x254b751a4af1)> (opt #86) @14, FP to SP delta: 96]
+            ;;; deoptimize at 162197: wrong map
+  reading input frame getTokenFromCode => node=2, args=1196, height=3; inputs:
+      0: 0x254b751ac781 ; (frame function) 0x254b751ac781 <JS Function getTokenFromCode (SharedFunctionInfo 0x254b751a4af1)>
+      1: 0x35438e004659 ; rax 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x7c00000000 ; [fp + 16] 124
+      3: 0x35438e004601 ; [fp - 24] 0x35438e004601 <FixedArray[5]>
+      4: 0x5ba065041b9 ; (literal 6) 0x5ba065041b9 <undefined>
+      5: 0x5ba065041b9 ; (literal 6) 0x5ba065041b9 <undefined>
+  translating frame getTokenFromCode => node=1196, height=16
+    0x7fff5fbfe4e0: [top + 56] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfe4d8: [top + 48] <- 0x7c00000000 ;  124  (input #2)
+    0x7fff5fbfe4d0: [top + 40] <- 0x3459969fba05 ;  caller's pc
+    0x7fff5fbfe4c8: [top + 32] <- 0x7fff5fbfe560 ;  caller's fp
+    0x7fff5fbfe4c0: [top + 24] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #3)
+    0x7fff5fbfe4b8: [top + 16] <- 0x254b751ac781 ;  function    0x254b751ac781 <JS Function getTokenFromCode (SharedFunctionInfo 0x254b751a4af1)>  (input #0)
+    0x7fff5fbfe4b0: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfe4a8: [top + 0] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #5)
+[deoptimizing (eager): end 0x254b751ac781 <JS Function getTokenFromCode (SharedFunctionInfo 0x254b751a4af1)> @14 => node=1196, pc=0x3459969746ab, state=NO_REGISTERS, alignment=no padding, took 0.080 ms]
+[removing optimized code for: getTokenFromCode]
+[deoptimizing (DEOPT soft): begin 0x254b751ae0b1 <JS Function pp.semicolon (SharedFunctionInfo 0x254b751ad9e9)> (opt #87) @65, FP to SP delta: 88]
+            ;;; deoptimize at 150506: Insufficient type feedback for generic named access
+  reading input frame pp.semicolon => node=1, args=13, height=2; inputs:
+      0: 0x254b751ae0b1 ; (frame function) 0x254b751ae0b1 <JS Function pp.semicolon (SharedFunctionInfo 0x254b751ad9e9)>
+      1: 0x35438e004659 ; [fp + 16] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e06fa21 ; [fp - 24] 0x35438e06fa21 <FixedArray[6]>
+      3: 0x254b751ae069 ; (literal 12) 0x254b751ae069 <JS Function pp.isLineTerminator (SharedFunctionInfo 0x254b751ad941)>
+  reading input frame pp.isLineTerminator => node=1, args=10, height=2; inputs:
+      0: 0x254b751ae069 ; (literal 12) 0x254b751ae069 <JS Function pp.isLineTerminator (SharedFunctionInfo 0x254b751ad941)>
+      1: 0x35438e004659 ; [fp + 16] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e06fa21 ; (literal 13) 0x35438e06fa21 <FixedArray[6]>
+      3: 0x254b751ac139 ; (literal 14) 0x254b751ac139 <JS Function eat (SharedFunctionInfo 0x254b751a3c81)>
+  reading input frame eat => node=2, args=41, height=3; inputs:
+      0: 0x254b751ac139 ; (literal 14) 0x254b751ac139 <JS Function eat (SharedFunctionInfo 0x254b751a3c81)>
+      1: 0x35438e004659 ; [fp + 16] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e08b4c9 ; [fp - 32] 0x35438e08b4c9 <a TokenType with map 0xa2459f1af71>
+      3: 0x35438e004601 ; (literal 15) 0x35438e004601 <FixedArray[5]>
+      4: 0x5ba065041b9 ; (literal 16) 0x5ba065041b9 <undefined>
+      5: 0x254b751ac0f1 ; (literal 18) 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>
+  reading input frame next => node=1, args=214, height=3; inputs:
+      0: 0x254b751ac0f1 ; (literal 18) 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>
+      1: 0x35438e004659 ; [fp + 16] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e004601 ; (literal 15) 0x35438e004601 <FixedArray[5]>
+      3: 0x254b751ac0f1 ; (literal 18) 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>
+      4: 0x254b751ac2e9 ; (literal 26) 0x254b751ac2e9 <JS Function nextToken (SharedFunctionInfo 0x254b751a4071)>
+  reading input frame nextToken => node=1, args=244, height=5; inputs:
+      0: 0x254b751ac2e9 ; (literal 26) 0x254b751ac2e9 <JS Function nextToken (SharedFunctionInfo 0x254b751a4071)>
+      1: 0x35438e004659 ; [fp + 16] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e004601 ; (literal 15) 0x35438e004601 <FixedArray[5]>
+      3: 0x5ba065041b9 ; (literal 16) 0x5ba065041b9 <undefined>
+      4: 0x5ba065041b9 ; (literal 16) 0x5ba065041b9 <undefined>
+      5: 0x35438e004659 ; [fp + 16] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      6: 0x254b751ac4f9 ; rax 0x254b751ac4f9 <JS Function finishToken (SharedFunctionInfo 0x254b751a4509)>
+  translating frame pp.semicolon => node=13, height=8
+    0x7fff5fbfef30: [top + 40] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfef28: [top + 32] <- 0x345996984bc7 ;  caller's pc
+    0x7fff5fbfef20: [top + 24] <- 0x7fff5fbfef50 ;  caller's fp
+    0x7fff5fbfef18: [top + 16] <- 0x35438e06fa21 ;  context    0x35438e06fa21 <FixedArray[6]>  (input #2)
+    0x7fff5fbfef10: [top + 8] <- 0x254b751ae0b1 ;  function    0x254b751ae0b1 <JS Function pp.semicolon (SharedFunctionInfo 0x254b751ad9e9)>  (input #0)
+    0x7fff5fbfef08: [top + 0] <- 0x254b751ae069 ;  0x254b751ae069 <JS Function pp.isLineTerminator (SharedFunctionInfo 0x254b751ad941)>  (input #3)
+  translating frame pp.isLineTerminator => node=10, height=8
+    0x7fff5fbfef00: [top + 40] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfeef8: [top + 32] <- 0x345996984d30 ;  caller's pc
+    0x7fff5fbfeef0: [top + 24] <- 0x7fff5fbfef20 ;  caller's fp
+    0x7fff5fbfeee8: [top + 16] <- 0x35438e06fa21 ;  context    0x35438e06fa21 <FixedArray[6]>  (input #2)
+    0x7fff5fbfeee0: [top + 8] <- 0x254b751ae069 ;  function    0x254b751ae069 <JS Function pp.isLineTerminator (SharedFunctionInfo 0x254b751ad941)>  (input #0)
+    0x7fff5fbfeed8: [top + 0] <- 0x254b751ac139 ;  0x254b751ac139 <JS Function eat (SharedFunctionInfo 0x254b751a3c81)>  (input #3)
+  translating frame eat => node=41, height=16
+    0x7fff5fbfeed0: [top + 56] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfeec8: [top + 48] <- 0x35438e08b4c9 ;  0x35438e08b4c9 <a TokenType with map 0xa2459f1af71>  (input #2)
+    0x7fff5fbfeec0: [top + 40] <- 0x345996984ed0 ;  caller's pc
+    0x7fff5fbfeeb8: [top + 32] <- 0x7fff5fbfeef0 ;  caller's fp
+    0x7fff5fbfeeb0: [top + 24] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #3)
+    0x7fff5fbfeea8: [top + 16] <- 0x254b751ac139 ;  function    0x254b751ac139 <JS Function eat (SharedFunctionInfo 0x254b751a3c81)>  (input #0)
+    0x7fff5fbfeea0: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfee98: [top + 0] <- 0x254b751ac0f1 ;  0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>  (input #5)
+  translating frame next => node=214, height=16
+    0x7fff5fbfee90: [top + 48] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfee88: [top + 40] <- 0x3459969771d9 ;  caller's pc
+    0x7fff5fbfee80: [top + 32] <- 0x7fff5fbfeeb8 ;  caller's fp
+    0x7fff5fbfee78: [top + 24] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #2)
+    0x7fff5fbfee70: [top + 16] <- 0x254b751ac0f1 ;  function    0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>  (input #0)
+    0x7fff5fbfee68: [top + 8] <- 0x254b751ac0f1 ;  0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>  (input #3)
+    0x7fff5fbfee60: [top + 0] <- 0x254b751ac2e9 ;  0x254b751ac2e9 <JS Function nextToken (SharedFunctionInfo 0x254b751a4071)>  (input #4)
+  translating frame nextToken => node=244, height=32
+    0x7fff5fbfee58: [top + 64] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfee50: [top + 56] <- 0x345996980490 ;  caller's pc
+    0x7fff5fbfee48: [top + 48] <- 0x7fff5fbfee80 ;  caller's fp
+    0x7fff5fbfee40: [top + 40] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #2)
+    0x7fff5fbfee38: [top + 32] <- 0x254b751ac2e9 ;  function    0x254b751ac2e9 <JS Function nextToken (SharedFunctionInfo 0x254b751a4071)>  (input #0)
+    0x7fff5fbfee30: [top + 24] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #3)
+    0x7fff5fbfee28: [top + 16] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfee20: [top + 8] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #5)
+    0x7fff5fbfee18: [top + 0] <- 0x254b751ac4f9 ;  0x254b751ac4f9 <JS Function finishToken (SharedFunctionInfo 0x254b751a4509)>  (input #6)
+[deoptimizing (soft): end 0x254b751ae0b1 <JS Function pp.semicolon (SharedFunctionInfo 0x254b751ad9e9)> @65 => node=244, pc=0x345996970446, state=TOS_REG, alignment=no padding, took 0.156 ms]
+[removing optimized code for: pp.semicolon]
+[deoptimizing (DEOPT soft): begin 0x254b751ac139 <JS Function eat (SharedFunctionInfo 0x254b751a3c81)> (opt #62) @62, FP to SP delta: 112]
+            ;;; deoptimize at 150506: Insufficient type feedback for generic named access
+  reading input frame eat => node=2, args=41, height=3; inputs:
+      0: 0x254b751ac139 ; (frame function) 0x254b751ac139 <JS Function eat (SharedFunctionInfo 0x254b751a3c81)>
+      1: 0x35438e004659 ; [fp + 24] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e004f71 ; [fp + 16] 0x35438e004f71 <a TokenType with map 0xa2459f1af71>
+      3: 0x35438e004601 ; [fp - 24] 0x35438e004601 <FixedArray[5]>
+      4: 0x5ba065041b9 ; (literal 12) 0x5ba065041b9 <undefined>
+      5: 0x254b751ac0f1 ; (literal 15) 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>
+  reading input frame next => node=1, args=214, height=3; inputs:
+      0: 0x254b751ac0f1 ; (literal 15) 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>
+      1: 0x35438e004659 ; [fp + 24] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e004601 ; (literal 14) 0x35438e004601 <FixedArray[5]>
+      3: 0x254b751ac0f1 ; (literal 15) 0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>
+      4: 0x254b751ac2e9 ; (literal 23) 0x254b751ac2e9 <JS Function nextToken (SharedFunctionInfo 0x254b751a4071)>
+  reading input frame nextToken => node=1, args=244, height=5; inputs:
+      0: 0x254b751ac2e9 ; (literal 23) 0x254b751ac2e9 <JS Function nextToken (SharedFunctionInfo 0x254b751a4071)>
+      1: 0x35438e004659 ; [fp + 24] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      2: 0x35438e004601 ; (literal 14) 0x35438e004601 <FixedArray[5]>
+      3: 0x5ba065041b9 ; (literal 12) 0x5ba065041b9 <undefined>
+      4: 0x5ba065041b9 ; (literal 12) 0x5ba065041b9 <undefined>
+      5: 0x35438e004659 ; [fp + 24] 0x35438e004659 <a Parser with map 0xa2459f29099>
+      6: 0x254b751ac4f9 ; rax 0x254b751ac4f9 <JS Function finishToken (SharedFunctionInfo 0x254b751a4509)>
+  translating frame eat => node=41, height=16
+    0x7fff5fbff060: [top + 56] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbff058: [top + 48] <- 0x35438e004f71 ;  0x35438e004f71 <a TokenType with map 0xa2459f1af71>  (input #2)
+    0x7fff5fbff050: [top + 40] <- 0x345996976994 ;  caller's pc
+    0x7fff5fbff048: [top + 32] <- 0x7fff5fbff0a8 ;  caller's fp
+    0x7fff5fbff040: [top + 24] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #3)
+    0x7fff5fbff038: [top + 16] <- 0x254b751ac139 ;  function    0x254b751ac139 <JS Function eat (SharedFunctionInfo 0x254b751a3c81)>  (input #0)
+    0x7fff5fbff030: [top + 8] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbff028: [top + 0] <- 0x254b751ac0f1 ;  0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>  (input #5)
+  translating frame next => node=214, height=16
+    0x7fff5fbff020: [top + 48] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbff018: [top + 40] <- 0x3459969771d9 ;  caller's pc
+    0x7fff5fbff010: [top + 32] <- 0x7fff5fbff048 ;  caller's fp
+    0x7fff5fbff008: [top + 24] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #2)
+    0x7fff5fbff000: [top + 16] <- 0x254b751ac0f1 ;  function    0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>  (input #0)
+    0x7fff5fbfeff8: [top + 8] <- 0x254b751ac0f1 ;  0x254b751ac0f1 <JS Function next (SharedFunctionInfo 0x254b751a3bd9)>  (input #3)
+    0x7fff5fbfeff0: [top + 0] <- 0x254b751ac2e9 ;  0x254b751ac2e9 <JS Function nextToken (SharedFunctionInfo 0x254b751a4071)>  (input #4)
+  translating frame nextToken => node=244, height=32
+    0x7fff5fbfefe8: [top + 64] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #1)
+    0x7fff5fbfefe0: [top + 56] <- 0x345996980490 ;  caller's pc
+    0x7fff5fbfefd8: [top + 48] <- 0x7fff5fbff010 ;  caller's fp
+    0x7fff5fbfefd0: [top + 40] <- 0x35438e004601 ;  context    0x35438e004601 <FixedArray[5]>  (input #2)
+    0x7fff5fbfefc8: [top + 32] <- 0x254b751ac2e9 ;  function    0x254b751ac2e9 <JS Function nextToken (SharedFunctionInfo 0x254b751a4071)>  (input #0)
+    0x7fff5fbfefc0: [top + 24] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #3)
+    0x7fff5fbfefb8: [top + 16] <- 0x5ba065041b9 ;  0x5ba065041b9 <undefined>  (input #4)
+    0x7fff5fbfefb0: [top + 8] <- 0x35438e004659 ;  0x35438e004659 <a Parser with map 0xa2459f29099>  (input #5)
+    71
+0x7fff5fbfefa8: [top + 0] <- 0x254b751ac4f9 ;  0x254b751ac4f9 <JS Function finishToken (SharedFunctionInfo 0x254b751a4509)>  (input #6)
+[deoptimizing (soft): end 0x254b751ac139 <JS Function eat (SharedFunctionInfo 0x254b751a3c81)> @62 => node=244, pc=0x345996970446, state=TOS_REG, alignment=no padding, took 0.090 ms]
+[removing optimized code for: eat]

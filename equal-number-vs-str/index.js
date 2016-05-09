@@ -5,7 +5,7 @@ var Benchmark = require('benchmark');
 var suite = new Benchmark.Suite();
 
 var fn1 = function(obj){
-  return obj === 'string';
+  return obj === 'stristrdinstrdinstrdinstrdinng';
 }
 
 var fn2 = function(obj){
@@ -14,7 +14,7 @@ var fn2 = function(obj){
 
 suite
 .add('use string', function () {
-  fn1('dasfasdfasdf');
+  fn1('strstrdinstrdinstrdinstrdinstrdindin');
 })
 .add('use number', function () {
   fn2(3);
@@ -24,6 +24,6 @@ suite
   console.log(String(event.target));
 })
 .on('complete', function () {
-  console.log('Fastest is ' + this.filter('fastest').pluck('name'));
+  console.log('Fastest is ' + this.filter('fastest').name);
 })
 .run();

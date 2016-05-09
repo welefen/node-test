@@ -1,0 +1,439 @@
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlining builtin 0x33c9e495a21 <JS Function pop (SharedFunctionInfo 0x33c9e44ea99)>
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlining builtin 0x33c9e495ab1 <JS Function shift (SharedFunctionInfo 0x33c9e44ebf9)>
+Inlining builtin 0x33c9e495ab1 <JS Function shift (SharedFunctionInfo 0x33c9e44ebf9)>
+Inlined posixSplitPath called from posix.dirname.
+Inlined NativeModule.exists called from NativeModule.nonInternalExists.
+Inlined NativeModule.isInternal called from NativeModule.nonInternalExists.
+Inlined NativeModule.exists called from NativeModule.nonInternalExists.
+Inlined NativeModule.isInternal called from NativeModule.nonInternalExists.
+Inlined NativeModule.nonInternalExists called from Module._resolveFilename.
+Did not inline Module._resolveLookupPaths called from Module._resolveFilename (target text too big).
+Inlined debugs.(anonymous function) called from Module._resolveFilename.
+Did not inline Module._findPath called from Module._resolveFilename (target text too big).
+Inlined assertPath called from posix.isAbsolute.
+Inlined ok called from Module.require.
+Inlined ok called from Module.require.
+Did not inline Module._load called from Module.require (target text too big).
+Inlined Module.require called from require.
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Did not inline  called from finishToken (target text too big).
+Inlined exports.default called from Node.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Node.
+Inlined isIdentifierStart called from readToken.
+Did not inline readWord1 called from readWord (target text too big).
+Inlined  called from readWord.
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Did not inline  called from finishToken (target text too big).
+Inlined finishToken called from readWord.
+Inlined readWord called from readToken.
+Did not inline getTokenFromCode called from readToken (target text too big).
+Inlined match called from eat.
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Inlined Token called from next.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined curContext called from nextToken.
+Did not inline skipSpace called from nextToken (target text too big).
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from nextToken.
+Inlined nextToken called from next.
+Inlined next called from eat.
+Inlined match called from .
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlining builtin 0x33c9e494301 <JS Function indexOf (SharedFunctionInfo 0x33c9e4488d1)>
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Did not inline  called from finishToken (target text too big).
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Inlined match called from eat.
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Inlined Token called from next.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined curContext called from nextToken.
+Did not inline skipSpace called from nextToken (target text too big).
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from nextToken.
+Inlined nextToken called from next.
+Inlined next called from eat.
+Did not inline readWord1 called from readWord (target text too big).
+Inlined  called from readWord.
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Did not inline  called from finishToken (target text too big).
+Inlined finishToken called from readWord.
+Inlined match called from eat.
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Inlined Token called from next.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined curContext called from nextToken.
+Did not inline skipSpace called from nextToken (target text too big).
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from nextToken.
+Inlined nextToken called from next.
+Inlined next called from eat.
+Inlined exports.default called from SourceLocation.
+Inlined exports.default called from Node.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Node.
+Inlined Node called from pp.startNode.
+Inlined curContext called from .
+Inlined isIdentifierStart called from readToken.
+Did not inline readWord1 called from readWord (target text too big).
+Inlined  called from readWord.
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Did not inline  called from finishToken (target text too big).
+Inlined finishToken called from readWord.
+Inlined readWord called from readToken.
+Did not inline getTokenFromCode called from readToken (target text too big).
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Inlined Token called from next.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined curContext called from nextToken.
+Did not inline skipSpace called from nextToken (target text too big).
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from nextToken.
+Inlined nextToken called from next.
+Inlined match called from .
+Inlined curContext called from .
+Inlined match called from .
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from readWord1.
+Inlined isIdentifierChar called from readWord1.
+Inlined match called from .
+Inlined match called from .
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Did not inline skipBlockComment called from skipSpace (target text too big).
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from skipLineComment.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from skipLineComment.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from pushComment.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined pp.addComment called from pushComment.
+Inlined pushComment called from skipLineComment.
+Inlined skipLineComment called from skipSpace.
+Inlined match called from .
+Inlined match called from .
+Inlined  called from pp.parseExprSubscripts.
+Did not inline pp.parseSubscripts called from pp.parseExprSubscripts (target text too big).
+Inlining builtin 0x33c9e494301 <JS Function indexOf (SharedFunctionInfo 0x33c9e4488d1)>
+Inlined  called from isKeyword.
+Inlined exports.default called from Node.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Node.
+Inlined match called from pp.canInsertSemicolon.
+Inlined match called from pp.canInsertSemicolon.
+Inlined match called from eat.
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Inlined Token called from next.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined curContext called from nextToken.
+Did not inline skipSpace called from nextToken (target text too big).
+Did not inline exports.default called from Position (inline depth limit reached).
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from nextToken.
+Inlined nextToken called from next.
+Inlined next called from eat.
+Inlined eat called from pp.expect.
+Inlined match called from eat.
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Inlined Token called from next.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined curContext called from nextToken.
+Did not inline skipSpace called from nextToken (target text too big).
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from nextToken.
+Inlined nextToken called from next.
+Inlined next called from eat.
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined exports.default called from Position.
+Inlined isIdentifierStart called from readToken.
+Did not inline readWord1 called from readWord (target text too big).
+Inlined  called from readWord.
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Did not inline  called from finishToken (target text too big).
+Inlined finishToken called from readWord.
+Inlined readWord called from readToken.
+Did not inline getTokenFromCode called from readToken (target text too big).
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Did not inline  called from finishToken (target text too big).
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Trying to inline the polymorphic call to curPosition from finishToken
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Trying to inline the polymorphic call to curPosition from finishToken
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Did not inline  called from finishToken (target text too big).
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Inlined Token called from next.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined curContext called from nextToken.
+Did not inline skipSpace called from nextToken (target text too big).
+Trying to inline the polymorphic call to curPosition from nextToken
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Trying to inline the polymorphic call to curPosition from nextToken
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from nextToken.
+Inlined nextToken called from next.
+Inlined next called from pp.parseIfStatement.
+Did not inline pp.parseParenExpression called from pp.parseIfStatement (cumulative AST node limit reached).
+Did not inline  called from pp.parseIfStatement (cumulative AST node limit reached).
+Did not inline eat called from pp.parseIfStatement (cumulative AST node limit reached).
+Did not inline pp.finishNode called from pp.parseIfStatement (cumulative AST node limit reached).
+Inlined exports.default called from Node.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Node.
+Inlined Node called from pp.startNodeAt.
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Did not inline pp.parseMaybeUnary called from pp.parseExprOps (target text too big).
+Did not inline pp.parseExprOp called from pp.parseExprOps (target text too big).
+Inlined match called from .
+Inlined curContext called from .
+Inlined match called from .
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curContext called from .
+Inlined exports.default called from Node.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Node.
+Inlined Node called from pp.startNode.
+Inlined match called from eat.
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Inlined Token called from next.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined curContext called from nextToken.
+Did not inline skipSpace called from nextToken (target text too big).
+Trying to inline the polymorphic call to curPosition from nextToken
+Did not inline exports.default called from Position (inline depth limit reached).
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Trying to inline the polymorphic call to curPosition from nextToken
+Did not inline exports.default called from Position (inline depth limit reached).
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from nextToken.
+Inlined nextToken called from next.
+Inlined next called from eat.
+Inlined eat called from pp.isLineTerminator.
+Did not inline pp.canInsertSemicolon called from pp.isLineTerminator (cumulative AST node limit reached).
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from readWord1.
+Inlined isIdentifierChar called from readWord1.
+Inlined match called from .
+Inlined match called from .
+Inlined  called from pp.parseExprSubscripts.
+Did not inline pp.parseSubscripts called from pp.parseExprSubscripts (target text too big).
+Inlined match called from .
+Inlined match called from .
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Did not inline skipBlockComment called from skipSpace (target text too big).
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from skipLineComment.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from skipLineComment.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from pushComment.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined pp.addComment called from pushComment.
+Inlined pushComment called from skipLineComment.
+Inlined skipLineComment called from skipSpace.
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Inlined Token called from next.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined curContext called from nextToken.
+Did not inline skipSpace called from nextToken (target text too big).
+Trying to inline the polymorphic call to curPosition from nextToken
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Trying to inline the polymorphic call to curPosition from nextToken
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from nextToken.
+Inlined nextToken called from next.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Trying to inline the polymorphic call to curPosition from finishToken
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Trying to inline the polymorphic call to curPosition from finishToken
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Did not inline  called from finishToken (target text too big).
+Inlined finishToken called from readToken_dot.
+Inlined readToken_dot called from getTokenFromCode.
+Trying to inline the polymorphic call to curPosition from finishToken
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Trying to inline the polymorphic call to curPosition from finishToken
+Inlined exports.default called from Position.
+Inlined Position called from curPosition.
+Inlined curPosition called from finishToken.
+Did not inline  called from finishToken (target text too big).
+Inlined finishToken called from getTokenFromCode.
+Did not inline finishToken called from getTokenFromCode (cumulative AST node limit reached).
+Did not inline finishToken called from getTokenFromCode (cumulative AST node limit reached).
+Did not inline finishToken called from getTokenFromCode (cumulative AST node limit reached).
+Did not inline finishToken called from getTokenFromCode (cumulative AST node limit reached).
+Did not inline finishToken called from getTokenFromCode (cumulative AST node limit reached).
+Did not inline finishToken called from getTokenFromCode (cumulative AST node limit reached).
+Did not inline finishToken called from getTokenFromCode (cumulative AST node limit reached).
+Did not inline hasPlugin called from getTokenFromCode (cumulative AST node limit reached).
+Did not inline fin62
+ishToken called from getTokenFromCode (cumulative AST node limit reached).
+Did not inline finishToken called from getTokenFromCode (cumulative AST node limit reached).
+Did not inline finishToken called from getTokenFromCode (cumulative AST node limit reached).
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Did not inline readNumber called from getTokenFromCode (target text too big).
+Did not inline readString called from getTokenFromCode (target text too big).
+Did not inline readToken_slash called from getTokenFromCode (cumulative AST node limit reached).
+Did not inline readToken_pipe_amp called from getTokenFromCode (cumulative AST node limit reached).
+Did not inline readToken_plus_min called from getTokenFromCode (target text too big).
+Did not inline readToken_lt_gt called from getTokenFromCode (target text too big).
+Did not inline readToken_eq_excl called from getTokenFromCode (cumulative AST node limit reached).
+Inlined match called from pp.shouldAllowYieldIdentifier.
+Inlined match called from eat.
+Inlined exports.default called from Token.
+Did not inline exports.default called from SourceLocation (inline depth limit reached).
+Inlined SourceLocation called from Token.
+Inlined Token called from next.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined curContext called from nextToken.
+Did not inline skipSpace called from nextToken (target text too big).
+Trying to inline the polymorphic call to curPosition from nextToken
+Did not inline Position called from curPosition (inline depth limit reached).
+Inlined curPosition called from nextToken.
+Trying to inline the polymorphic call to curPosition from nextToken
+Did not inline Position called from curPosition (inline depth limit reached).
+Inlined curPosition called from nextToken.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from nextToken.
+Inlined nextToken called from next.
+Inlined next called from eat.
+Inlined eat called from pp.isLineTerminator.
+Did not inline pp.canInsertSemicolon called from pp.isLineTerminator (cumulative AST node limit reached).
+Inlined pp.isLineTerminator called from pp.semicolon.
+Inlined match called from eat.
+Inlined exports.default called from Token.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Token.
+Inlined Token called from next.
+Inlining builtin 0x33c9e495a69 <JS Function push (SharedFunctionInfo 0x33c9e44eb49)>
+Inlined curContext called from nextToken.
+Did not inline skipSpace called from nextToken (target text too big).
+Trying to inline the polymorphic call to curPosition from nextToken
+Did not inline exports.default called from Position (inline depth limit reached).
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Trying to inline the polymorphic call to curPosition from nextToken
+Did not inline exports.default called from Position (inline depth limit reached).
+Inlined Position called from curPosition.
+Inlined curPosition called from nextToken.
+Inlining builtin 0x33c9e49a4d9 <JS Function charCodeAt (SharedFunctionInfo 0x33c9e458941)>
+Inlined fullCharCodeAtPos called from nextToken.
+Inlined nextToken called from next.
+Inlined next called from eat.
+Inlined eat called from pp.expect.
+Inlined exports.default called from Node.
+Inlined exports.default called from SourceLocation.
+Inlined SourceLocation called from Node.
+Inlined Node called from pp.startNode.
+Inlined pp.startNode called from .
+Inlined match called from .
+Inlined match called from pp.parseExprListItem.
+Inlined match called from pp.parseExprListItem.
+Did not inline pp.parseMaybeAssign called from pp.parseExprListItem (target text too big).
